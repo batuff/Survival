@@ -1,2 +1,2 @@
 # Survival
-Implementation of radiobiological models for radiotherapy.
+Implementation of radiobiological models for radiotherapy and hadrontherapy.
