@@ -1,3 +1,6 @@
 1) Fix conversion rest_energy <=> kinetic_energy
 2) Create an executable for Windows
 3) Fix hyperlink and indexing in the reference manual
+4) Add and describe templates to:
+	- Execute the program - ("run_tmp.sh")
+	- Pass a spectrum (mixed-fields evaluations) - ("spectrum_tmp.txt")
