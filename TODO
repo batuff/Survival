@@ -2,5 +2,5 @@
 2) Create an executable for Windows
 3) Fix hyperlink and indexing in the reference manual
 4) Add and describe templates to:
-	- Execute the program - ("run_tmp.sh")
+	- Execute the program - ("tmp_run.sh")
 	- Pass a spectrum (mixed-fields evaluations) - ("spectrum_tmp.txt")
