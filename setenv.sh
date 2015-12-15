@@ -1,5 +1,7 @@
 #
 # Modify with your own path to this directory
+# Then source this file (Unix and Unix-like systems)
+# 	$ source setenv.sh
 #
 
 install_folder=$HOME/path_to_this_directory/
