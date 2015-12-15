@@ -1,0 +1,4 @@
+<map id="Survival::CellLine::getParameters_LQ_noDt" name="Survival::CellLine::getParameters_LQ_noDt">
+<area shape="rect" id="node2" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#a98422ab9e7cd064a2ba6c3e63c2f1180" title="Constructor. Instantiates and sets the object. " alt="" coords="229,5,392,46"/>
+<area shape="rect" id="node3" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#a7c636b061fa866437e518103d767d29a" title="Returns a pointer to a new Nucleus_MKM object. It not really a clone but a new clean object..." alt="" coords="440,5,603,46"/>
+</map>

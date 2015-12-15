@@ -1,0 +1,4 @@
+<map id="Survival::Nucleus_Integral_t::getDose" name="Survival::Nucleus_Integral_t::getDose">
+<area shape="rect" id="node2" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#ae5af80e9ae9caa3eb28f9f6ed4b72b1d" title="Returns (overwriting parameters passed by reference) the total dose absorbed by the nucleus and the a..." alt="" coords="230,5,397,46"/>
+<area shape="rect" id="node3" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#a019d185879804a491e4e8e78c53a86d4" title="Return the dose absorbed in the indexOfDomain&#45;th domain, expressed in Gy. " alt="" coords="230,70,397,111"/>
+</map>

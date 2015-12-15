@@ -1,0 +1,5 @@
+<map id="Survival::Track_Elsasser2007::getLocalDose" name="Survival::Track_Elsasser2007::getLocalDose">
+<area shape="rect" id="node2" href="$dd/d43/classSurvival_1_1Track__Elsasser2007.html#aa8750be8db13ae62dba9cca0563080aa" title="Function created to calculate the mean time required to the evaluation the getLocalDose() method..." alt="" coords="251,5,447,46"/>
+<area shape="rect" id="node3" href="$dd/d43/classSurvival_1_1Track__Elsasser2007.html#aa0d5d8749fd9f33bae5f29c580815741" title="Evaluates and returns the LET of the track. " alt="" coords="251,70,447,111"/>
+<area shape="rect" id="node4" href="$dd/d43/classSurvival_1_1Track__Elsasser2007.html#a7e8d8c12fa99c86ae7fa63beaf34e9fa" title="Evaluates the relative precision of the calculated LET with respect of the original particle LET..." alt="" coords="497,70,693,111"/>
+</map>

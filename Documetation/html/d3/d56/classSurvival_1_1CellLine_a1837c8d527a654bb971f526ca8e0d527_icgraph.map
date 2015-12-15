@@ -1,0 +1,6 @@
+<map id="Survival::CellLine::addParametrization_LQ_noDt_T" name="Survival::CellLine::addParametrization_LQ_noDt_T">
+<area shape="rect" id="node2" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="256,5,307,32"/>
+<area shape="rect" id="node3" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#a845e67146d7e08ad42fa790490ffbd4a" title="Create the domains as pointers to Nucleus_Integral_t objects, placed to form a hexagonal shape..." alt="" coords="198,57,365,98"/>
+<area shape="rect" id="node4" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#ac0ba5b4131c47c1da7c65ff95a504fb7" title="Constructor. Instantiates and sets the object. " alt="" coords="414,57,581,98"/>
+<area shape="rect" id="node5" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#ae30e29da4ef02fc1b1a2ad7477887265" title="Returns a pointer to a new Nucleus_tMKM object. It not really a clone but a new clean object..." alt="" coords="630,57,797,98"/>
+</map>

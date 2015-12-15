@@ -1,0 +1,11 @@
+<map id="Survival::Calculus::histogram_dose_survival_t" name="Survival::Calculus::histogram_dose_survival_t">
+<area shape="rect" id="node2" href="$dd/d54/classSurvival_1_1Tracks.html#a4413948ed5fc96621bb0aa8c5f5166d5" title="Returns the size of the vector of tracks. " alt="" coords="263,5,412,32"/>
+<area shape="rect" id="node3" href="$dd/d54/classSurvival_1_1Tracks.html#a7f2e0bce46e3142b6bb6329af22a622b" title="Evaluates and returns the mean LET of the vector of tracks, expressed in keV/um. " alt="" coords="241,56,434,83"/>
+<area shape="rect" id="node4" href="$dd/d54/classSurvival_1_1Tracks.html#a98058ff7f4ff4ebc3eb51a1198bf3015" title="Returns the total weight of the group of particles generating the vector of tracks. " alt="" coords="483,74,655,115"/>
+<area shape="rect" id="node5" href="$dd/d54/classSurvival_1_1Tracks.html#ac1a6efb09c4e1eef98ede817db8edcf2" title="Returns the density of the medium in . " alt="" coords="243,157,431,184"/>
+<area shape="rect" id="node6" href="$d3/d6c/classSurvival_1_1Nucleus.html#aa32471aeb6af3f71a73413d56467a18c" title="Declaration of the pure virtual function getRadius (for a more detailed description see the derived c..." alt="" coords="271,209,404,250"/>
+<area shape="rect" id="node7" href="$d3/ddc/classSurvival_1_1Calculus.html#aa3f0e540feb07414181a3ddc9a5dc289" title="Generate an ordered fixed&#45;size sequence of pseudorandom numbers in [begin, begin+duration]. " alt="" coords="268,274,407,315"/>
+<area shape="rect" id="node8" href="$d3/d4c/classSurvival_1_1Track.html#abd918df6e0738bdf50d908770b809cd8" title="Declaration of the pure virtual function setPosition (for a more detailed description see the derived..." alt="" coords="246,340,429,367"/>
+<area shape="rect" id="node9" href="$d3/d4c/classSurvival_1_1Track.html#a5dcb85c3c1363c6166a46435308a6bd1" title="Declaration of the pure virtual function setTime (for a more detailed description see the derived cla..." alt="" coords="255,391,420,417"/>
+<area shape="rect" id="node10" href="$d3/d6c/classSurvival_1_1Nucleus.html#a534c8b9731693f31451a7229a6b7b59f" title="Declaration of the pure virtual function distributeDose (for a more detailed description see the deri..." alt="" coords="271,442,404,483"/>
+</map>

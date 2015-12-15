@@ -1,0 +1,8 @@
+<map id="Survival::Track::setTime" name="Survival::Track::setTime">
+<area shape="rect" id="node2" href="$d3/ddc/classSurvival_1_1Calculus.html#ae5f1ea95674d3f9325cccc91d1469660" title="Simulates, via the Monte Carlo method, the irradiation process of a nucleus which is part of the cell..." alt="" coords="219,5,407,46"/>
+<area shape="rect" id="node6" href="$d3/ddc/classSurvival_1_1Calculus.html#aa500fd3a7915675ca3f53cf16c4374f3" title="Simulates via the Monte Carlo method the irradiation process of a nucleus, which is part of the cellu..." alt="" coords="221,70,406,111"/>
+<area shape="rect" id="node3" href="$d3/ddc/classSurvival_1_1Calculus.html#a7362c07d69d46fa313fd2ca68b88de90" title="Perform the Monte Carlo simulation relatively to a single value of dose imposed and returns the mean ..." alt="" coords="456,5,669,46"/>
+<area shape="rect" id="node4" href="$d3/ddc/classSurvival_1_1Calculus.html#a71a43500a5655346c3b9ac0f687c999f" title="Method called to perform a Monte Carlo simulation to reproduce the irradiation process getting the LQ..." alt="" coords="717,5,880,46"/>
+<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="928,12,979,39"/>
+<area shape="rect" id="node7" href="$d3/ddc/classSurvival_1_1Calculus.html#aff1c83dcc7dd667e86e3b08f17db6efe" title="Perform a Monte Carlo simulation delivering a fixed total dose with a defined time structure to a cel..." alt="" coords="499,70,627,111"/>
+</map>

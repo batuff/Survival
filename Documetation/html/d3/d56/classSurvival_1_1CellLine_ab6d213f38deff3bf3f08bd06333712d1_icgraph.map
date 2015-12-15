@@ -1,0 +1,4 @@
+<map id="Survival::CellLine::getAC" name="Survival::CellLine::getAC">
+<area shape="rect" id="node2" href="$d3/ddc/classSurvival_1_1Calculus.html#aff1c83dcc7dd667e86e3b08f17db6efe" title="Perform a Monte Carlo simulation delivering a fixed total dose with a defined time structure to a cel..." alt="" coords="199,5,327,46"/>
+<area shape="rect" id="node3" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#ae5af80e9ae9caa3eb28f9f6ed4b72b1d" title="Returns (overwriting parameters passed by reference) the total dose absorbed by the nucleus and the a..." alt="" coords="179,70,346,111"/>
+</map>

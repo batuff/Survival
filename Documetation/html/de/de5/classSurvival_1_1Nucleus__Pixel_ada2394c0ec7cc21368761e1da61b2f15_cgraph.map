@@ -1,0 +1,7 @@
+<map id="Survival::Nucleus_Pixel::clone" name="Survival::Nucleus_Pixel::clone">
+<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a450201dc60fb4a159a57e3e8c5528b72" title="Constructor. Instantiates and sets the object. " alt="" coords="217,70,378,111"/>
+<area shape="rect" id="node3" href="$d3/d56/classSurvival_1_1CellLine.html#a850ce403d91953b71f89cbe1aba93517" title="Returns the radius of the nucleus expressed in um. " alt="" coords="439,5,577,46"/>
+<area shape="rect" id="node4" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a5a13ebad8048c2fabc29205d2bca08cd" title="Called by the constructor to create the pixels structure. " alt="" coords="427,70,589,111"/>
+<area shape="rect" id="node6" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ac2f5e64e2420a3fbc56755e8f01afd01" title="Resets to zero all counters (inNucleusCount and intersectionCount) and doses absorbed in the nucleus..." alt="" coords="427,135,589,177"/>
+<area shape="rect" id="node5" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#aebae29b605f731ce0cc3bbc60d50ca6c" title="Determines if there is intersection between a pixel of the grid and the nucleus. " alt="" coords="638,70,799,111"/>
+</map>

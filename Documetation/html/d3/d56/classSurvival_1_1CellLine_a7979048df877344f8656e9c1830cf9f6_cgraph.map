@@ -1,0 +1,6 @@
+<map id="Survival::CellLine::getParameters" name="Survival::CellLine::getParameters">
+<area shape="rect" id="node2" href="$d3/d56/classSurvival_1_1CellLine.html#acce6d741c107dc05cca0934a62aca1ac" title="Returns the logarithmic cellular survival corresponding to a particular dose absorbed. Implements the parametrization used in the MKM formulation. " alt="" coords="179,5,357,46"/>
+<area shape="rect" id="node3" href="$d3/d56/classSurvival_1_1CellLine.html#a2284eb3b95312bec7992d4eff602bc7d" title="Returns the logarithmic cellular survival associated to a sequence of doses absorbed with a specific ..." alt="" coords="197,69,339,125"/>
+<area shape="rect" id="node4" href="$d3/d56/classSurvival_1_1CellLine.html#abaccc7a0370420ce9bc31e5149008367" title="Returns the logarithmic cellular survival corresponding to a particular dose absorbed. Implements the parametrization used in the LEM I formulation. " alt="" coords="197,149,339,190"/>
+<area shape="rect" id="node5" href="$d3/d56/classSurvival_1_1CellLine.html#ab5b17b0449469fc2d73a71bf1d1977bf" title="Returns the logarithmic cellular survival corresponding to a particular dose absorbed. Implements the parametrization used in the LEM II formulation. " alt="" coords="193,214,343,255"/>
+</map>
