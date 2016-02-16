@@ -30,6 +30,7 @@
 
 # Rstudio project
 Survival.Rproj
+.Rhistory
 
 # executables
 survival

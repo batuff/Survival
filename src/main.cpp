@@ -39,13 +39,13 @@ using namespace Survival;
 
 /*!
     \mainpage
- 
+
     \author Andrea Attili
     \author Lorenzo Manganaro
     \author Germano Russo
- 
+
     \date 2015
- 
+
     \section usage Usage
     \subsection Linux_MAC Unix and Unix-like systems.
     To execute the program the user has to call from the command line:
@@ -53,9 +53,9 @@ using namespace Survival;
     $ source setenv.sh
     $ ./survival -SIMULATION_OPTION CHOSEN_VALUES ...
     \endcode
- 
+
     Then the user has the possibility to set a number of physical (and not only physical) parameters by using the syntax: \c -PARAMETER_NAME \c PARAMETER_VALUE
- 
+
     Here is the complete list of parameters and their meaning:
         - \c -projectName It's a string representing the prefix to give at any file and directories that will be created in the simulation. The default value is "NewProject".
         - \c -output The user has the possibility to choose between three kinds of output (and all possible combination between them):
@@ -118,14 +118,14 @@ using namespace Survival;
         - \c -trackMode In the case of mixed fields this option require a string indicating the way in which to interpretate the spectrum specification. Two possibilities are provided:
             -# "histogram": then the spectrum will be considered as an histogram where each particle is a bin with its "weight" (see the TEMPLATE for the spectrum_file).
             -# "random": then the program will random extract with uniform probability (iteration by iteration) the particle to use.
- 
+
     Typing \c --help a hint will be display, suggesting how to use the program.
  */
 int main(int argc, char* argv[])
 {
     // CONVERSION CONSTANT
     const double AMU2MEV = 931.494027;
-    
+
     // SETTING DEFAULT VALUES:
     string projectName = "NewProject";
     string cellType = "Cell1";
@@ -133,44 +133,44 @@ int main(int argc, char* argv[])
     string trackType = "KieferChatterjee";
     string parametrizationType = "LQ_noDt";
     string calculusType = "rapidMKM";
-    
+
     double precision = 0.05;
     int parallelismType = 0;
-    
+
     vector<double> doses;
-    
+
     vector<string> parameter_name;
-    
+
     double MKM_alpha0 = 0.312;
     double MKM_beta0 = 0.073;
     double MKM_rNucleus = 4.611;
     double MKM_rDomain = 0.365;
-    
+
     double tMKM_ac = 2.187;
-    
+
     double LEM_alphaX = 0.312;
     double LEM_betaX = 0.073;
     double LEM_rNucleus = 4.611;
     double LEM_Dt = 30;
-    
+
     string ionType = "C";
     int particleA = 12;
     int particleZ = 6;
     string trackMode = "histogram";
     string energyType = "energy";
     vector<double> energies;
-    
+
     int nFraction = 1;
     double timeSpacing = 0.0;
     double fracDeliveryTime = 0.0;
-    
+
     bool saveAlphaBeta = false;
     bool saveMeans = false;
     bool saveCell = false;
-    
+
     bool mono = true;
     string spectrum_file="";
-    
+
     // PARSING INPUT ARGUMENTS:
     parse(argc, argv, cellType, model, trackType, parametrizationType,
           calculusType, precision, parallelismType, doses, parameter_name,
@@ -180,17 +180,17 @@ int main(int argc, char* argv[])
           nFraction, timeSpacing, fracDeliveryTime,
           saveAlphaBeta, saveMeans, saveCell, projectName,
           mono, spectrum_file);
-    
+
     // FILE TO SAVE ALPHA-BETA VALUES
     ostringstream filename_LQ;
     ofstream LQ_File;
     if (saveAlphaBeta) {
         filename_LQ << projectName << "_LQparameters_" << model << ".csv";
-        
+
         bool already_exist = false;
         if(ifstream(filename_LQ.str().c_str()))
             already_exist = true;
-        
+
         LQ_File.open(filename_LQ.str().c_str(), ios::app);
         if(!LQ_File)
         {
@@ -208,7 +208,7 @@ int main(int argc, char* argv[])
     }
     else
         filename_LQ << "noSave";
-    
+
     // FILE TO SAVE MEAN DOSE AND SURVIVAL VALUES
     string title_means;
     ofstream means_File;
@@ -216,11 +216,11 @@ int main(int argc, char* argv[])
         title_means = projectName + "_survival_" + model + ".csv";
         ostringstream filename_means;
         filename_means << title_means;
-        
+
         bool already_exist = false;
         if (ifstream(filename_means.str().c_str()))
             already_exist = true;
-        
+
         means_File.open(filename_means.str().c_str(), ios::app);
         if(!means_File)
         {
@@ -239,14 +239,14 @@ int main(int argc, char* argv[])
     }
     else
         title_means = "noSave";
-    
+
     // FILE TO SAVE SINGLE CELL DOSE AND SURVIVAL VALUES
     string outputDir;
     if (saveCell) {
         outputDir = projectName + "_survival_data/";
         mkdir(outputDir.c_str());
     }
-    
+
     // SETTING THE CELL LINE (USING THE INPUT PARAMETERS)
     CellLine *cellLine = new CellLine(cellType);
     if (model == "LEMI" || model == "LEMII" || model == "LEMIII")
@@ -270,7 +270,7 @@ int main(int argc, char* argv[])
         cellLine->addParametrization_LQ_noDt_T(MKM_alpha0, MKM_beta0, tMKM_ac);
     }
     cellLine->setParametrization(parametrizationType);
-                    
+
     // CREATING THE NUCLEUS
     Nucleus_Pixel nucleus(*cellLine);
     cout << "Nucleus of type PIXEL created." << endl;
@@ -278,7 +278,7 @@ int main(int argc, char* argv[])
     cout << "Nucleus of type MKM created." << endl;
     Nucleus_tMKM nucleus_tMKM(*cellLine);
     cout << "Nucleus of type tMKM created." << endl;
-    
+
     // CREATING THE PARTICLE
     Particle particle;
     particle.type = ionType;
@@ -289,7 +289,7 @@ int main(int argc, char* argv[])
     particle.y = 0.0; // mm
     particle.z = 0.0; // mm
     particle.weight = 1.0;
-    
+
     // MODEL PARAMETERS
     vector<double> parameters;
     if (model == "MKM" || model == "tMKM") {
@@ -306,7 +306,7 @@ int main(int argc, char* argv[])
         parameters.push_back(LEM_rNucleus);
         parameters.push_back(LEM_Dt);
     }
-    
+
     // ALPHA, BETA VECTORS
     int NUMBER_OF_ITERATIONS;
     if (mono)
@@ -317,12 +317,12 @@ int main(int argc, char* argv[])
     vector<double> beta(NUMBER_OF_ITERATIONS, 0.0);
     vector<double> alpha_sigma(NUMBER_OF_ITERATIONS, 0.0);
     vector<double> beta_sigma(NUMBER_OF_ITERATIONS, 0.0);
-                    
+
     // LOOP OVER LETS/ENERGIES
     for (int i = 0; i < NUMBER_OF_ITERATIONS; i++) {
-        
+
         Particles particles;
-        
+
         if (mono) {
             if (energyType == "energy")
             {
@@ -334,7 +334,7 @@ int main(int argc, char* argv[])
                 particle.let = energies[i] / 1000.; // MeV/um (si suppone venga data in keV/um)
                 particle.e_c = betheBloch_inv_Srim(particle.type, particle.let) * particle.restEnergy / AMU2MEV; // MeV
             }
-            
+
             particles << particle;
         }
         else {
@@ -343,7 +343,7 @@ int main(int argc, char* argv[])
             particles.setSpectrumFile(spectrum_file);
             particles.reconstructIonLETandEnergy();
         }
-        
+
         Tracks tracks(particles, trackType);
 
         // CREATING AND EXECUTING CALCULUS
@@ -553,7 +553,7 @@ int main(int argc, char* argv[])
                                       << "LETd," << tracks.getDoseAveragedLet() << endl
                                       << "LETd_sigma," << tracks.getSigmaDoseAveragedLet() << endl;
                         }
-                        
+
                         Info_File
                                 << "Track_Type," << trackType << endl
                                 << "Track_Mode," << trackMode << endl
@@ -573,7 +573,7 @@ int main(int argc, char* argv[])
             }
             else
                 prefix << "noSave";
-            
+
             if (model == "LEMI" || model == "LEMII" || model == "LEMIII")
             {
                 Calculus calculus_LEM(tracks, *cellLine, nucleus, prefix.str(), model, parallelismType);
@@ -599,7 +599,7 @@ int main(int argc, char* argv[])
                                                     saveAlphaBeta, saveMeans, saveCell, title_means);
             }
         }//if MonteCarlo
-        
+
         if(calculusType!="MonteCarlo" && saveMeans) {
             double meanEn = tracks.getMeanEnergy();
             double meanEnSig = tracks.getSigmaMeanEnergy();
@@ -607,10 +607,10 @@ int main(int argc, char* argv[])
             double meanLSig = tracks.getSigmaMeanLet();
             double meanDoseAvL = tracks.getDoseAveragedLet();
             double meanDoseAvLSig = tracks.getSigmaDoseAveragedLet();
-            
+
             for (size_t d=0; d<doses.size(); ++d) {
                 double S = exp(-alpha[i]*doses[d]-beta[i]*doses[d]*doses[d]);
-            
+
                 means_File << model << "," << calculusType << "," << cellType << ",";
                 for (size_t a=0; a<parameters.size(); a++)
                     means_File << parameters[a] << ",";
@@ -626,9 +626,9 @@ int main(int argc, char* argv[])
                 means_File.unsetf(std::ios::scientific);
             }
         }
-        
+
         clog << "---------------------------" << endl;
-        
+
         if (saveAlphaBeta) {
             double mEsig = tracks.getSigmaMeanEnergy();
             double mLsig = tracks.getSigmaMeanLet();
@@ -648,8 +648,8 @@ int main(int argc, char* argv[])
         }
     }
     LQ_File.close();
-         
+
     delete cellLine;
-    
+    celline = 0;
     return 0;
 }
