@@ -5,8 +5,6 @@ This software was developed by the INFN (Istituto Nazionale di Fisica Nucleare) 
 
 The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) and OpenMP (Open Multi-Processing) external libraries.
 
-### Usage
-
 ### Full description
 A full description of the code can be found in the User's Manual: "Documentation/Survival_REFERENCE_MANUAL.pdf".
 
@@ -23,3 +21,6 @@ A detailed description of the implemented models can be found in the following p
  	1. Original MKM formulation: R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", *Radiation Research* **140**, 366-374 (1994). [Some corrections and improvements were made over the subsequent years]
  	2. Kiefer-Chatterjee amorphous track structure introduction: Y. Kase, T. Kanai, N. Matsufuji, Y. Furusawa, T. Elsasser, and M. Scholz, "Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation", *Physics in Medicine and Biology* **53**, 37-59 (2008)
  - MCt-MKM: L. Manganaro, G. Russo, R. Cirio, F. Dalmasso, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati and A. Attili, "A novel formulation of the Microdosimetric Kinetic Model to account for dose-delivery time structure effects in ion beam therapy with application in treatment planning simulations", *Medical Physics*, **Submitted**
+
+### Usage
+
