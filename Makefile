@@ -1,4 +1,4 @@
-#Makefile originale per ‘main’
+# Makefile: use this to create the executable (Linux and MacOS X)
 
 CC = g++
 CCFLAGS = -O3 -Wall -W -fopenmp -std=c++11
