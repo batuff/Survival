@@ -56,7 +56,7 @@ Nucleus_Pixel::Nucleus_Pixel(const CellLine &cellLineRef,
   radius_3( radius3 ),
   pixelSide_4( pixelSide_3 * scale_3 )
 {
-    clog << "Creating Nucleus of type Pixel... " << endl;
+    //clog << "Creating Nucleus of type Pixel... " << endl;
 
     r_nucleus = cellLine.getNucleusRadius();
 
@@ -64,7 +64,7 @@ Nucleus_Pixel::Nucleus_Pixel(const CellLine &cellLineRef,
 
     cleanNucleus();
 
-    clog << "done" << endl;
+    //clog << "done" << endl;
 }
 
 //------------------------------------------------------------------------------

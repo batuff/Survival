@@ -44,7 +44,7 @@ Nucleus_tMKM::Nucleus_tMKM(const CellLine &cellLineRef,
   y_nucleus( yPosition ),
   r_nucleus( 0.0 )
 {
-    clog << "Creating Nucleus of type tMKM... " << endl;
+    //clog << "Creating Nucleus of type tMKM... " << endl;
 
     double tmp;
     domainRadius = cellLine.getDomainRadius();  // um
@@ -59,7 +59,7 @@ Nucleus_tMKM::Nucleus_tMKM(const CellLine &cellLineRef,
 
     cleanNucleus();
 
-    clog << "done" << endl;
+    //clog << "done" << endl;
 }
 
 //------------------------------------------------------------------------------
@@ -76,7 +76,7 @@ Nucleus_tMKM::Nucleus_tMKM(const CellLine &cellLineRef,
   y_nucleus( yPosition ),
   r_nucleus( 0.0 )
 {
-    cout << "Creating Nucleus of type tMKM... " << flush;
+    //clog << "Creating Nucleus of type tMKM... " << flush;
 
     double tmp;
     
@@ -89,8 +89,8 @@ Nucleus_tMKM::Nucleus_tMKM(const CellLine &cellLineRef,
 
     cleanNucleus();
 
-    cout << "done" << endl
-         << endl << flush;
+    //clog << "done" << endl
+    //     << endl << flush;
 }
 
 //------------------------------------------------------------------------------

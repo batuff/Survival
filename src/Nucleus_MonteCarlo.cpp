@@ -50,9 +50,9 @@ Nucleus_MonteCarlo::Nucleus_MonteCarlo(const CellLine &cellLineRef,
         exit(1);
     }
 
-    cout << "Creating Nucleus of type MonteCarlo... " << flush;
-    cout << "done" << endl
-         << endl << flush;
+    //clog << "Creating Nucleus of type MonteCarlo... " << flush;
+    //clog << "done" << endl
+    //     << endl << flush;
 }
 
 //------------------------------------------------------------------------------

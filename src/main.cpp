@@ -82,7 +82,7 @@ using namespace Survival;
                 R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", \a Radiation \a Research \b 140, 366-374 (1994) -- And subsequent references\n
                 Y. Kase, T. Kanai, N. Matsufuji, Y. Furusawa, T. Elsasser, and M. Scholz, "Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation", \a Physics \a in \a Medicine \a and \a Biology \b 53, 37-59 (2008)
             -# "tMKM" A monte carlo reformulation of the MKM, extended to the temporal dimension to evaluate the effect of the time structure of the irradiation on the LQ parameters, as described in:\n
-                L. Manganaro, G. Russo, A. Attili, "Advanced modeling of the temporal effect in particle therapy: from radiobiological evaluation to treatment planning", \a Medical \a Physics, (Submitted)\n
+                L. Manganaro, G. Russo, R. Cirio, F. Dalmasso, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati, A. Attili, "A novel formulation of the Microdosimetric Kinetic Model to account for dose-delivery time structure effects in ion beam therapy with application in treatment planning simulations", \a Medical \a Physics, (Submitted)\n
                 The default value for this option is "MKM"
         - \c -calculusType A string identifying the type of calculus to be done. Some possibilities are available:
                 -# "rapidScholz" It's an implementation of the method described in:\n
@@ -334,6 +334,11 @@ int main(int argc, char* argv[])
                 particle.let = energies[i] / 1000.; // MeV/um (si suppone venga data in keV/um)
                 particle.e_c = betheBloch_inv_Srim(particle.type, particle.let) * particle.restEnergy / AMU2MEV; // MeV
             }
+            
+            clog << endl << "Setting particle kinetic energy: " << particle.e_c << " MeV  —  ("
+                         << particle.e_c/(double)particle.A << " MeV/u)" << endl
+                         << "                        and LET: " << particle.let * 1000. << " keV/um" << endl
+                         << endl;
             
             particles << particle;
         }
@@ -627,7 +632,7 @@ int main(int argc, char* argv[])
             }
         }
         
-        clog << "---------------------------" << endl;
+        clog << "------------------------------------------------------" << endl;
         
         if (saveAlphaBeta) {
             double mEsig = tracks.getSigmaMeanEnergy();

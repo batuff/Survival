@@ -120,7 +120,7 @@ Particles Particles::getIons()
             ions << particleVector[i];
     
     cout << ions.size() << " ions extracted" << endl
-    << endl << flush;
+         << endl << flush;
     
     return ions;
 }
@@ -310,6 +310,8 @@ Particles* Particles::getWithDistanceBetween(const double distance_min,  // mm
 
 void Particles::loadSpectrum(const string file_name)
 {
+    cout << "Loading spectrum file..." << endl;
+    
     const double AMU2MEV = 931.494027;
     
     spectrum_file = file_name;

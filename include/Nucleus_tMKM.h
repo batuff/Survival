@@ -17,7 +17,7 @@ namespace Survival {
      
         Similar in its structure to the Nucleus_MKM class, it provides some method to manage the temporal structure of the irradiation to support the MonteCarlo temporal-Microdosimetric Kinetic Model (MCt-MKM, \ref MCt-MKM "1"). It keeps track of the history of the irradiation, associating to each dose deposited a precise temporal instant. The total number of lethal events observed and the associated cellular survival are evaluated considering also the repaired kinetics of the cell.
      
-        \anchor MCt-MKM 1. L. Manganaro, G. Russo, A. Attili, "Advanced modeling of the temporal effect in particle therapy: from radiobiological evaluation to treatment planning", \a Medical \a Physics, (Submitted).
+        \anchor MCt-MKM 1. L. Manganaro, G. Russo, R. Cirio, F. Dalmasso, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati, A. Attili, "A novel formulation of the Microdosimetric Kinetic Model to account for dose-delivery time structure effects in ion beam therapy with application in treatment planning simulations", \a Medical \a Physics, (Submitted).
      */
     class Nucleus_tMKM : public Nucleus
     {

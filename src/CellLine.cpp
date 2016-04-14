@@ -16,6 +16,7 @@ using std::cout;
 using std::endl;
 using std::flush;
 using std::ios;
+using std::clog;
 
 #include <cstdlib>
 using std::exit;
@@ -662,7 +663,7 @@ void CellLine::setParametrization(const string parametrization_type)
         exit(1);
     }
 
-    cout << "Selected " << parametrization_type << " parametrization for X-rays." << endl;
+    //clog << "Selected " << parametrization_type << " parametrization for X-rays." << endl;
 
     if(needEtaGenerated)
     {

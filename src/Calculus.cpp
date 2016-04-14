@@ -479,6 +479,7 @@ void Calculus::random_dose_survival_p(const double doseImposed,
 void Calculus::rapidINFN_alphaIon_betaIon(double &alphaIon,
                                           double &betaIon)
 {
+    // Questo dev'essere quello che nella tesi di Germano viene identificato con "INFN approximate implementation"
     if(true)
     {
         //dummy initialization to avoid warnings when compiling.
@@ -740,6 +741,7 @@ void Calculus::rapidMKM_Kase_alphaIon_betaIon(double &alphaIon,
 void Calculus::rapidRusso_alphaIon_betaIon(double &alphaIon,
                                            double &betaIon)
 {
+    // Nella tesi di Germano è quello che viene indicato con "A refinement of the Rapid GSI approach"
     double alpha_X, beta_X, D_t;
     cellLine.getParameters(alpha_X, beta_X, D_t);
     double s = alpha_X + 2 * beta_X * D_t;  //Gy^(-1)
@@ -806,6 +808,7 @@ void Calculus::rapidRusso_alphaIon_betaIon(double &alphaIon,
 void Calculus::rapidScholz_alphaIon_betaIon(double &alphaIon,
                                             double &betaIon)
 {
+    // Nella tesi di Germano è quello che viene indicato con "GSI approximate implementation"
     double alpha_X, beta_X, D_t;
     cellLine.getParameters(alpha_X, beta_X, D_t);
     double s = alpha_X + 2 * beta_X * D_t;  //Gy^(-1)
