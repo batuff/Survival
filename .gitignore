@@ -26,3 +26,15 @@
 *.exe
 *.out
 *.app
+.Rproj.user
+
+# Rstudio project
+Survival.Rproj
+.Rhistory
+
+# executables
+survival
+
+# temp files (makefile)
+dep.mk
+
