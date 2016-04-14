@@ -1,8 +1,0 @@
-<map id="Survival::Nucleus_Pixel::intersection" name="Survival::Nucleus_Pixel::intersection">
-<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#add98c0e0188211f5bc4da2f3965ea716" title="Distributes the dose deposited by a Track in the pixels constituting the nucleus. ..." alt="" coords="217,70,378,111"/>
-<area shape="rect" id="node5" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a5a13ebad8048c2fabc29205d2bca08cd" title="Called by the constructor to create the pixels structure. " alt="" coords="217,135,378,177"/>
-<area shape="rect" id="node3" href="$da/d16/classSurvival_1_1Nucleus__MonteCarlo.html#a6fbaad539bf8b8853034ae30f3f991b1" title="It simply calls Nucleus_Pixel::distributeDose(const Track &amp;track) to evaluate the dose deposited in t..." alt="" coords="427,5,626,46"/>
-<area shape="rect" id="node4" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a38bd5639c2eaec08481f7feebcf63c15" title="Overload of distributeDose(const Track &amp;track) to manage a Tracks object, it simply calls distributeD..." alt="" coords="446,70,607,111"/>
-<area shape="rect" id="node6" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a450201dc60fb4a159a57e3e8c5528b72" title="Constructor. Instantiates and sets the object. " alt="" coords="446,135,607,177"/>
-<area shape="rect" id="node7" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ada2394c0ec7cc21368761e1da61b2f15" title="Returns a pointer to a new Nucleus_Pixel object. It not really a clone but a new clean object..." alt="" coords="675,135,837,177"/>
-</map>

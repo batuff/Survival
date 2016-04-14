@@ -1,4 +1,0 @@
-<map id="Survival::Nucleus_Pixel::createPixels" name="Survival::Nucleus_Pixel::createPixels">
-<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a450201dc60fb4a159a57e3e8c5528b72" title="Constructor. Instantiates and sets the object. " alt="" coords="217,5,378,46"/>
-<area shape="rect" id="node3" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ada2394c0ec7cc21368761e1da61b2f15" title="Returns a pointer to a new Nucleus_Pixel object. It not really a clone but a new clean object..." alt="" coords="427,5,589,46"/>
-</map>

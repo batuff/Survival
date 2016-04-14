@@ -1,4 +1,0 @@
-<map id="Survival::Nucleus_MonteCarlo::cleanNucleus" name="Survival::Nucleus_MonteCarlo::cleanNucleus">
-<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ac2f5e64e2420a3fbc56755e8f01afd01" title="Resets to zero all counters (inNucleusCount and intersectionCount) and doses absorbed in the nucleus..." alt="" coords="259,5,421,46"/>
-<area shape="rect" id="node3" href="$dd/d54/classSurvival_1_1Tracks.html#a2523e3adc75eea991f833aff3de98c47" title="Deletes each element of the vector and erases the vector itself. " alt="" coords="254,71,426,97"/>
-</map>

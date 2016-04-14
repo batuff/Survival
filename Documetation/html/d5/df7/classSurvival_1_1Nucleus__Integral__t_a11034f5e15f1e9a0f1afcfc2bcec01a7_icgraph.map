@@ -1,4 +1,0 @@
-<map id="Survival::Nucleus_Integral_t::cleanNucleus" name="Survival::Nucleus_Integral_t::cleanNucleus">
-<area shape="rect" id="node2" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#a4f1da2e7e95bd7218d30cdc7fce5b85f" title="Constructor. Instantiates and sets the object. " alt="" coords="230,5,405,46"/>
-<area shape="rect" id="node3" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#afcce1f66cf6017674f2ed50f86b9c70d" title="Returns a pointer to a new Nucleus_Integral_t object. It not really a clone but a new clean object..." alt="" coords="454,5,629,46"/>
-</map>

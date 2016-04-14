@@ -1,4 +1,0 @@
-<map id="Survival::Tracks::getSigmaMeanLet" name="Survival::Tracks::getSigmaMeanLet">
-<area shape="rect" id="node2" href="$dd/d54/classSurvival_1_1Tracks.html#a7f2e0bce46e3142b6bb6329af22a622b" title="Evaluates and returns the mean LET of the vector of tracks, expressed in keV/um. " alt="" coords="235,5,429,32"/>
-<area shape="rect" id="node3" href="$dd/d54/classSurvival_1_1Tracks.html#a98058ff7f4ff4ebc3eb51a1198bf3015" title="Returns the total weight of the group of particles generating the vector of tracks. " alt="" coords="478,23,650,65"/>
-</map>

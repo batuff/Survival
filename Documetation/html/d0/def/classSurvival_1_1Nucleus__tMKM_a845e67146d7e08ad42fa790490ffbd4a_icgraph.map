@@ -1,4 +1,0 @@
-<map id="Survival::Nucleus_tMKM::createDomains" name="Survival::Nucleus_tMKM::createDomains">
-<area shape="rect" id="node2" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#ac0ba5b4131c47c1da7c65ff95a504fb7" title="Constructor. Instantiates and sets the object. " alt="" coords="222,5,389,46"/>
-<area shape="rect" id="node3" href="$d0/def/classSurvival_1_1Nucleus__tMKM.html#ae30e29da4ef02fc1b1a2ad7477887265" title="Returns a pointer to a new Nucleus_tMKM object. It not really a clone but a new clean object..." alt="" coords="438,5,605,46"/>
-</map>

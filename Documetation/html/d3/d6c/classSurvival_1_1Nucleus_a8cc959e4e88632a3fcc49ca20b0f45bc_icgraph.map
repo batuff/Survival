@@ -1,5 +1,0 @@
-<map id="Survival::Nucleus::getDosesAndLethals" name="Survival::Nucleus::getDosesAndLethals">
-<area shape="rect" id="node2" href="$d3/ddc/classSurvival_1_1Calculus.html#a47538c45fd5a9b2cd97bea6d41341171" title="Simulates, via the Monte Carlo method, the irradiation process of a nucleus which is part of the cell..." alt="" coords="198,4,373,60"/>
-<area shape="rect" id="node3" href="$d3/ddc/classSurvival_1_1Calculus.html#aac0abf30856195062b94015937838aaf" title="Perform the Monte Carlo simulation relatively to a single value of dose imposed and returns the mean ..." alt="" coords="421,4,635,60"/>
-<area shape="rect" id="node4" href="$d3/ddc/classSurvival_1_1Calculus.html#a5354e680ba838228dba9624b1e0a6ca7" title="This function was thought to control the dose delivery inside the MKM nucleus. It&#39;s similar to slow_a..." alt="" coords="683,4,845,60"/>
-</map>

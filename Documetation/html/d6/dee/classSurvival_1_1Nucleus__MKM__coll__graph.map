@@ -1,5 +1,0 @@
-<map id="Survival::Nucleus_MKM" name="Survival::Nucleus_MKM">
-<area shape="rect" id="node2" href="$d3/d6c/classSurvival_1_1Nucleus.html" title="Linked to a specific CellLine object, this class defines the structure of the cellular nucleus to be ..." alt="" coords="5,272,168,496"/>
-<area shape="rect" id="node5" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html" title="Implements a nucleus as a 2D circular object and provides methods to evaluate the number of lethal ev..." alt="" coords="81,686,295,1042"/>
-<area shape="rect" id="node3" href="$d3/d56/classSurvival_1_1CellLine.html" title="Represents the cell line to which the nucleus belongs and hosts the radiobiological and structural ch..." alt="" coords="215,147,431,621"/>
-</map>

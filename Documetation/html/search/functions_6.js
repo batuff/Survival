@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['fit_5flq',['fit_LQ',['../df/d88/namespaceSurvival.html#adcc7f2c138e44c5286663a9c38dd14e1',1,'Survival::fit_LQ(vector&lt; double &gt; dose, vector&lt; double &gt; survival, vector&lt; double &gt; survivalUncertainty, double &amp;alpha, double &amp;alphaUncertainty, double &amp;beta, double &amp;betaUncertainty, double &amp;chiSquared, double &amp;incompleteGammaQ)'],['../df/d88/namespaceSurvival.html#a726e9cca8c7bee598cd0665df8b0e602',1,'Survival::fit_LQ(std::vector&lt; double &gt; dose, std::vector&lt; double &gt; survival, std::vector&lt; double &gt; survivalUncertainty, double &amp;alpha, double &amp;alphaUncertainty, double &amp;beta, double &amp;betaUncertainty, double &amp;chiSquared, double &amp;incompleteGammaQ)']]],
-  ['folder_5fexists',['folder_exists',['../df/d88/namespaceSurvival.html#a7fa54d48e0ce6e0a8ce1c4cf7350f97e',1,'Survival::folder_exists(string foldername)'],['../df/d88/namespaceSurvival.html#a8fd87b51c2c9eb92f9ac21860e101f5c',1,'Survival::folder_exists(std::string foldername)']]]
-];

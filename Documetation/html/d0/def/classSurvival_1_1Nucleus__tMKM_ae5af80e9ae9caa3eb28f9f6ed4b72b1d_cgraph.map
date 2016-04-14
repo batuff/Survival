@@ -1,6 +1,0 @@
-<map id="Survival::Nucleus_tMKM::getDoseAndSurvival" name="Survival::Nucleus_tMKM::getDoseAndSurvival">
-<area shape="rect" id="node2" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#ab413e3493d754ce08be0473e52570b4e" title="Returns the vector representing each dose deposited in the nucleus by a Particle when an interaction ..." alt="" coords="222,5,397,46"/>
-<area shape="rect" id="node3" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#a19ddf14de35bcc1601c19b8e8b2899c1" title="Returns the vector representing each instant in which an interaction with a Particle occurs..." alt="" coords="222,70,397,111"/>
-<area shape="rect" id="node4" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#ae41113bccd2b2fe7b72cb9204f4cafa3" title="Returns the total dose absorbed by the nucleus, expressed in Gy, overwriting a double variable passed..." alt="" coords="222,135,397,177"/>
-<area shape="rect" id="node5" href="$d3/d56/classSurvival_1_1CellLine.html#ab6d213f38deff3bf3f08bd06333712d1" title="Returns the time constant associated to the repair kinetics of the nucleus, expressed in ..." alt="" coords="247,201,371,242"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="Survival::Nucleus_MonteCarlo::distributeDose" name="Survival::Nucleus_MonteCarlo::distributeDose">
-<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#add98c0e0188211f5bc4da2f3965ea716" title="Distributes the dose deposited by a Track in the pixels constituting the nucleus. ..." alt="" coords="254,78,415,119"/>
-<area shape="rect" id="node3" href="$d3/d4c/classSurvival_1_1Track.html#a7cbd42c4881770c7bb89d8baad8c81a0" title="Declaration of the pure virtual function getPosition (for a more detailed description see the derived..." alt="" coords="473,5,655,32"/>
-<area shape="rect" id="node4" href="$d3/d4c/classSurvival_1_1Track.html#a0f268b2048c965a9c1a2604e786b55a7" title="Declaration of the pure virtual function getRadius (for a more detailed description see the derived c..." alt="" coords="475,56,653,83"/>
-<area shape="rect" id="node5" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#aebae29b605f731ce0cc3bbc60d50ca6c" title="Determines if there is intersection between a pixel of the grid and the nucleus. " alt="" coords="483,107,645,149"/>
-<area shape="rect" id="node6" href="$d3/d4c/classSurvival_1_1Track.html#aacf246b1c633218966efd08bd8733626" title="Declaration of the pure virtual function getLocalDose (for a more detailed description see the derive..." alt="" coords="465,173,663,200"/>
-</map>

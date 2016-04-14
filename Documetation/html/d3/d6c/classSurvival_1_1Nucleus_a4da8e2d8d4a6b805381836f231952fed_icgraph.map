@@ -1,6 +1,0 @@
-<map id="Survival::Nucleus::clone" name="Survival::Nucleus::clone">
-<area shape="rect" id="node2" href="$d3/ddc/classSurvival_1_1Calculus.html#aff1c83dcc7dd667e86e3b08f17db6efe" title="Perform a Monte Carlo simulation delivering a fixed total dose with a defined time structure to a cel..." alt="" coords="229,5,357,46"/>
-<area shape="rect" id="node3" href="$d3/ddc/classSurvival_1_1Calculus.html#a7362c07d69d46fa313fd2ca68b88de90" title="Perform the Monte Carlo simulation relatively to a single value of dose imposed and returns the mean ..." alt="" coords="187,70,400,111"/>
-<area shape="rect" id="node4" href="$d3/ddc/classSurvival_1_1Calculus.html#a71a43500a5655346c3b9ac0f687c999f" title="Method called to perform a Monte Carlo simulation to reproduce the irradiation process getting the LQ..." alt="" coords="448,70,611,111"/>
-<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="659,77,709,104"/>
-</map>

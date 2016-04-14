@@ -1,8 +1,0 @@
-<map id="Survival::Nucleus_Pixel::addNucleusDoses" name="Survival::Nucleus_Pixel::addNucleusDoses">
-<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ad2d1ca2a288cc81ff2b07356ff07242c" title="Returns the radius of the nucleus, expressed in um. " alt="" coords="233,5,394,46"/>
-<area shape="rect" id="node3" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ad47b15701f98999a6fc5bd5f8b8ab3c0" title="The number of pixels constituting the smallest grid. " alt="" coords="216,70,411,111"/>
-<area shape="rect" id="node4" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a5a6fa9645cf11c3f6c06b5b4a0abdd17" title="Returns the number of pixels constituting the biggest grid. " alt="" coords="219,135,407,177"/>
-<area shape="rect" id="node5" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ae4b832cb08674730ae553fb4a8aa60bd" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="233,201,394,242"/>
-<area shape="rect" id="node7" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a5b2ce0660a1d90e4d4b350528b52ace6" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="233,266,394,307"/>
-<area shape="rect" id="node6" href="$d3/d56/classSurvival_1_1CellLine.html#a86e4e660181036f873b9f347550d7996" title="Returns the natural logarithm of the cellular survival evaluated on the basis of the selected paramet..." alt="" coords="459,234,591,275"/>
-</map>

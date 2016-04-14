@@ -1,4 +1,0 @@
-<map id="Survival::Track_Elsasser2007::getRelativePrecision" name="Survival::Track_Elsasser2007::getRelativePrecision">
-<area shape="rect" id="node2" href="$dd/d43/classSurvival_1_1Track__Elsasser2007.html#aa0d5d8749fd9f33bae5f29c580815741" title="Evaluates and returns the LET of the track. " alt="" coords="251,5,447,46"/>
-<area shape="rect" id="node3" href="$dd/d43/classSurvival_1_1Track__Elsasser2007.html#aa6d7195703e41369047d771eeaa7e2cd" title="Returns the local dose (in Gy) deposited by the track at a certain distance from the track center (ex..." alt="" coords="497,5,693,46"/>
-</map>

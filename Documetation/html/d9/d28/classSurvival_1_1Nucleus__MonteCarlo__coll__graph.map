@@ -1,7 +1,0 @@
-<map id="Survival::Nucleus_MonteCarlo" name="Survival::Nucleus_MonteCarlo">
-<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html" title="Inherited from the Nucleus pure virtual class, it implements the nucleus structure used in the LEM..." alt="" coords="279,910,456,1325"/>
-<area shape="rect" id="node3" href="$d3/d6c/classSurvival_1_1Nucleus.html" title="Linked to a specific CellLine object, this class defines the structure of the cellular nucleus to be ..." alt="" coords="5,272,168,496"/>
-<area shape="rect" id="node4" href="$df/d1b/classSurvival_1_1Pixel.html" title="Implements the Pixel features to be used in the Nucleus_Pixel class. " alt="" coords="193,323,343,445"/>
-<area shape="rect" id="node5" href="$d3/d56/classSurvival_1_1CellLine.html" title="Represents the cell line to which the nucleus belongs and hosts the radiobiological and structural ch..." alt="" coords="412,147,628,621"/>
-<area shape="rect" id="node7" href="$dd/d54/classSurvival_1_1Tracks.html" title="This is a container class for Track objects; it implements the structure and methods to manage a vect..." alt="" coords="565,646,728,885"/>
-</map>

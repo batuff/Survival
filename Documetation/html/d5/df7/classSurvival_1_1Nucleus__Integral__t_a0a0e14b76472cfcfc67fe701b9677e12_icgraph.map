@@ -1,4 +1,0 @@
-<map id="Survival::Nucleus_Integral_t::IntegrateWeightedRadialTrack" name="Survival::Nucleus_Integral_t::IntegrateWeightedRadialTrack">
-<area shape="rect" id="node2" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#a7b0074656eda4dcdf81c88d7ccf6fa98" title="Integrates the radial profile of the track in the intersection area with the nucleus to evaluate the ..." alt="" coords="273,5,447,46"/>
-<area shape="rect" id="node3" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#aaa018773b968eb8e48cfeae48ddb88f8" title="Overload of distributeDose(const Track &amp;track) to manage a Tracks object, it simply calls distributeD..." alt="" coords="497,5,671,46"/>
-</map>

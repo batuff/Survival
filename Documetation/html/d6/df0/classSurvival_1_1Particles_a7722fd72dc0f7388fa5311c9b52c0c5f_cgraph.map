@@ -1,5 +1,0 @@
-<map id="Survival::Particles::reconstructIonLETandEnergy" name="Survival::Particles::reconstructIonLETandEnergy">
-<area shape="rect" id="node2" href="$df/d88/namespaceSurvival.html#ab28c172053abaa98652f86d2c3ed229c" title="Survival::betheBloch\l_inv_Srim" alt="" coords="270,5,413,46"/>
-<area shape="rect" id="node3" href="$df/d88/namespaceSurvival.html#a5b76404b95bb011e06f17b79292977e8" title="Survival::betheBloch_Srim" alt="" coords="253,71,429,97"/>
-<area shape="rect" id="node4" href="$dc/d23/classSurvival_1_1BetheBlochTable.html#a9a972ac6377b4c3eeb1a634b46f16fd1" title="Returns the value of LET corresponding to the kinetic energy imposed. " alt="" coords="477,63,653,105"/>
-</map>

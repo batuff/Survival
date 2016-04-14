@@ -1,7 +1,0 @@
-<map id="Survival::Nucleus::getInNucleusCount" name="Survival::Nucleus::getInNucleusCount">
-<area shape="rect" id="node2" href="$d3/ddc/classSurvival_1_1Calculus.html#a294fab8fab79c18b557029728c222150" title="Simulates, via the Monte Carlo method, the irradiation process of a nucleus which is part of the cell..." alt="" coords="190,5,365,46"/>
-<area shape="rect" id="node6" href="$d3/ddc/classSurvival_1_1Calculus.html#a1303a07d2edc29d56b313eeac9c16a62" title="Evaluates the dose deposited in the nucleus using directly the tracks vector without modifying it and..." alt="" coords="194,70,361,111"/>
-<area shape="rect" id="node3" href="$d3/ddc/classSurvival_1_1Calculus.html#a7362c07d69d46fa313fd2ca68b88de90" title="Perform the Monte Carlo simulation relatively to a single value of dose imposed and returns the mean ..." alt="" coords="413,5,627,46"/>
-<area shape="rect" id="node4" href="$d3/ddc/classSurvival_1_1Calculus.html#a71a43500a5655346c3b9ac0f687c999f" title="Method called to perform a Monte Carlo simulation to reproduce the irradiation process getting the LQ..." alt="" coords="675,5,837,46"/>
-<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="885,12,936,39"/>
-</map>

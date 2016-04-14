@@ -1,9 +1,0 @@
-<map id="Survival::Nucleus_MKM::addNucleusDoses" name="Survival::Nucleus_MKM::addNucleusDoses">
-<area shape="rect" id="node2" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#aff3aa9c796e1c74ff162b0d12e955ff2" title="Returns the effective radius of the Nucleus_MKM object. " alt="" coords="236,5,399,46"/>
-<area shape="rect" id="node3" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#ac1c863a23ec34e6720aab4d7cf5d2361" title="Returns the number of domains composing the MKM nucleus. " alt="" coords="236,70,399,111"/>
-<area shape="rect" id="node4" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#a5a1c60a9ff4923ed0220b96277dab8f6" title="Returns the radius of the domain corresponding to the CellLine to which the MKM nucleus belongs..." alt="" coords="236,135,399,177"/>
-<area shape="rect" id="node5" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#a51abcc8778d4fdaf8310386bfb33e4dd" title="Returns (overwriting parameters passed by reference) the dose absorbed and the number of lethal event..." alt="" coords="217,201,418,242"/>
-<area shape="rect" id="node8" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#a9487de939cd195c5ff12a86ed7b00f18" title="Adds a constant value of dose absorbed by the nucleus. " alt="" coords="230,266,405,307"/>
-<area shape="rect" id="node6" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#af77998a851d5b3c5383d42aac51b185e" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="467,201,642,242"/>
-<area shape="rect" id="node7" href="$d3/d56/classSurvival_1_1CellLine.html#a86e4e660181036f873b9f347550d7996" title="Returns the natural logarithm of the cellular survival evaluated on the basis of the selected paramet..." alt="" coords="691,201,823,242"/>
-</map>

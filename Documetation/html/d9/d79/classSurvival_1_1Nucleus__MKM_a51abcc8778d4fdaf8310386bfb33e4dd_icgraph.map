@@ -1,5 +1,0 @@
-<map id="Survival::Nucleus_MKM::getDoseAndLethalForDomain" name="Survival::Nucleus_MKM::getDoseAndLethalForDomain">
-<area shape="rect" id="node2" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#a254b8878e6487a80090e5103e56fd8ff" title="Performs the sum of the dose absorbed by two different nucleus domain to domain (adds one to the othe..." alt="" coords="256,5,419,46"/>
-<area shape="rect" id="node3" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#a49cf9a7e7a92e7fba54102c1878f5ebd" title="Returns (overwriting parameters passed by reference) the vectors containing doses absorbed and number..." alt="" coords="256,70,419,111"/>
-<area shape="rect" id="node4" href="$d9/d79/classSurvival_1_1Nucleus__MKM.html#a0217cb8c959397b656cfd1770de05c91" title="Save data corresponding to the dose absorbed by each domain and the number of lethal events observed..." alt="" coords="256,135,419,177"/>
-</map>

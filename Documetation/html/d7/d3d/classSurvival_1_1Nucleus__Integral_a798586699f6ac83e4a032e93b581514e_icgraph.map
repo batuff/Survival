@@ -1,7 +1,0 @@
-<map id="Survival::Nucleus_Integral::cleanNucleus" name="Survival::Nucleus_Integral::cleanNucleus">
-<area shape="rect" id="node2" href="$d3/ddc/classSurvival_1_1Calculus.html#ae5d0c2ac1627f5f09be324e8f22f5e49" title="Different implementation of the rapidMKM calculation. " alt="" coords="229,5,432,61"/>
-<area shape="rect" id="node3" href="$d3/ddc/classSurvival_1_1Calculus.html#a25393348b530b7d5ef5146181a930b08" title="This method provide the original analytic implementation of the MKM model, as it is described by Hawk..." alt="" coords="239,85,422,141"/>
-<area shape="rect" id="node5" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#a4ce3baeb75abfe0acdb20e6ea6ebc677" title="Constructor. Instantiates and sets the object. " alt="" coords="243,165,418,206"/>
-<area shape="rect" id="node4" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="543,100,593,127"/>
-<area shape="rect" id="node6" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#a8fd639c77cebd1022549836545e81a17" title="Returns a pointer to a new Nucleus_Integral object. It not really a clone but a new clean object..." alt="" coords="481,165,655,206"/>
-</map>
