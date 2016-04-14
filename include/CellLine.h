@@ -478,7 +478,7 @@ namespace Survival {
         bool isLQ_noDtLoaded;
         
         
-        //! The time constant associated to the repair kinetics of the nucleus, expressed in \f$h^{-1}\f$.
+        //! The time constant associated to the repair kinetics of the cell, expressed in \f$h^{-1}\f$.
         double ac;
         
         //! A boolean value identifying if the "LQ_noDt_T" parametrization is selected.
