@@ -24,13 +24,15 @@ A detailed description of the implemented models can be found in the following p
  - MCt-MKM: L. Manganaro, G. Russo, R. Cirio, F. Dalmasso, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati and A. Attili, "A novel formulation of the Microdosimetric Kinetic Model to account for dose-delivery time structure effects in ion beam therapy with application in treatment planning simulations", *Medical Physics*, **Submitted**
 
 ### Usage (Unix and Unix-like systems)
-To execute the program the user has to call from the command line:
-`$ source setenv.sh`
-`$ ./survival -SIMULATION_OPTION CHOSEN_VALUES ...`
-Hence, the user has the possibility to set a number of physical (and not only physical) parameters by using the syntax: `-PARAMETER_NAME PARAMETER_VALUE`
+To execute the program the user has to call from the command line:  
+`$ source setenv.sh`  
+`$ ./survival -SIMULATION_OPTION CHOSEN_VALUES ...`  
+Hence, the user has the possibility to set a number of physical (and not only physical) parameters by using the syntax:  
+`-PARAMETER_NAME PARAMETER_VALUE`
  
 Here is the complete list of parameters and their meaning:
  - `-projectName` It's a string representing the prefix to give at any file and directories that will be created in the simulation. The default value is "NewProject".
+
  - `-output` The user has the possibility to choose between three kinds of output (and all possible combination between them):
    1. "LQ_pars" Then a file will be created, named "PROJECTNAME_LQparameters_MKM.csv", containing the information about the parameters chosen for the simulation and the values of the simulated LQ \f$\alpha\f$ and \f$\beta\f$ parameters (a new line for each energy evaluated).
    2. "meanValues" Then a file will be created, named "PROJECTNAME_survival_MKM.csv", containing the information about the parameters chosen for the simulation and the values of doses delivered and survival observed (a new line for each energy or dose evaluated).
@@ -68,9 +70,13 @@ Here is the complete list of parameters and their meaning:
  - `-MKM_rDomain` The radius of domains wich constitute the MKM nucleus expressed in \f$\mu m\f$. This option is compatible only with the MKM (and tMKM) model, it won't be use if a different model is chosen. The default value is 0.365 \f$\mu m\f$, a tipical value representing the Human Salivary Gland (HSG) cell line.
  - `-MKM_timeConst`
  - `-LEM_alpha0` A double representing IDEALLY the linear quadratic \f$\alpha\f$-parameter characteristic for X-rays, expressed in \f$Gy^{-1}\f$. The simulated \f$\alpha\f$ parameter will tend to this value for low LET. This option is compatible only with the LEM (I, II and III) model, it won't be use if a different model is chosen. The default value is 0.312 \f$Gy^{-1}\f$, a tipical value representing the Human Salivary Gland (HSG) cell line.
+
  - `-LEM_beta0` A double representing IDEALLY the linear quadratic \f$\beta\f$-parameter characteristic for X-rays, expressed in \f$Gy^{-2}\f$. The simulated \f$\beta\f$ parameter will tend to this value for low LET. This option is compatible only with the LEM (I, II and III) model, it won't be use if a different model is chosen. The default value is 0.073 \f$Gy^{-2}\f$, a tipical value representing the Human Salivary Gland (HSG) cell line.
+
  - `-LEM_rNucleus` The radius of the cell expressed in \f$\mu m\f$. This option is compatible only with the LEM (I, II and III) model, it won't be use if a different model is chosen. The default value is 4.611 \f$\mu m\f$, a tipical value representing the Human Salivary Gland (HSG) cell line.
+
  - `-LEM_Dt` The transition dose beyond which the standard linear quadratic parametrization is no more valid, expressed in Gy. This option is compatible only with the LEM (I, II and III) model, it won't be use if a different model is chosen. The default value is 30 Gy.
+
  - `-ion` A string identifying the chemical symbol of the element, without mass number specifications. Ions from proton to neon are supported.
  - `-energies` A sequence of kinetic energies of the primary ions to be evaluated, expressed in MeV. This and the `-lets` option are mutually exclusive, but one of the two has to be specified.
  - `-lets` A sequence of LET of the primary ions to be evaluated, expressed in MeV. This and the `-energies` option are mutually exclusive, but one of the two has to be specified.
