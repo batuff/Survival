@@ -1,4 +1,4 @@
-1) Fix conversion rest_energy <=> kinetic_energy
+1) Fix conversion rest_energy <=> kinetic_energy (precision of the mass number)
 2) Create an executable for Windows
 3) Fix hyperlink and indexing in the reference manual
 4) Add and describe templates to:
