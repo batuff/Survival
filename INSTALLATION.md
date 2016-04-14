@@ -11,3 +11,8 @@ Then:
  3. From the *Terminal* type:  
  `> source setenv.sh` to load the setenv.sh settings  
  `> make` to create the executable file named *survival*
+
+Windows
+=================
+
+Not supported yet. Work in progress...
