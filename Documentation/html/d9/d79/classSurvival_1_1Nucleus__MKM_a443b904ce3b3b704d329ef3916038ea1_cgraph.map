@@ -1,0 +1,4 @@
+<map id="Survival::Nucleus_MKM::getDoseAndSurvival" name="Survival::Nucleus_MKM::getDoseAndSurvival">
+<area shape="rect" id="node2" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#af77998a851d5b3c5383d42aac51b185e" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="217,5,391,46"/>
+<area shape="rect" id="node3" href="$d3/d56/classSurvival_1_1CellLine.html#a86e4e660181036f873b9f347550d7996" title="Returns the natural logarithm of the cellular survival evaluated on the basis of the selected paramet..." alt="" coords="441,5,573,46"/>
+</map>

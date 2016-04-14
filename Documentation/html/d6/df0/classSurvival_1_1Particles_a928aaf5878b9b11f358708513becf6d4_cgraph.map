@@ -1,0 +1,4 @@
+<map id="Survival::Particles::getIons" name="Survival::Particles::getIons">
+<area shape="rect" id="node2" href="$d6/df0/classSurvival_1_1Particles.html#a05cc4eef44e8a81fe3255ba2ece1528f" title="Constructor. Instantiates and sets the object. " alt="" coords="181,5,309,46"/>
+<area shape="rect" id="node3" href="$d6/df0/classSurvival_1_1Particles.html#a830119d364ca4355e1caf8819aaad9ef" title="Returns the size of the vector of particles. " alt="" coords="181,70,309,111"/>
+</map>

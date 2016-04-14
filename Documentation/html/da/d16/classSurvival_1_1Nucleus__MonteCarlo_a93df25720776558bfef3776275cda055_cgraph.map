@@ -1,0 +1,6 @@
+<map id="Survival::Nucleus_MonteCarlo::getDoseAndSurvival" name="Survival::Nucleus_MonteCarlo::getDoseAndSurvival">
+<area shape="rect" id="node2" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#a615cd32269297995d86528f35b71c1a3" title="Adds a constant value of dose absorbed in each pixel of the nucleus. " alt="" coords="254,5,415,46"/>
+<area shape="rect" id="node3" href="$de/de5/classSurvival_1_1Nucleus__Pixel.html#ae4b832cb08674730ae553fb4a8aa60bd" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="254,70,415,111"/>
+<area shape="rect" id="node4" href="$d3/d56/classSurvival_1_1CellLine.html#a86e4e660181036f873b9f347550d7996" title="Returns the natural logarithm of the cellular survival evaluated on the basis of the selected paramet..." alt="" coords="465,99,597,141"/>
+<area shape="rect" id="node5" href="$dd/d54/classSurvival_1_1Tracks.html#a4413948ed5fc96621bb0aa8c5f5166d5" title="Returns the size of the vector of tracks. " alt="" coords="260,187,409,213"/>
+</map>

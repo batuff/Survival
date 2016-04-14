@@ -1,0 +1,9 @@
+<map id="Survival::Nucleus_Integral_t::distributeDose" name="Survival::Nucleus_Integral_t::distributeDose">
+<area shape="rect" id="node2" href="$d3/d4c/classSurvival_1_1Track.html#a7cbd42c4881770c7bb89d8baad8c81a0" title="Declaration of the pure virtual function getPosition (for a more detailed description see the derived..." alt="" coords="247,5,430,32"/>
+<area shape="rect" id="node3" href="$d3/d4c/classSurvival_1_1Track.html#a0f268b2048c965a9c1a2604e786b55a7" title="Declaration of the pure virtual function getRadius (for a more detailed description see the derived c..." alt="" coords="250,56,427,83"/>
+<area shape="rect" id="node4" href="$d3/d4c/classSurvival_1_1Track.html#adf431f091753b442cc903170a0f99b11" title="Declaration of the pure virtual function getRadialIntegral (for a more detailed description see the d..." alt="" coords="252,107,425,149"/>
+<area shape="rect" id="node5" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#a0a0e14b76472cfcfc67fe701b9677e12" title="Performs the integral of the radial profile of the track in the intersection area with the nucleus..." alt="" coords="230,173,447,214"/>
+<area shape="rect" id="node8" href="$d3/d4c/classSurvival_1_1Track.html#ae7bae4554402ee218dac257ccaa8d320" title="Declaration of the pure virtual function getTime (for a more detailed description see the derived cla..." alt="" coords="256,239,421,265"/>
+<area shape="rect" id="node6" href="$d5/df7/classSurvival_1_1Nucleus__Integral__t.html#a6ca6c20ff84692f59312614b30815520" title="Evaluate the length of the arc of circumference (expressed in radians) derived from the intersection ..." alt="" coords="509,143,683,185"/>
+<area shape="rect" id="node7" href="$d3/d4c/classSurvival_1_1Track.html#aacf246b1c633218966efd08bd8733626" title="Declaration of the pure virtual function getLocalDose (for a more detailed description see the derive..." alt="" coords="497,209,695,236"/>
+</map>

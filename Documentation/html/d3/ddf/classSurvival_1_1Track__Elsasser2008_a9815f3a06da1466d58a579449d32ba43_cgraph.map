@@ -1,0 +1,5 @@
+<map id="Survival::Track_Elsasser2008::clone" name="Survival::Track_Elsasser2008::clone">
+<area shape="rect" id="node2" href="$d3/ddf/classSurvival_1_1Track__Elsasser2008.html#a25c22d429f8d476a5edf721bef2a17c8" title="Constructor. Instantiates and sets the object. " alt="" coords="251,5,447,46"/>
+<area shape="rect" id="node3" href="$d3/ddf/classSurvival_1_1Track__Elsasser2008.html#ae3f3b5b1017e8cfd41bcbbd5ac436356" title="Evaluates the local dose along the radial profile of the track. " alt="" coords="497,5,693,46"/>
+<area shape="rect" id="node4" href="$d3/ddf/classSurvival_1_1Track__Elsasser2008.html#a306a1ae7f3bb8e7a98fbd6efd2059a92" title="Evaluates the argument of the normalized integral in the construction of the track profile..." alt="" coords="742,5,965,46"/>
+</map>

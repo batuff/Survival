@@ -1,0 +1,8 @@
+<map id="Survival::Nucleus_Integral::ArcIntersectionWeight" name="Survival::Nucleus_Integral::ArcIntersectionWeight">
+<area shape="rect" id="node2" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#adf4ae59e1328acdf875a3e036b1c07b3" title="Performs the integral of the radial profile of the track in the intersection area with the nucleus..." alt="" coords="230,93,437,134"/>
+<area shape="rect" id="node3" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#ad2accdc21874fcd9ce45859d7a2ba4c9" title="Integrates the radial profile of the track in the intersection area with the nucleus to evaluate the ..." alt="" coords="486,93,661,134"/>
+<area shape="rect" id="node4" href="$d3/ddc/classSurvival_1_1Calculus.html#ae5d0c2ac1627f5f09be324e8f22f5e49" title="Different implementation of the rapidMKM calculation. " alt="" coords="709,5,912,61"/>
+<area shape="rect" id="node5" href="$d3/ddc/classSurvival_1_1Calculus.html#a25393348b530b7d5ef5146181a930b08" title="This method provide the original analytic implementation of the MKM model, as it is described by Hawk..." alt="" coords="719,85,902,141"/>
+<area shape="rect" id="node7" href="$d7/d3d/classSurvival_1_1Nucleus__Integral.html#a8b83b8cb069d82ba4f61b2ca27286570" title="Overload of distributeDose(const Track &amp;track) to manage a Tracks object, it simply calls distributeD..." alt="" coords="723,165,898,206"/>
+<area shape="rect" id="node6" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="960,100,1011,127"/>
+</map>

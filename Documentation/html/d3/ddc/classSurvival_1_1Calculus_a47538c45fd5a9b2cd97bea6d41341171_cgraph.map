@@ -1,0 +1,12 @@
+<map id="Survival::Calculus::histogram_dose_survival_with_domains" name="Survival::Calculus::histogram_dose_survival_with_domains">
+<area shape="rect" id="node2" href="$dd/d54/classSurvival_1_1Tracks.html#a7f2e0bce46e3142b6bb6329af22a622b" title="Evaluates and returns the mean LET of the vector of tracks, expressed in keV/um. " alt="" coords="230,5,423,32"/>
+<area shape="rect" id="node3" href="$dd/d54/classSurvival_1_1Tracks.html#a98058ff7f4ff4ebc3eb51a1198bf3015" title="Returns the total weight of the group of particles generating the vector of tracks. " alt="" coords="473,23,645,65"/>
+<area shape="rect" id="node4" href="$dd/d54/classSurvival_1_1Tracks.html#ac1a6efb09c4e1eef98ede817db8edcf2" title="Returns the density of the medium in . " alt="" coords="233,107,421,133"/>
+<area shape="rect" id="node5" href="$d3/d6c/classSurvival_1_1Nucleus.html#aa32471aeb6af3f71a73413d56467a18c" title="Declaration of the pure virtual function getRadius (for a more detailed description see the derived c..." alt="" coords="260,158,393,199"/>
+<area shape="rect" id="node6" href="$dd/d54/classSurvival_1_1Tracks.html#a4413948ed5fc96621bb0aa8c5f5166d5" title="Returns the size of the vector of tracks. " alt="" coords="252,224,401,251"/>
+<area shape="rect" id="node7" href="$d3/d4c/classSurvival_1_1Track.html#abd918df6e0738bdf50d908770b809cd8" title="Declaration of the pure virtual function setPosition (for a more detailed description see the derived..." alt="" coords="235,275,418,301"/>
+<area shape="rect" id="node8" href="$d3/d6c/classSurvival_1_1Nucleus.html#a534c8b9731693f31451a7229a6b7b59f" title="Declaration of the pure virtual function distributeDose (for a more detailed description see the deri..." alt="" coords="260,326,393,367"/>
+<area shape="rect" id="node9" href="$d3/d6c/classSurvival_1_1Nucleus.html#adbd3faee7029e64620f3dec187657dfe" title="Declaration of the pure virtual function getDoseAndSurvival (for a more detailed description see the ..." alt="" coords="256,391,397,433"/>
+<area shape="rect" id="node10" href="$d3/d6c/classSurvival_1_1Nucleus.html#a8cc959e4e88632a3fcc49ca20b0f45bc" title="Declaration of the virtual function getDosesandLethals (for a more detailed description see the deriv..." alt="" coords="255,457,398,498"/>
+<area shape="rect" id="node11" href="$d3/d6c/classSurvival_1_1Nucleus.html#a805a3fbe99df542d135407aa1c2bae28" title="Declaration of the pure virtual function cleanNucleus (for a more detailed description see the derive..." alt="" coords="260,522,393,563"/>
+</map>
