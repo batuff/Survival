@@ -8,7 +8,7 @@ The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) a
 ### Usage
 
 ### Full description
-A full description of the code can be found in the User's Manual, named "Survival_REFERENCE_MANUAL.pdf" in the "Documentation" directory.
+A full description of the code can be found in the User's Manual: "Documentation/Survival_REFERENCE_MANUAL.pdf".
 
 ### Reference published paper:
 *Writing in progress!!*
