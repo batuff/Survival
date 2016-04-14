@@ -1,15 +1,17 @@
 Survival
 ========
 
-The software was developed by the INFN (Istituto Nazionale di Fisica Nucleare) in collaboration with the University of Torino (UniTO, Physics Department) and provide different implementations of some radiobiological models, namely: LEMI, LEMII, LEMIII, MKM and MCt-MKM.
+This software was developed by the INFN (Istituto Nazionale di Fisica Nucleare) in collaboration with the University of Torino (UniTO, Physics Department) and provides different implementations of some radiobiological models to predict the cell survival after irradiation. The implemented models are (for the moment): LEMI, LEMII, LEMIII, MKM and MCt-MKM.
 
-### Full description
-A full description of the code can be found in the User's Manual
+The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) and OpenMP (Open Multi-Processing) external libraries.
 
 ### Usage
 
+### Full description
+A full description of the code can be found in the User's Manual, named "Survival_REFERENCE_MANUAL.pdf" in the "Documentation" directory.
+
 ### Reference published paper:
-*writing in progress!!*
+*Writing in progress!!*
 
 ### Papers describing the implemented models
 A detailed description of the implemented models can be found in the following papers:
