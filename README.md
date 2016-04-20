@@ -11,7 +11,7 @@ The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) a
  - Once you have downloaded the *Survival* folder, an interactive html manual is available opening the **./Documentation/html/index.html** file.
 
 ### Licensing
-The *Survival* code is distributed under terms of the [GNU General Public Licence](https://github.com/batuff/Survival/edit/master/LICENCE)
+The *Survival* code is distributed under terms of the [GNU General Public Licence](https://github.com/batuff/Survival/edit/master/LICENSE)
 
 ### Published paper:
 *Writing in progress!!*
