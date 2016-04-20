@@ -2,11 +2,11 @@
 
 CC = g++
 CCFLAGS = -O3 -Wall -W -fopenmp -std=c++11
-INCLUDE = ./include
+INCLUDE = ./include /usr/local/include/
 SRC = ./src
-EXT_LIB = ./usr/local/lib/
+EXT_LIB = /usr/local/lib/
 BIN = ./
-INCLUDE_PATHS = -I$(INCLUDE)
+INCLUDE_PATHS = $(foreach d, $(INCLUDE), -I$d)
 #debug: -g
 LDFLAGS = -L$(EXT_LIB) -lgsl -lgslcblas -lm
 
