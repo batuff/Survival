@@ -8,7 +8,7 @@ EXT_LIB = ./lib
 BIN = ./
 INCLUDE_PATHS = -I$(INCLUDE)
 #debug: -g
-LDFLAGS = -L$(EXT_LIB)  -lgsl -lgslcblas -lm
+LDFLAGS = -L$(EXT_LIB) -lgsl -lgslcblas -lm
 
 
 ifeq ($(OS),Windows_NT)
