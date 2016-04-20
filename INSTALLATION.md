@@ -1,3 +1,8 @@
+Licence
+=================
+
+Before starting the installation process, please read the LICENCE of the software (./LICENCE).
+
 Unix and MacOS X
 =================
 
