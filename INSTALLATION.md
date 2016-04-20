@@ -1,8 +1,8 @@
 Unix and MacOS X
 =================
 
-Be sure to have:
- - the GSL libraries installed
+To correctly compile the software, please be sure to have:
+ - the GSL libraries installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)
  - a compiler supporting the -c++11 option
 
 Then:
