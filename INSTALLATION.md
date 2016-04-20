@@ -8,7 +8,7 @@ Unix and MacOS X
 
 To correctly compile the software, please be sure to have:
  - The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)
- - A compiler supporting the OpenMP (Information about OpenMP compilers at: http://openmp.org/wp/openmp-compilers/)
+ - A compiler supporting the OpenMP (and the `-std=c++11` option. Information about OpenMP compilers at: http://openmp.org/wp/openmp-compilers/)
 
 Then:
  1. Download the whole *Survival* folder
