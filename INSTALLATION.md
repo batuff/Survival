@@ -8,7 +8,7 @@ To correctly compile the software, please be sure to have:
 Linux and MacOS X
 =================
 
-The current version supports the MacOS X up to the 10.10 version (Yosemite).
+The current version supports the MacOS X up to the 10.10 version (Yosemite).  
 Compatibility for MacOS X 10.11 (El Capitan) is not guaranteed (under development).
 
 Please:
@@ -21,5 +21,5 @@ Please:
 Windows
 =================
 
-The software has never been tested on *Windows*. Nevertheless, it technically works (under the previous requirements).
+The software has never been tested on *Windows*. Nevertheless, it technically works (under the previous requirements).  
 The test is currently in progress...
