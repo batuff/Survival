@@ -1,5 +1,7 @@
 1) Fix conversion rest_energy <=> kinetic_energy (increase the precision of the mass number)
-2) Support the Windows OS
-3) Fix hyperlink and indexing in the reference manual
-4) Add and describe templates to:
+2) Fix hyperlink and indexing in the reference manual
+3) Add and describe templates to:
 	- Pass a spectrum (mixed-fields evaluations) - ("spectrum_tmp.txt")
+4) Update version to support:
+	- MacOS X 10.11 (El Capitan)
+	- Windows
