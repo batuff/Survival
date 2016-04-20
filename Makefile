@@ -4,7 +4,7 @@ CC = g++
 CCFLAGS = -O3 -Wall -W -fopenmp -std=c++11
 INCLUDE = ./include
 SRC = ./src
-EXT_LIB = ./lib
+EXT_LIB = ./usr/local/lib/
 BIN = ./
 INCLUDE_PATHS = -I$(INCLUDE)
 #debug: -g
