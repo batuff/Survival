@@ -1,5 +1,8 @@
-Unix and MacOS X
+Linux and MacOS X
 =================
+
+The current version support the MacOS X up to the 10.10 version (Yosemite).
+Compatibility for MacOS X 10.11 (El Capitan) is not guaranteed (under development).
 
 To correctly compile the software, please be sure to have:
  - The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)
