@@ -7,8 +7,8 @@ This software was developed by the INFN (Istituto Nazionale di Fisica Nucleare) 
 The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) and OpenMP (Open Multi-Processing) external libraries.
 
 ### Documentation
- - A full description of the code can be found in the User's Manual: "Documentation/Survival_USERS_MANUAL.pdf".
- - Once you have downloaded the *Survival* folder, an interactive html manual is available opening the "./Documentation/html/index.html" file.
+ - A full description of the code can be found in the User's Manual: **Documentation/Survival_USERS_MANUAL.pdf**.
+ - Once you have downloaded the *Survival* folder, an interactive html manual is available opening the **./Documentation/html/index.html** file.
 
 ### Reference published paper:
 *Writing in progress!!*
