@@ -1,6 +1,5 @@
-1) Fix conversion rest_energy <=> kinetic_energy (precision of the mass number)
-2) Create an executable for Windows
+1) Fix conversion rest_energy <=> kinetic_energy (increase the precision of the mass number)
+2) Support the Windows OS
 3) Fix hyperlink and indexing in the reference manual
 4) Add and describe templates to:
-	- Execute the program - ("tmp_run.sh")
 	- Pass a spectrum (mixed-fields evaluations) - ("spectrum_tmp.txt")
