@@ -10,7 +10,7 @@ The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) a
  - A full description of the code can be found in the User's Manual: **Documentation/Survival_USERS_MANUAL.pdf**.
  - Once you have downloaded the *Survival* folder, an interactive html manual is available opening the **./Documentation/html/index.html** file.
 
-### Reference published paper:
+### Published paper:
 *Writing in progress!!*
 
 ### Papers describing the implemented models
