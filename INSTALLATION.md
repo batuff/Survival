@@ -2,8 +2,8 @@ Unix and MacOS X
 =================
 
 To correctly compile the software, please be sure to have:
- - the GSL libraries installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)
- - a compiler supporting the -c++11 option
+ - The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)
+ - A compiler supporting the OpenMP (Information about OpenMP compilers at: http://openmp.org/wp/openmp-compilers/)
 
 Then:
  1. Download the whole *Survival* folder
