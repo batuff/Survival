@@ -8,7 +8,7 @@ In the *command line* (from the *install_folder* defined in the setenv.sh file),
 
 Two files will be created with the simulation results.
 
-The script can be changed and modified to perform any kind of simulation supported, see the user's manual (./Documentation/Survival_USERS_MANUAL.pdf) for a full description of the software.
+The script can be changed and modified to perform any kind of simulation supported, see the [User's Manual](https://github.com/batuff/Survival/tree/master/Documentation/Survival_USERS_MANUAL.pdf) for a full description of the software.
 
 
 Windows
