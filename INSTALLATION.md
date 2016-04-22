@@ -18,11 +18,11 @@ To correctly compile the software, please be sure to have:
    2. cd to your downloads folder and un-gzip the archive: `gunzip gcc-xx.yy-bin.tar.gz`
    3. In the same folder run `sudo tar -xvf gcc-xx.yy-bin.tar -C /` - this will place new executable to /usr/local/bin
    4. Add the following to your ~/.bash_profile (*Linux Users*) or ~/.profile (*MacOS X Users*)  
-      `export PATH=/install/prefix/bin:$PATH`  
-      `export C_INCLUDE_PATH=/install/prefix/include:<OpenMP include path>:$C_INCLUDE_PATH`  
-      `export CPLUS_INCLUDE_PATH=/install/prefix/include:<OpenMP include path>:$CPLUS_INCLUDE_PATH`  
-      `export LIBRARY_PATH=/install/prefix/lib:<OpenMP library path>:$LIBRARY_PATH`  
-      `export LD_LIBRARY_PATH=/install/prefix/lib:<OpenMP library path>:$LD_LIBRARY_PATH`\*\*  
+      `export PATH=/usr/local/bin:$PATH`  
+      `export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH`  
+      `export CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH`  
+      `export LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH`  
+      `export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH`\*\*  
       \*\* *MacOS X Users* must replace LD\_LIBRARY\_PATH with DYLD\_LIBRARY\_PATH
    5. Open new terminal and run which gcc. This should point to /usr/local/bin/gcc.
 - For **MacOS X 10.11 (El Capitan) Users** (or higher): In the wake of the introduction of the SIP (System Integrity Protection) security feature, the user who wants to install the GSL libraries from the command line has to do it as super user (1. download the GSL; 2. ./configure; 3. <u>sudo</u> make; 4. <u>sudo</u> make install). More information about the SIP at https://support.apple.com/en-us/HT204899
