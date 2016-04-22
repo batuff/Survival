@@ -1,9 +1,9 @@
 Unix and MacOS X
 =================
 
-The *run_example.sh* file contains a script to perform an examplifying simulation, using the approximate implementation of the MKM model.
+The *run_example.sh* file, in the run\_example folder, contains a script to perform an examplifying simulation, using the approximate implementation of the MKM model.
 
-In the *command line* (from the *install_folder* defined in the setenv.sh file), type:  
+In the *command line*, cd to the run\_example folder and type:  
 `> ./run_example.sh` 
 
 Two files will be created with the simulation results.
