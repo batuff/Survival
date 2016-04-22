@@ -3,7 +3,7 @@ Requirements
 
 To correctly compile the software, please be sure to have:
  - The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)  
-     **MacOS X 10.11 (El Capitan) or higher**: In the wake of the introduction of the SIP (System Integrity Protection) security feature, the user who wants to install the GSL libraries from the command line has to do it as super user (1. download the GSL; 2. ./configure; 3. <u>sudo</u> make; 4. <u>sudo</u> make install). More information about the SIP at https://support.apple.com/en-us/HT204899
+    NOTE: For **MacOS X 10.11 (El Capitan) Users** (or higher): In the wake of the introduction of the SIP (System Integrity Protection) security feature, the user who wants to install the GSL libraries from the command line has to do it as super user (1. download the GSL; 2. ./configure; 3. <u>sudo</u> make; 4. <u>sudo</u> make install). More information about the SIP at https://support.apple.com/en-us/HT204899
  - A version of the gcc compiler installed that:
     1. Supports the OpenMP libraries (information about OpenMP compilers at: http://openmp.org/wp/openmp-compilers/)
     2. Is compatible with the C++11 version (information about C++11 compatible compilers at: http://en.cppreference.com/w/cpp/compiler_support)  
