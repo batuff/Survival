@@ -2,14 +2,12 @@ Requirements
 =================
 
 To correctly compile the software, please be sure to have:
- - The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)
+ - The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)  
+     **MacOS X 10.11 (El Capitan) or higher**: In the wake of the introduction of the SIP (System Integrity Protection) security feature, the user who wants to intall the GSL libraries from the command line has to do it as super user (1. download the GSL; 2. ./configure; 3. <u>sudo</u> make; 4. <u>sudo</u> make install). More information about the SIP at https://support.apple.com/en-us/HT204899
  - A compiler supporting the OpenMP and compatible with the C++11 version. (Information about OpenMP compilers at: http://openmp.org/wp/openmp-compilers/; and about C++11 compatible compilers at: http://en.cppreference.com/w/cpp/compiler_support)
 
 Linux and MacOS X
 =================
-
-The current version supports the MacOS X up to the 10.10 version (Yosemite).  
-Compatibility for MacOS X 10.11 (El Capitan) is not guaranteed (under development).
 
 Please:
  1. Download the whole *Survival* folder
