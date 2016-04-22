@@ -14,9 +14,9 @@ To correctly compile the software, please be sure to have:
    2. From the command line type: `./compile_test_OpenMP.sh`: Compilation should proceed with no errors or warnings.
    3. Test the result typing `./test_OpenMP`  
 - To **install gcc** (full guide at https://gcc.gnu.org/install/):  
-   1. Download gcc-4.9-bin.tar.gz download or newer from http://hpc.sourceforge.net/
-   2. cd to your downloads folder and un-gzip the archive: `gunzip gcc-4.9-bin.tar.gz`
-   3. In the same folder run `sudo tar -xvf gcc-4.9-bin.tar -C /` - this will place new executable to /usr/local/bin
+   1. Download gcc-4.xx.yy-bin.tar.gz download or newer from http://hpc.sourceforge.net/
+   2. cd to your downloads folder and un-gzip the archive: `gunzip gcc-xx.yy-bin.tar.gz`
+   3. In the same folder run `sudo tar -xvf gcc-xx.yy-bin.tar -C /` - this will place new executable to /usr/local/bin
    4. Add the following to your ~/.bash_profile (*Linux Users*) or ~/.profile (*MacOS X Users*)  
       `export PATH=/install/prefix/bin:$PATH`  
       `export C_INCLUDE_PATH=/install/prefix/include:<OpenMP include path>:$C_INCLUDE_PATH`  
