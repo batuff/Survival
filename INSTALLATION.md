@@ -9,12 +9,12 @@ To correctly compile the software, please be sure to have:
     2. Is compatible with the C++11 version (information about C++11 compatible compilers at: http://en.cppreference.com/w/cpp/compiler_support)  
 
 **NOTES:**  
-A) To **check your gcc version** type from the command line: `gcc --version` (recommended 4.9 or newer).  
-B) To **test if your gcc version is compatible with the OpenMP libraries**:
+- To **check your gcc version** type from the command line: `gcc --version` (recommended 4.9 or newer).  
+- To **test if your gcc version is compatible with the OpenMP libraries**:
    1. cd to the *test_OpenMP* directory
    2. From the command line type: `./compile_test_OpenMP.sh`: Compilation should proceed with no errors or warnings.
    3. Test the result typing `./test_OpenMP`  
-C) To **install gcc** (full guide at https://gcc.gnu.org/install/):  
+- To **install gcc** (full guide at https://gcc.gnu.org/install/):  
    1. Download gcc-4.9-bin.tar.gz download or newer from http://hpc.sourceforge.net/
    2. cd to your downloads folder and un-gzip the archive: `gunzip gcc-4.9-bin.tar.gz`
    3. In the same folder run `sudo tar -xvf gcc-4.9-bin.tar -C /` - this will place new executable to /usr/local/bin
