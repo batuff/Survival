@@ -38,3 +38,6 @@ survival
 # temp files (makefile)
 dep.mk
 
+# R/Rstudio files
+Survival.Rproj
+

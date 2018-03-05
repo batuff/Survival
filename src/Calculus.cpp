@@ -27,9 +27,9 @@ using std::time;
 #include <cmath>
 using std::pow;
 using std::abs;
-#ifdef OSX
+//#ifdef OSX
 using std::isnan;
-#endif
+//#endif
 
 #include <iomanip>
 using std::setprecision;
