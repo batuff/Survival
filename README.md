@@ -25,7 +25,7 @@ A detailed description of the implemented models can be found in the following p
  - MKM:
    1. Original MKM formulation: R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", *Radiation Research* **140**, 366-374 (1994). [Some corrections and improvements were made over the subsequent years].
    2. Kiefer-Chatterjee amorphous track structure introduction: Y. Kase, T. Kanai, N. Matsufuji, Y. Furusawa, T. Elsasser, and M. Scholz, "Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation", *Physics in Medicine and Biology* **53**, 37-59 (2008).
- - MCt-MKM: L. Manganaro, G. Russo, R. Cirio, F. Dalmasso, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati and A. Attili, "A novel formulation of the Microdosimetric Kinetic Model to account for dose-delivery time structure effects in ion beam therapy with application in treatment planning simulations", *Medical Physics*, **Submitted**.
+ - MCt-MKM: Manganaro, L., Russo, G., Cirio, R., Dalmasso, F., Giordanengo, S., Monaco, V., … Attili, A. (2017). A Monte Carlo approach to the microdosimetric kinetic model to account for dose rate time structure effects in ion beam therapy with application in treatment planning simulations. *Medical Physics*, 44(4), 1577–1589.
 
 ### Usage (Unix and Unix-like systems)
 To execute the program the user has to call from the command line:  
@@ -59,13 +59,14 @@ Here is the complete list of parameters and their meaning:
    2. "LEMII"
    3. "LEMIII"
    4. "MKM"
-   5. "tMKM"
+   5. "tMKM_Manganaro2017"
 
  The default value for this option is "MKM"
  - `-calculusType` A string identifying the type of calculus to be done. Some possibilities are available:
-   1. "rapidScholz" It's an implementation of the method described in: M. Krämer and M. Scholz, "Rapid calculation of biological effects in ion radiotherapy", *Physics in medicine and biology* **51**, 1959-1970 (2006). It's compatible only with LEMI, LEMII and LEMIII models.
-   2. "rapidRusso" A new rapid method for LEM, proved to be more accurate, described in: G. Russo, "Develpment of a radiobiological database for carbon ion Treatment Planning Systems - Modelling and simulating the irradiation process", *Ph.D. Thesis*, Università degli studi di Torino (2011). It is compatible only with LEMI-LEMII-LEMIII models.
-   3. "rapidMKM" An implementation of the original MKM calculation. It's compatible only with the MKM model and it's the default value for this option.
+   1. "rapidLEM_Scholz2006" It's an implementation of the method described in: M. Krämer and M. Scholz, "Rapid calculation of biological effects in ion radiotherapy", *Physics in medicine and biology* **51**, 1959-1970 (2006). It's compatible only with LEMI, LEMII and LEMIII models.
+   2. "rapidLEM_Russo2011" A new rapid method for LEM, proved to be more accurate, described in: G. Russo, "Develpment of a radiobiological database for carbon ion Treatment Planning Systems - Modelling and simulating the irradiation process", *Ph.D. Thesis*, Università degli studi di Torino (2011). It is compatible only with LEMI-LEMII-LEMIII models.
+   3. "rapidMKM_Kase2008" A fast implementation of the MKM calculation as described in: Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008). Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation. *Physics in Medicine and Biology*, 53(1), 37–59 It's compatible only with the MKM.
+   4. "rapidMKM_Attili2013" A fast original implementation of the MKM model, combining the methods described in: Hawkins_2003 Hawkins, R. B. (2003). A microdosimetric-kinetic model for the effect of non-Poisson distribution of lethal lesions on the variation of RBE with LET. *Radiation Research*, 160(1), 61–69, and Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008). Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation. *Physics in Medicine and Biology*, 53(1), 37–59.
    4. "MonteCarlo" Compatible with all models implemented, performs a monte carlo simulation of the irradiation process to get the LQ parameters.
 
  - `-cellType` A string identifying the name of the cell lline used in the calculation. The default value is "Cell1".
