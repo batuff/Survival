@@ -1,0 +1,5 @@
+<map id="Survival::Tracks::eraseAll" name="Survival::Tracks::eraseAll">
+<area shape="rect" id="node2" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a6d14763f8e69a92c83d59e74b0d38319" title="Clean the object by calling the Tracks::eraseAll() and Nucleus_Pixel::cleanNucleus() methods..." alt="" coords="225,5,424,47"/>
+<area shape="rect" id="node4" href="$df/d16/class_survival_1_1_tracks.html#a4cf9df8f36e4daee9e3d64a6a8892f43" title="Destructor. " alt="" coords="262,71,387,112"/>
+<area shape="rect" id="node3" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a3e5ad32b67811bf5b95b51103a7f78b6" title="Destructor. " alt="" coords="472,5,671,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Survival::Nucleus_Pixel::getDoseAndSurvival" name="Survival::Nucleus_Pixel::getDoseAndSurvival">
+<area shape="rect" id="node2" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a93df25720776558bfef3776275cda055" title="Perform a Monte Carlo simulation to integrate over the nucleus the dose deposited by a track distribu..." alt="" coords="215,5,413,47"/>
+<area shape="rect" id="node4" href="$df/d57/class_survival_1_1_nucleus___pixel.html#a3a86a7a550012daf30914e62005c93b0" title="Performs the sum of the dose absorbed by two different nucleus pixel by pixel, starting from the smal..." alt="" coords="233,71,395,112"/>
+<area shape="rect" id="node3" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a3e5ad32b67811bf5b95b51103a7f78b6" title="Destructor. " alt="" coords="461,5,660,47"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Survival::Nucleus_Pixel" name="Survival::Nucleus_Pixel">
+<area shape="rect" id="node2" href="$d0/d7f/class_survival_1_1_nucleus.html" title="Linked to a specific CellLine object, this class defines the structure of the cellular nucleus to be ..." alt="" coords="5,270,168,494"/>
+<area shape="rect" id="node3" href="$d7/d50/class_survival_1_1_pixel.html" title="Implements the Pixel features to be used in the Nucleus_Pixel class. " alt="" coords="193,321,343,443"/>
+<area shape="rect" id="node4" href="$d1/d8b/class_survival_1_1_cell_line.html" title="Represents the cell line to which the nucleus belongs and hosts the radiobiological and structural ch..." alt="" coords="412,145,628,619"/>
+</map>

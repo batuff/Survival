@@ -1,0 +1,5 @@
+<map id="Survival::Track_Scholz2000::getLocalDose" name="Survival::Track_Scholz2000::getLocalDose">
+<area shape="rect" id="node2" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a0caa58c4a235c2215fd64be8a6e7ffd3" title="Returns the LET in water of the particle generating the track expressed in MeV/um. " alt="" coords="239,5,424,47"/>
+<area shape="rect" id="node3" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a38954da540fe5160699e7d17e8025191" title="Saves the local dose deposited by the track at different distances from its center to reconstruct the..." alt="" coords="239,71,424,112"/>
+<area shape="rect" id="node4" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a61cce5224a678992aeb39c6aff99432c" title="Returns the weight in the beam of the particle generating the track. Useful in the case of &quot;mixed fie..." alt="" coords="472,71,657,112"/>
+</map>

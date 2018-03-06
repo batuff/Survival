@@ -1,0 +1,5 @@
+<map id="Survival::Nucleus_Pixel::distributeDose" name="Survival::Nucleus_Pixel::distributeDose">
+<area shape="rect" id="node2" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a6fbaad539bf8b8853034ae30f3f991b1" title="It simply calls Nucleus_Pixel::distributeDose(const Track &amp;track) to evaluate the dose deposited in t..." alt="" coords="215,5,413,47"/>
+<area shape="rect" id="node4" href="$df/d57/class_survival_1_1_nucleus___pixel.html#a38bd5639c2eaec08481f7feebcf63c15" title="Overload of distributeDose(const Track &amp;track) to manage a Tracks object, it simply calls distributeD..." alt="" coords="233,71,395,112"/>
+<area shape="rect" id="node3" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a3e5ad32b67811bf5b95b51103a7f78b6" title="Destructor. " alt="" coords="461,5,660,47"/>
+</map>

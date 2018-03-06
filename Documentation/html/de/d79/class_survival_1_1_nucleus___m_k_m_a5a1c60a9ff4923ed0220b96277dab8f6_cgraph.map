@@ -1,0 +1,8 @@
+<map id="Survival::Nucleus_MKM::getDomainRadius" name="Survival::Nucleus_MKM::getDomainRadius">
+<area shape="rect" id="node2" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a51abcc8778d4fdaf8310386bfb33e4dd" title="Returns (overwriting parameters passed by reference) the dose absorbed and the number of lethal event..." alt="" coords="427,21,628,62"/>
+<area shape="rect" id="node5" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a49cf9a7e7a92e7fba54102c1878f5ebd" title="Returns (overwriting parameters passed by reference) the vectors containing doses absorbed and number..." alt="" coords="216,28,379,69"/>
+<area shape="rect" id="node6" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a443b904ce3b3b704d329ef3916038ea1" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="446,86,609,128"/>
+<area shape="rect" id="node7" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a2443d2820a65133eee029016cc772be8" title="Return the dose absorbed in the indexOfDomain&#45;th domain, expressed in Gy. " alt="" coords="216,145,379,186"/>
+<area shape="rect" id="node3" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#af77998a851d5b3c5383d42aac51b185e" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="676,86,851,128"/>
+<area shape="rect" id="node4" href="$d1/d8b/class_survival_1_1_cell_line.html#a86e4e660181036f873b9f347550d7996" title="Returns the natural logarithm of the cellular survival evaluated on the basis of the selected paramet..." alt="" coords="899,86,1031,128"/>
+</map>

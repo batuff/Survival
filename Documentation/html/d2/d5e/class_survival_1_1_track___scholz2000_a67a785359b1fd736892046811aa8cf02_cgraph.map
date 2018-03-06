@@ -1,0 +1,4 @@
+<map id="Survival::Track_Scholz2000::getParticleType" name="Survival::Track_Scholz2000::getParticleType">
+<area shape="rect" id="node2" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a7797197e0a4efed77bcdb700130c3216" title="Returns the track position (x and y coordinates) referred to the beam axis and expressed in mm overwr..." alt="" coords="239,5,424,47"/>
+<area shape="rect" id="node3" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a1c05d054c4f0a329b72f7e0df6b199fd" title="Returns the dose (in Gy) deposited by the track evaluated as the radial integral of the track profile..." alt="" coords="239,71,424,112"/>
+</map>

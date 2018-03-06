@@ -162,3 +162,8 @@
 \form#161:$x>=0$
 \form#162:$\alpha_0$
 \form#163:$\beta_0$
+\form#164:\[ \alpha_P=\alpha_0+\beta_0\,\gamma \]
+\form#165:\[ \gamma_{nucleus}=\frac{\left\langle z_n^2\right\rangle}{\left\langle z_n\right\rangle} \]
+\form#166:$\beta=\beta(\mathrm{LET})$
+\form#167:$alpha/alpha_P$
+\form#168:\[ \beta=\left(\frac{\alpha}{\alpha_P}\right)^2\beta_0 \]

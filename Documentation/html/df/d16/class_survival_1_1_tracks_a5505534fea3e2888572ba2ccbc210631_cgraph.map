@@ -1,0 +1,4 @@
+<map id="Survival::Tracks::getSigmaMeanEnergy" name="Survival::Tracks::getSigmaMeanEnergy">
+<area shape="rect" id="node2" href="$df/d16/class_survival_1_1_tracks.html#aa793a850868fc776660021d87951135a" title="Evaluates and returns the mean energy of the vector of tracks, expressed in MeV. " alt="" coords="233,5,408,47"/>
+<area shape="rect" id="node3" href="$df/d16/class_survival_1_1_tracks.html#a98058ff7f4ff4ebc3eb51a1198bf3015" title="Returns the total weight of the group of particles generating the vector of tracks. " alt="" coords="456,35,628,76"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Survival::Track_Elsasser2008::normalizedDoseIntegralArgument" name="Survival::Track_Elsasser2008::normalizedDoseIntegralArgument">
+<area shape="rect" id="node2" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a2b113eaaf7e9e67edfceb04395a38723" title="Sets the time associated to a particular event. " alt="" coords="520,5,716,47"/>
+<area shape="rect" id="node3" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#ae3f3b5b1017e8cfd41bcbbd5ac436356" title="Evaluates the local dose along the radial profile of the track. " alt="" coords="276,64,472,105"/>
+<area shape="rect" id="node4" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a25c22d429f8d476a5edf721bef2a17c8" title="Constructor. Instantiates and sets the object. " alt="" coords="520,71,716,112"/>
+<area shape="rect" id="node5" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a9815f3a06da1466d58a579449d32ba43" title="Returns a pointer to a new Track_Elsasser2008 object created as a copy of an existent one by means of..." alt="" coords="764,71,960,112"/>
+</map>

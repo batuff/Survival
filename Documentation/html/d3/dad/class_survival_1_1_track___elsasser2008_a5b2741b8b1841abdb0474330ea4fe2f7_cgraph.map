@@ -1,0 +1,4 @@
+<map id="Survival::Track_Elsasser2008::getLet" name="Survival::Track_Elsasser2008::getLet">
+<area shape="rect" id="node2" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a416e3bdd4ab0a127a92b82d2ed385da6" title="Returns the local dose (in Gy) deposited by the track at a certain distance from the track center (ex..." alt="" coords="493,5,689,47"/>
+<area shape="rect" id="node3" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a4820be89db66d386417790c7c3faa3ae" title="Function created to calculate the mean time required to the evaluation the getLocalDose() method..." alt="" coords="249,35,445,76"/>
+</map>

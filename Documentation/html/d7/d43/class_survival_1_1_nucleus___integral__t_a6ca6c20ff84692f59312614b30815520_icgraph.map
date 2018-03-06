@@ -1,0 +1,9 @@
+<map id="Survival::Nucleus_Integral_t::ArcIntersectionWeight" name="Survival::Nucleus_Integral_t::ArcIntersectionWeight">
+<area shape="rect" id="node2" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a19ddf14de35bcc1601c19b8e8b2899c1" title="Returns the vector representing each instant in which an interaction with a Particle occurs..." alt="" coords="493,5,668,47"/>
+<area shape="rect" id="node5" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a0a0e14b76472cfcfc67fe701b9677e12" title="Performs the integral of the radial profile of the track in the intersection area with the nucleus..." alt="" coords="228,64,445,105"/>
+<area shape="rect" id="node3" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#ae5af80e9ae9caa3eb28f9f6ed4b72b1d" title="Returns (overwriting parameters passed by reference) the total dose absorbed by the nucleus and the a..." alt="" coords="720,5,887,47"/>
+<area shape="rect" id="node4" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#a97e93b32df2627502377ab92f063faf2" title="Returns the radius of the domain corresponding to the CellLine to which the tMKM nucleus belongs..." alt="" coords="939,5,1105,47"/>
+<area shape="rect" id="node6" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a7b0074656eda4dcdf81c88d7ccf6fa98" title="Integrates the radial profile of the track in the intersection area with the nucleus to evaluate the ..." alt="" coords="493,71,668,112"/>
+<area shape="rect" id="node7" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a6ce9353dc4afd860aef683158b752df9" title="Destructor. " alt="" coords="716,71,891,112"/>
+<area shape="rect" id="node8" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#aaa018773b968eb8e48cfeae48ddb88f8" title="Overload of distributeDose(const Track &amp;track) to manage a Tracks object, it simply calls distributeD..." alt="" coords="716,136,891,177"/>
+</map>

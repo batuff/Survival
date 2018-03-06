@@ -81,19 +81,32 @@ using namespace Survival;
             -# "MKM" The Microdosimetric Kinetic Model, in the formulation of Hawkins, with the approach of Kase who suggest to use the Kiefer-Chatterjee amorphous track model. Some published references:\n
                 R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", \a Radiation \a Research \b 140, 366-374 (1994) -- And subsequent references\n
                 Y. Kase, T. Kanai, N. Matsufuji, Y. Furusawa, T. Elsasser, and M. Scholz, "Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation", \a Physics \a in \a Medicine \a and \a Biology \b 53, 37-59 (2008)
-            -# "tMKM" A monte carlo reformulation of the MKM, extended to the temporal dimension to evaluate the effect of the time structure of the irradiation on the LQ parameters, as described in:\n
-                L. Manganaro, G. Russo, R. Cirio, F. Dalmasso, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati, A. Attili, "A novel formulation of the Microdosimetric Kinetic Model to account for dose-delivery time structure effects in ion beam therapy with application in treatment planning simulations", \a Medical \a Physics, (Submitted)\n
+            -# "tMKM_Manganaro2017" A monte carlo reformulation of the MKM, extended to the temporal dimension to evaluate the effect of the time structure of the irradiation
+                on the LQ parameters, as described in:\n
+                Manganaro, L., Russo, G., Cirio, R., Dalmasso, F., Giordanengo, S., Monaco, V., ... Attili, A. (2017).
+                A Monte Carlo approach to the microdosimetric kinetic model to account for dose rate time structure effects
+                in ion beam therapy with application in treatment planning simulations. \a Medical \a Physics, 44(4), 1577–1589.\n
                 The default value for this option is "MKM"
         - \c -calculusType A string identifying the type of calculus to be done. Some possibilities are available:
-                -# "rapidScholz" It's an implementation of the method described in:\n
-                M. Krämer and M. Scholz, "Rapid calculation of biological effects in ion radiotherapy", \a Physics \a in \a medicine \a and \a biology \b 51, 1959-1970 (2006)\n
-                It's compatible only with LEMI-LEMII-LEMIII models.
-                -# "rapidRusso" A new rapid method for LEM, proved to be more accurate, described in:\n
-                G. Russo, "Develpment of a radiobiological database for carbon ion Treatment Planning Systems - Modelling and simulating the irradiation process", \a PhD \a Thesis, Università degli studi di Torino (2011)\n
-                Also this method is compatible only with LEMI-LEMII-LEMIII models.
-                -# "rapidMKM" An implementation of the original MKM calculation, described in:\n
-                R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", \a Radiation \a Research \b 140, 366-374 (1994) -- And subsequent references.\n
-                It's compatible only with the MKM model and it's the default value for this option.
+                -# "rapidLEM_Scholz2006" It's an implementation of the method described in:\n
+                M. Krämer and M. Scholz, "Rapid calculation of biological effects in ion radiotherapy",
+                \a Physics \a in \a medicine \a and \a biology \b 51, 1959-1970 (2006)\n
+                It's compatible only with LEMI-LEMII-LEMIII models. See Survival::Calculus::rapidLEM_Scholz2006() for details.
+                -# "rapidLEM_Russo2011" A new rapid method for LEM, proved to be more accurate, described in:\n
+                G. Russo, "Develpment of a radiobiological database for carbon ion Treatment Planning Systems - Modelling and
+                simulating the irradiation process", \a PhD \a Thesis, Università degli studi di Torino (2011)\n
+                Also this method is compatible only with LEMI-LEMII-LEMIII models. See Survival::Calculus::rapidLEM_Russo2011() for details.
+                -# "rapidMKM_Kase2008" A fast implementation of the MKM calculation as described in:\n
+                Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008).
+                Biophysical calculation of cell survival probabilities using amorphous track structure models
+                for heavy-ion irradiation. \a Physics \a in \a Medicine \a and \a Biology, 53(1), 37–59
+                It's compatible only with the MKM model and it's the default value for this option. See Survival::Calculus::rapidMKM_Kase2008() for details.
+                -# "rapidMKM_Attili2013" A fast original implementation of the MKM model, combining the methods described in:\n
+                Hawkins_2003 Hawkins, R. B. (2003). A microdosimetric-kinetic model for the effect of non-Poisson distribution of lethal
+                lesions on the variation of RBE with LET. \a Radiation \a Research, 160(1), 61–69, and\n
+                Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008).
+                Biophysical calculation of cell survival probabilities using amorphous track structure models
+                for heavy-ion irradiation. \a Physics \a in \a Medicine \a and \a Biology, 53(1), 37–59. See Survival::Calculus::rapidMKM_Attili2013() for details.
                 -# "MonteCarlo" Compatible with all models implemented, performs a monte carlo simulation of the irradiation process to get the LQ parameters.
         - \c -cellType A string identifying the name of the cell lline used in the calculation. The default value is "Cell1"
                 \note The cell line in reality is completely determined by the model parameters chosen. This is only a tag to indicate the cell but it isn't used in the simulation.
@@ -263,7 +276,7 @@ int main(int argc, char* argv[])
         cellLine->setDomainRadius(MKM_rDomain);
         cellLine->addParametrization_LQ_noDt(MKM_alpha0, MKM_beta0);
     }
-    else if (model == "tMKM")
+    else if (model == "tMKM_Manganaro2017")
     {
         cellLine->setNucleusRadius(MKM_rNucleus);
         cellLine->setDomainRadius(MKM_rDomain);
@@ -292,12 +305,12 @@ int main(int argc, char* argv[])
     
     // MODEL PARAMETERS
     vector<double> parameters;
-    if (model == "MKM" || model == "tMKM") {
+    if (model == "MKM" || model == "tMKM_Manganaro2017") {
         parameters.push_back(MKM_alpha0);
         parameters.push_back(MKM_beta0);
         parameters.push_back(MKM_rNucleus);
         parameters.push_back(MKM_rDomain);
-        if (model == "tMKM")
+        if (model == "tMKM_Manganaro2017")
             parameters.push_back(tMKM_ac);
     }
     else {
@@ -352,20 +365,25 @@ int main(int argc, char* argv[])
         Tracks tracks(particles, trackType);
 
         // CREATING AND EXECUTING CALCULUS
-        if (calculusType == "rapidScholz")
+        if (calculusType == "rapidLEM_Scholz2006")
         {
             Calculus calculus(tracks, *cellLine, nucleus, filename_LQ.str(), model, parallelismType);
-            calculus.rapidScholz_alphaIon_betaIon(alpha[i], beta[i]);
+            calculus.rapidLEM_Scholz2006(alpha[i], beta[i]);
         }
-        else if (calculusType == "rapidRusso")
+        else if (calculusType == "rapidLEM_Russo2011")
         {
             Calculus calculus(tracks, *cellLine, nucleus, filename_LQ.str(), model, parallelismType);
-            calculus.rapidRusso_alphaIon_betaIon(alpha[i], beta[i]);
+            calculus.rapidLEM_Russo2011(alpha[i], beta[i]);
         }
-        else if (calculusType == "rapidMKM")
+        else if (calculusType == "rapidMKM_Kase2008")
         {
             Calculus calculus(tracks, *cellLine, nucleus_MKM, filename_LQ.str(), model, parallelismType);
-            calculus.rapidMKM_Kase_alphaIon_betaIon(alpha[i], beta[i]);
+            calculus.rapidMKM_Kase2008(alpha[i], beta[i]);
+        }
+        else if (calculusType == "rapidMKM_Attili2013")
+        {
+          Calculus calculus(tracks, *cellLine, nucleus_MKM, filename_LQ.str(), model, parallelismType);
+          calculus.rapidMKM_Attili2013(alpha[i], beta[i]);
         }
         else if (calculusType == "MonteCarlo")
         {
@@ -595,7 +613,7 @@ int main(int argc, char* argv[])
                                                    nFraction, timeSpacing, fracDeliveryTime,
                                                    saveAlphaBeta, saveMeans, saveCell, title_means);
             }
-            else if (model == "tMKM")
+            else if (model == "tMKM_Manganaro2017")
             {
                 Calculus calculus_tMKM(tracks, *cellLine, nucleus_tMKM, prefix.str(), model, parallelismType);
                 calculus_tMKM.slow_alphaIon_betaIon(trackMode, parameters, doses, precision,

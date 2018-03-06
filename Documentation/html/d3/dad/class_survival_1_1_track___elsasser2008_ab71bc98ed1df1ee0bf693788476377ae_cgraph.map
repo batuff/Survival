@@ -1,0 +1,4 @@
+<map id="Survival::Track_Elsasser2008::getWeight" name="Survival::Track_Elsasser2008::getWeight">
+<area shape="rect" id="node2" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a603df3dd4545ccb92445b72421ae90dc" title="Saves the local dose deposited by the track at different distances from its center to reconstruct the..." alt="" coords="249,5,445,47"/>
+<area shape="rect" id="node3" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a188a71a971b400a69eaa2a8695c0445c" title="Sets the track position (x and y coordinates) referred to the beam axis. " alt="" coords="249,71,445,112"/>
+</map>

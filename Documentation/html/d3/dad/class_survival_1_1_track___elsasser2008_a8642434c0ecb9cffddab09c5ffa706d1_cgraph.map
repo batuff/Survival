@@ -1,0 +1,5 @@
+<map id="Survival::Track_Elsasser2008::getRadius" name="Survival::Track_Elsasser2008::getRadius">
+<area shape="rect" id="node2" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#ad4565acf63e7b460093d4b4a3834f25c" title="Evaluates the relative precision of the calculated LET with respect of the original particle LET..." alt="" coords="249,5,445,47"/>
+<area shape="rect" id="node3" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a255fef28621eaf78409ed58da3ca31cf" title="Evaluates and returns the LET of the track. " alt="" coords="493,5,689,47"/>
+<area shape="rect" id="node4" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a416e3bdd4ab0a127a92b82d2ed385da6" title="Returns the local dose (in Gy) deposited by the track at a certain distance from the track center (ex..." alt="" coords="737,5,933,47"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Survival::Nucleus_Integral::distributeDose" name="Survival::Nucleus_Integral::distributeDose">
+<area shape="rect" id="node2" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a91a5db2285e722f8c42574625fa74a8e" title="Destructor. " alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node3" href="$d2/d56/class_survival_1_1_calculus.html#a78cec5e607ac8ff691d42292ea3efc59" title="Fast implementation of the MKM as described in (Kase_2008) " alt="" coords="238,229,393,271"/>
+<area shape="rect" id="node6" href="$d2/d56/class_survival_1_1_calculus.html#a02bcc368a1b01891db717a7e581c064d" title="Extension of the rapidMKM_Kase2008() method with . " alt="" coords="238,70,393,126"/>
+<area shape="rect" id="node7" href="$d2/d56/class_survival_1_1_calculus.html#a1c81b6b37e94c87ec054a20c80725121" title="This method provide a fast original implementation of the MKM model, combining the methods described ..." alt="" coords="240,295,391,336"/>
+<area shape="rect" id="node8" href="$d2/d56/class_survival_1_1_calculus.html#aae250fd0d311c9dd682aa90162afe3a5" title="Extension of the rapidMKM_Attili2013() method with . " alt="" coords="240,150,391,206"/>
+<area shape="rect" id="node9" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a8b83b8cb069d82ba4f61b2ca27286570" title="Overload of distributeDose(const Track &amp;track) to manage a Tracks object, it simply calls distributeD..." alt="" coords="228,360,403,401"/>
+<area shape="rect" id="node4" href="$d2/d56/class_survival_1_1_calculus.html#a7f5dbb4c4c72cba8dacd883b65fc8d61" title="Returns the model used in the simulation. " alt="" coords="451,193,579,235"/>
+<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="489,299,540,326"/>
+</map>

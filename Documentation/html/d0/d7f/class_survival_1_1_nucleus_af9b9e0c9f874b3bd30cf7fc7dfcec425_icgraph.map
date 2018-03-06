@@ -1,0 +1,6 @@
+<map id="Survival::Nucleus::getPosition" name="Survival::Nucleus::getPosition">
+<area shape="rect" id="node2" href="$d0/d7f/class_survival_1_1_nucleus.html#aa1ad6b0e5f5152a32cdeb41b68025a93" title="Declaration of the virtual function getNumberOfDomains (for a more detailed description see the deriv..." alt="" coords="187,13,339,54"/>
+<area shape="rect" id="node3" href="$d2/d56/class_survival_1_1_calculus.html#aac0abf30856195062b94015937838aaf" title="Perform the Monte Carlo simulation relatively to a single value of dose imposed and returns the mean ..." alt="" coords="387,5,600,61"/>
+<area shape="rect" id="node4" href="$d2/d56/class_survival_1_1_calculus.html#a532ecb9940306c12f8ca08684057f34e" title="Sets the prefix of the output file name. " alt="" coords="859,13,987,54"/>
+<area shape="rect" id="node5" href="$d2/d56/class_survival_1_1_calculus.html#a5354e680ba838228dba9624b1e0a6ca7" title="This function was thought to control the dose delivery inside the MKM nucleus. It&#39;s similar to slow_a..." alt="" coords="648,37,811,93"/>
+</map>

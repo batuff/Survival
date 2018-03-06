@@ -1,0 +1,6 @@
+<map id="Survival::Nucleus::addNucleusDoses" name="Survival::Nucleus::addNucleusDoses">
+<area shape="rect" id="node2" href="$d0/d7f/class_survival_1_1_nucleus.html#a31ceca4d57048fde5969a2803be25960" title="Declaration of the pure virtual function getCellType (for a more detailed description see the derived..." alt="" coords="187,5,320,47"/>
+<area shape="rect" id="node3" href="$d0/d7f/class_survival_1_1_nucleus.html#a805a3fbe99df542d135407aa1c2bae28" title="Declaration of the pure virtual function cleanNucleus (for a more detailed description see the derive..." alt="" coords="187,71,320,112"/>
+<area shape="rect" id="node4" href="$d0/d7f/class_survival_1_1_nucleus.html#a4da8e2d8d4a6b805381836f231952fed" title="Declaration of the pure virtual function clone (for a more detailed description see the derived class..." alt="" coords="187,136,320,177"/>
+<area shape="rect" id="node5" href="$d0/d7f/class_survival_1_1_nucleus.html#a534c8b9731693f31451a7229a6b7b59f" title="Declaration of the pure virtual function distributeDose (for a more detailed description see the deri..." alt="" coords="187,201,320,243"/>
+</map>

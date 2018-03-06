@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['calculus',['Calculus',['../d3/ddc/classSurvival_1_1Calculus.html',1,'Survival']]],
-  ['cellline',['CellLine',['../d3/d56/classSurvival_1_1CellLine.html',1,'Survival']]]
+  ['calculus',['Calculus',['../d2/d56/class_survival_1_1_calculus.html',1,'Survival']]],
+  ['cellline',['CellLine',['../d1/d8b/class_survival_1_1_cell_line.html',1,'Survival']]]
 ];

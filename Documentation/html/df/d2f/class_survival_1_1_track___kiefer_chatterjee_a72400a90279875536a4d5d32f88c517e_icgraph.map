@@ -1,0 +1,5 @@
+<map id="Survival::Track_KieferChatterjee::getLocalDose" name="Survival::Track_KieferChatterjee::getLocalDose">
+<area shape="rect" id="node2" href="$df/d2f/class_survival_1_1_track___kiefer_chatterjee.html#a845fc5b20c24201d5f61a779204d979d" title="Returns the LET in water of the particle generating the track expressed in MeV/um. " alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node3" href="$df/d2f/class_survival_1_1_track___kiefer_chatterjee.html#a0149bfa84f20e47cc76fb81a4e94043d" title="Saves the local dose deposited by the track at different distances from its center to reconstruct the..." alt="" coords="264,71,475,112"/>
+<area shape="rect" id="node4" href="$df/d2f/class_survival_1_1_track___kiefer_chatterjee.html#a4fd62ffeb6c5a821ebeee9a957062edf" title="Returns the Barkas effective charge. " alt="" coords="523,71,733,112"/>
+</map>

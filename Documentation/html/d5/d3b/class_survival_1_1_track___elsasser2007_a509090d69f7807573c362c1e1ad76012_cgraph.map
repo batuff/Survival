@@ -1,0 +1,7 @@
+<map id="Survival::Track_Elsasser2007::setTime" name="Survival::Track_Elsasser2007::setTime">
+<area shape="rect" id="node2" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a87f79853a7320bf4ce3a124880845317" title="Creates the master curve corresponding to the common track profile. " alt="" coords="249,5,445,47"/>
+<area shape="rect" id="node3" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a2a25dfe2b1aedfd05d97404dbdead525" title="Evaluates the local dose along the radial profile of the master curve. " alt="" coords="493,56,689,97"/>
+<area shape="rect" id="node4" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a3d09a781ce22ee08721d1471b0206ebf" title="Evaluates the argument of the normalized integral in the creation of the master curve. " alt="" coords="737,85,960,127"/>
+<area shape="rect" id="node5" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#aa0d5d8749fd9f33bae5f29c580815741" title="Evaluates and returns the LET of the track. " alt="" coords="249,173,445,215"/>
+<area shape="rect" id="node6" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#aa6d7195703e41369047d771eeaa7e2cd" title="Returns the local dose (in Gy) deposited by the track at a certain distance from the track center (ex..." alt="" coords="493,173,689,215"/>
+</map>

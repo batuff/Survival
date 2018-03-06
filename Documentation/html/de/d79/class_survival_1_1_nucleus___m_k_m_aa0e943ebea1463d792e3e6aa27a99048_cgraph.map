@@ -1,0 +1,6 @@
+<map id="Survival::Nucleus_MKM::distributeDose" name="Survival::Nucleus_MKM::distributeDose">
+<area shape="rect" id="node2" href="$df/d16/class_survival_1_1_tracks.html#a4413948ed5fc96621bb0aa8c5f5166d5" title="Returns the size of the vector of tracks. " alt="" coords="223,5,372,32"/>
+<area shape="rect" id="node3" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a0a3666a418c526435411ed860b3bcd0a" title="When an interaction between a Particle and the MKM nucleus occurs, the method increases inNucleusCoun..." alt="" coords="216,57,379,98"/>
+<area shape="rect" id="node4" href="$d6/d85/class_survival_1_1_track.html#a7cbd42c4881770c7bb89d8baad8c81a0" title="Declaration of the pure virtual function getPosition (for a more detailed description see the derived..." alt="" coords="427,39,609,65"/>
+<area shape="rect" id="node5" href="$d6/d85/class_survival_1_1_track.html#a0f268b2048c965a9c1a2604e786b55a7" title="Declaration of the pure virtual function getRadius (for a more detailed description see the derived c..." alt="" coords="429,89,607,116"/>
+</map>

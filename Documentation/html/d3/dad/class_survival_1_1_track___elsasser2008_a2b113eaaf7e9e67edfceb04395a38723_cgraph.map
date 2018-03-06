@@ -1,0 +1,6 @@
+<map id="Survival::Track_Elsasser2008::setTime" name="Survival::Track_Elsasser2008::setTime">
+<area shape="rect" id="node2" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a255fef28621eaf78409ed58da3ca31cf" title="Evaluates and returns the LET of the track. " alt="" coords="249,5,445,47"/>
+<area shape="rect" id="node4" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a306a1ae7f3bb8e7a98fbd6efd2059a92" title="Evaluates the argument of the normalized integral in the construction of the track profile..." alt="" coords="493,96,716,137"/>
+<area shape="rect" id="node5" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#ae3f3b5b1017e8cfd41bcbbd5ac436356" title="Evaluates the local dose along the radial profile of the track. " alt="" coords="249,123,445,164"/>
+<area shape="rect" id="node3" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a416e3bdd4ab0a127a92b82d2ed385da6" title="Returns the local dose (in Gy) deposited by the track at a certain distance from the track center (ex..." alt="" coords="507,5,703,47"/>
+</map>

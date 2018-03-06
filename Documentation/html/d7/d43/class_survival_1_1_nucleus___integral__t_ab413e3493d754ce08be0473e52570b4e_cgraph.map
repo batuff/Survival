@@ -1,0 +1,5 @@
+<map id="Survival::Nucleus_Integral_t::getDoses" name="Survival::Nucleus_Integral_t::getDoses">
+<area shape="rect" id="node2" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#af18c02fdd7cc1db2a237affd2557d7ce" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and the associa..." alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node4" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a619928b3390b1fdcaa5ef11e3d05eef5" title="Returns (overwriting parameters passed by reference) the dose absorbed by the nucleus and associated ..." alt="" coords="228,71,403,112"/>
+<area shape="rect" id="node3" href="$d1/d8b/class_survival_1_1_cell_line.html#a86e4e660181036f873b9f347550d7996" title="Returns the natural logarithm of the cellular survival evaluated on the basis of the selected paramet..." alt="" coords="451,39,583,80"/>
+</map>

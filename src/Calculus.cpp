@@ -555,113 +555,7 @@ void Calculus::rapidINFN_alphaIon_betaIon(double &alphaIon,
 
 //------------------------------------------------------------------------------
 
-void Calculus::rapidMKM_Hawkins_alphaIon_betaIon(double &alphaIon,
-                                                 double &betaIon)
-{
-    double dummy1, dummy2, dummy3;
-    double alpha_X, beta_X;
-    cellLine.getParameters(alpha_X, beta_X, dummy1);
-
-    double alpha_D, beta_D;
-    double alpha_tot = 0.0, sqrt_beta_tot = 0.0;
-    double meanLet = 0.0;
-    double r_domain = cellLine.getDomainRadius();
-    double r_nucleus = cellLine.getNucleusRadius();
-    
-    CellLine fakeD("domain", r_domain);
-    fakeD.addParametrization_LQ_noDt(alpha_X, beta_X);
-    fakeD.setParametrization("LQ_noDt");
-    Nucleus_Integral domain(fakeD);
-    
-    CellLine fakeN("nucleus", r_nucleus);
-    fakeN.addParametrization_LQ_noDt(alpha_X, beta_X);
-    fakeN.setParametrization("LQ_noDt");
-    Nucleus_Integral nucleus_int(fakeN);
-    
-    for(int k = 0; k < tracks.size(); k++)
-    {
-        Track *track = tracks[k].clone();
-        double r_max = track->getRadius();
-        double let = tracks[k].getLet();
-        double weight = tracks[k].getWeight();
-        
-        //Compute gamma
-        double r1;
-        double r2 = 1e-4;
-        double log10_r2 = log10(r2);
-        track->setPosition(0.0, r2*1e-3);
-        domain.distributeDose(*track);
-        double d1, d2;
-        domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
-        domain.cleanNucleus();
-        
-        double z_1 = 0.;
-        double z_1D = 0.;
-        do
-        {
-            r1 = r2;
-            d1 = d2;
-            log10_r2 += 1e-3; // orig 1e-2
-            r2 = pow(10.0, log10_r2);
-            
-            track->setPosition(0.0, r2*1e-3);
-            domain.distributeDose(*track);
-            domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
-            domain.cleanNucleus();
-            z_1 += (d1*r1 + d2*r2) * (r2 - r1);
-            z_1D += (d1*d1*r1 + d2*d2*r2) * (r2 - r1);
-        } while( r2 < r_domain + r_max );
-        double gamma = z_1D / z_1;
-        
-        //Compute gamma_nucleus
-        r2 = 1e-4;
-        log10_r2 = log10(r2);
-        track->setPosition(0.0, r2*1e-3);
-        nucleus_int.distributeDose(*track);
-        nucleus_int.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
-        nucleus_int.cleanNucleus();
-        
-        z_1 = 0.;
-        z_1D = 0.;
-        do
-        {
-            r1 = r2;
-            d1 = d2;
-            log10_r2 += 1e-3; // orig 1e-2
-            r2 = pow(10.0, log10_r2);
-            
-            track->setPosition(0.0, r2*1e-3);
-            nucleus_int.distributeDose(*track);
-            nucleus_int.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
-            nucleus_int.cleanNucleus();
-            z_1 += (d1*r1 + d2*r2) * (r2 - r1);
-            z_1D += (d1*d1*r1 + d2*d2*r2) * (r2 - r1);
-        } while( r2 < r_nucleus + r_max );
-        double gamma_nucleus = z_1D / z_1;
-        
-        double alpha_P = alpha_X + beta_X * gamma;
-        double beta_P = beta_X;
-        alpha_D = (1 - exp( - alpha_P * gamma_nucleus )) / gamma_nucleus;
-        beta_D = beta_P;
-        
-        alpha_tot += weight * let * alpha_D;
-        sqrt_beta_tot += weight * let * sqrt(beta_D);
-        meanLet += weight * let;
-        
-    }
-    
-    alphaIon = alpha_tot / meanLet;
-    betaIon = pow(sqrt_beta_tot/meanLet, 2);
-    
-    cout << setprecision(6)
-         << "alpha ion = " << alphaIon << "   beta ion = " << betaIon << endl
-         << endl;
-}
-
-//------------------------------------------------------------------------------
-
-void Calculus::rapidMKM_Kase_alphaIon_betaIon(double &alphaIon,
-                                              double &betaIon)
+void Calculus::rapidMKM_Kase2008(double &alphaIon, double &betaIon)
 {
     double dummy1, dummy2, dummy3;
     double alpha_X, beta_X;
@@ -738,7 +632,293 @@ void Calculus::rapidMKM_Kase_alphaIon_betaIon(double &alphaIon,
 
 //------------------------------------------------------------------------------
 
-void Calculus::rapidRusso_alphaIon_betaIon(double &alphaIon,
+void Calculus::rapidMKM_Kase2008_corrected_beta(double &alphaIon, double &betaIon)
+{
+  double dummy1, dummy2, dummy3;
+  double alpha_X, beta_X;
+  cellLine.getParameters(alpha_X, beta_X, dummy1);
+  
+  double alpha_D, beta_D;
+  double alpha_tot = 0.0, sqrt_beta_tot = 0.0;
+  double meanLet = 0.0;
+  double r_domain = cellLine.getDomainRadius();
+  double r_nucleus = cellLine.getNucleusRadius();
+  
+  CellLine fakeD("domain", r_domain);
+  fakeD.addParametrization_LQ_noDt(alpha_X, beta_X);
+  fakeD.setParametrization("LQ_noDt");
+  Nucleus_Integral domain(fakeD);
+  
+  for(int k = 0; k < tracks.size(); k++)
+  {
+    Track *track = tracks[k].clone();
+    double r_max = track->getRadius();
+    double let = tracks[k].getLet();
+    double weight = tracks[k].getWeight();
+    
+    //Compute gamma
+    double r1;
+    double r2 = 1e-4;
+    double log10_r2 = log10(r2);
+    track->setPosition(0.0, r2*1e-3);
+    domain.distributeDose(*track);
+    double d1, d2;
+    domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+    domain.cleanNucleus();
+    
+    double z_1 = 0.;
+    double z_1D = 0.;
+    do
+    {
+      r1 = r2;
+      d1 = d2;
+      log10_r2 += 1e-3; // orig 1e-2
+      r2 = pow(10.0, log10_r2);
+      
+      track->setPosition(0.0, r2*1e-3);
+      domain.distributeDose(*track);
+      domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+      domain.cleanNucleus();
+      z_1 += (d1*r1 + d2*r2) * (r2 - r1);
+      z_1D += (d1*d1*r1 + d2*d2*r2) * (r2 - r1);
+    } while( r2 < r_domain + r_max );
+    double gamma = z_1D / z_1;
+    
+    //Compute gamma_nucleus
+    const double CONV = 160.2177;
+    double gamma_nucleus = CONV*track->getLet()/(tracks.getDensity()*M_PI*r_nucleus*r_nucleus);
+    
+    double alpha_P = alpha_X + beta_X * gamma;
+    double beta_P = beta_X;
+    alpha_D = (1 - exp( - alpha_P * gamma_nucleus )) / gamma_nucleus;
+    beta_D = beta_P * (alpha_D/alpha_P)*(alpha_D/alpha_P); // corrected variable beta
+    
+    alpha_tot += weight * let * alpha_D;
+    sqrt_beta_tot += weight * let * sqrt(beta_D);
+    meanLet += weight * let;
+    
+  }
+  
+  alphaIon = alpha_tot / meanLet;
+  betaIon = pow(sqrt_beta_tot/meanLet, 2);
+  
+  cout << setprecision(6)
+       << "alpha ion = " << alphaIon << "   beta ion = " << betaIon << endl
+       << endl;
+}
+
+//------------------------------------------------------------------------------
+
+void Calculus::rapidMKM_Attili2013(double &alphaIon, double &betaIon)
+{
+  double dummy1, dummy2, dummy3;
+  double alpha_X, beta_X;
+  cellLine.getParameters(alpha_X, beta_X, dummy1);
+  
+  double alpha_D, beta_D;
+  double alpha_tot = 0.0, sqrt_beta_tot = 0.0;
+  double meanLet = 0.0;
+  double r_domain = cellLine.getDomainRadius();
+  double r_nucleus = cellLine.getNucleusRadius();
+  
+  CellLine fakeD("domain", r_domain);
+  fakeD.addParametrization_LQ_noDt(alpha_X, beta_X);
+  fakeD.setParametrization("LQ_noDt");
+  Nucleus_Integral domain(fakeD);
+  
+  CellLine fakeN("nucleus", r_nucleus);
+  fakeN.addParametrization_LQ_noDt(alpha_X, beta_X);
+  fakeN.setParametrization("LQ_noDt");
+  Nucleus_Integral nucleus_int(fakeN);
+  
+  for(int k = 0; k < tracks.size(); k++)
+  {
+    Track *track = tracks[k].clone();
+    double r_max = track->getRadius();
+    double let = tracks[k].getLet();
+    double weight = tracks[k].getWeight();
+    
+    //Compute gamma
+    double r1;
+    double r2 = 1e-4;
+    double log10_r2 = log10(r2);
+    track->setPosition(0.0, r2*1e-3);
+    domain.distributeDose(*track);
+    double d1, d2;
+    domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+    domain.cleanNucleus();
+    
+    double z_1 = 0.;
+    double z_1D = 0.;
+    do
+    {
+      r1 = r2;
+      d1 = d2;
+      log10_r2 += 1e-3; // orig 1e-2
+      r2 = pow(10.0, log10_r2);
+      
+      track->setPosition(0.0, r2*1e-3);
+      domain.distributeDose(*track);
+      domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+      domain.cleanNucleus();
+      z_1 += (d1*r1 + d2*r2) * (r2 - r1);
+      z_1D += (d1*d1*r1 + d2*d2*r2) * (r2 - r1);
+    } while( r2 < r_domain + r_max );
+    double gamma = z_1D / z_1;
+    
+    //Compute gamma_nucleus
+    r2 = 1e-4;
+    log10_r2 = log10(r2);
+    track->setPosition(0.0, r2*1e-3);
+    nucleus_int.distributeDose(*track);
+    nucleus_int.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+    nucleus_int.cleanNucleus();
+    
+    z_1 = 0.;
+    z_1D = 0.;
+    do
+    {
+      r1 = r2;
+      d1 = d2;
+      log10_r2 += 1e-3; // orig 1e-2
+      r2 = pow(10.0, log10_r2);
+      
+      track->setPosition(0.0, r2*1e-3);
+      nucleus_int.distributeDose(*track);
+      nucleus_int.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+      nucleus_int.cleanNucleus();
+      z_1 += (d1*r1 + d2*r2) * (r2 - r1);
+      z_1D += (d1*d1*r1 + d2*d2*r2) * (r2 - r1);
+    } while( r2 < r_nucleus + r_max );
+    double gamma_nucleus = z_1D / z_1;
+    
+    double alpha_P = alpha_X + beta_X * gamma;
+    double beta_P = beta_X;
+    alpha_D = (1 - exp( - alpha_P * gamma_nucleus )) / gamma_nucleus;
+    beta_D = beta_P;
+    
+    alpha_tot += weight * let * alpha_D;
+    sqrt_beta_tot += weight * let * sqrt(beta_D);
+    meanLet += weight * let;
+    
+  }
+  
+  alphaIon = alpha_tot / meanLet;
+  betaIon = pow(sqrt_beta_tot/meanLet, 2);
+  
+  cout << setprecision(6)
+       << "alpha ion = " << alphaIon << "   beta ion = " << betaIon << endl
+       << endl;
+}
+
+//------------------------------------------------------------------------------
+
+void Calculus::rapidMKM_Attili2013_corrected_beta(double &alphaIon, double &betaIon)
+{
+  double dummy1, dummy2, dummy3;
+  double alpha_X, beta_X;
+  cellLine.getParameters(alpha_X, beta_X, dummy1);
+  
+  double alpha_D, beta_D;
+  double alpha_tot = 0.0, sqrt_beta_tot = 0.0;
+  double meanLet = 0.0;
+  double r_domain = cellLine.getDomainRadius();
+  double r_nucleus = cellLine.getNucleusRadius();
+  
+  CellLine fakeD("domain", r_domain);
+  fakeD.addParametrization_LQ_noDt(alpha_X, beta_X);
+  fakeD.setParametrization("LQ_noDt");
+  Nucleus_Integral domain(fakeD);
+  
+  CellLine fakeN("nucleus", r_nucleus);
+  fakeN.addParametrization_LQ_noDt(alpha_X, beta_X);
+  fakeN.setParametrization("LQ_noDt");
+  Nucleus_Integral nucleus_int(fakeN);
+  
+  for(int k = 0; k < tracks.size(); k++)
+  {
+    Track *track = tracks[k].clone();
+    double r_max = track->getRadius();
+    double let = tracks[k].getLet();
+    double weight = tracks[k].getWeight();
+    
+    //Compute gamma
+    double r1;
+    double r2 = 1e-4;
+    double log10_r2 = log10(r2);
+    track->setPosition(0.0, r2*1e-3);
+    domain.distributeDose(*track);
+    double d1, d2;
+    domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+    domain.cleanNucleus();
+    
+    double z_1 = 0.;
+    double z_1D = 0.;
+    do
+    {
+      r1 = r2;
+      d1 = d2;
+      log10_r2 += 1e-3; // orig 1e-2
+      r2 = pow(10.0, log10_r2);
+      
+      track->setPosition(0.0, r2*1e-3);
+      domain.distributeDose(*track);
+      domain.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+      domain.cleanNucleus();
+      z_1 += (d1*r1 + d2*r2) * (r2 - r1);
+      z_1D += (d1*d1*r1 + d2*d2*r2) * (r2 - r1);
+    } while( r2 < r_domain + r_max );
+    double gamma = z_1D / z_1;
+    
+    //Compute gamma_nucleus
+    r2 = 1e-4;
+    log10_r2 = log10(r2);
+    track->setPosition(0.0, r2*1e-3);
+    nucleus_int.distributeDose(*track);
+    nucleus_int.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+    nucleus_int.cleanNucleus();
+    
+    z_1 = 0.;
+    z_1D = 0.;
+    do
+    {
+      r1 = r2;
+      d1 = d2;
+      log10_r2 += 1e-3; // orig 1e-2
+      r2 = pow(10.0, log10_r2);
+      
+      track->setPosition(0.0, r2*1e-3);
+      nucleus_int.distributeDose(*track);
+      nucleus_int.getDoseAndSurvival(d2, dummy1, dummy2, dummy3);
+      nucleus_int.cleanNucleus();
+      z_1 += (d1*r1 + d2*r2) * (r2 - r1);
+      z_1D += (d1*d1*r1 + d2*d2*r2) * (r2 - r1);
+    } while( r2 < r_nucleus + r_max );
+    double gamma_nucleus = z_1D / z_1;
+    
+    double alpha_P = alpha_X + beta_X * gamma;
+    double beta_P = beta_X;
+    alpha_D = (1 - exp( - alpha_P * gamma_nucleus )) / gamma_nucleus;
+    beta_D = beta_P * (alpha_D/alpha_P)*(alpha_D/alpha_P); // variable beta
+    
+    alpha_tot += weight * let * alpha_D;
+    sqrt_beta_tot += weight * let * sqrt(beta_D);
+    meanLet += weight * let;
+    
+  }
+  
+  alphaIon = alpha_tot / meanLet;
+  betaIon = pow(sqrt_beta_tot/meanLet, 2);
+  
+  cout << setprecision(6)
+       << "alpha ion = " << alphaIon << "   beta ion = " << betaIon << endl
+       << endl;
+}
+
+
+//------------------------------------------------------------------------------
+
+void Calculus::rapidLEM_Russo2011(double &alphaIon,
                                            double &betaIon)
 {
     // Nella tesi di Germano è quello che viene indicato con "A refinement of the Rapid GSI approach"
@@ -805,7 +985,7 @@ void Calculus::rapidRusso_alphaIon_betaIon(double &alphaIon,
 
 //------------------------------------------------------------------------------
 
-void Calculus::rapidScholz_alphaIon_betaIon(double &alphaIon,
+void Calculus::rapidLEM_Scholz2006(double &alphaIon,
                                             double &betaIon)
 {
     // Nella tesi di Germano è quello che viene indicato con "GSI approximate implementation"

@@ -1,0 +1,5 @@
+<map id="Survival::Track_Elsasser2008::getTrackLet" name="Survival::Track_Elsasser2008::getTrackLet">
+<area shape="rect" id="node2" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a2b113eaaf7e9e67edfceb04395a38723" title="Sets the time associated to a particular event. " alt="" coords="249,5,445,47"/>
+<area shape="rect" id="node3" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#ad4565acf63e7b460093d4b4a3834f25c" title="Evaluates the relative precision of the calculated LET with respect of the original particle LET..." alt="" coords="249,71,445,112"/>
+<area shape="rect" id="node4" href="$d3/dad/class_survival_1_1_track___elsasser2008.html#a8642434c0ecb9cffddab09c5ffa706d1" title="Returns the effective radius of the track, expressed in um. " alt="" coords="493,71,689,112"/>
+</map>

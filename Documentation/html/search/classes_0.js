@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['betheblochtable',['BetheBlochTable',['../dc/d23/classSurvival_1_1BetheBlochTable.html',1,'Survival']]]
+  ['betheblochtable',['BetheBlochTable',['../d5/da8/class_survival_1_1_bethe_bloch_table.html',1,'Survival']]]
 ];

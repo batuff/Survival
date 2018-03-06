@@ -1,0 +1,6 @@
+<map id="Survival::BetheBlochTable::GetLET" name="Survival::BetheBlochTable::GetLET">
+<area shape="rect" id="node2" href="$de/d0a/namespace_survival.html#a5b76404b95bb011e06f17b79292977e8" title="Survival::betheBloch_Srim" alt="" coords="229,35,405,61"/>
+<area shape="rect" id="node3" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="739,5,789,32"/>
+<area shape="rect" id="node4" href="$d2/d43/class_survival_1_1_particles.html#a7722fd72dc0f7388fa5311c9b52c0c5f" title="For each particle of particle of particle vector, if its LET or energy is undefined the method tries ..." alt="" coords="453,57,652,98"/>
+<area shape="rect" id="node5" href="$d2/d43/class_survival_1_1_particles.html#ae08ed725ac764789dd964b0b43e5b511" title="Returns a string identifying the file containing the spectrum of particles. " alt="" coords="700,57,828,98"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Survival::Nucleus::getDosesAndLethals" name="Survival::Nucleus::getDosesAndLethals">
+<area shape="rect" id="node2" href="$d2/d56/class_survival_1_1_calculus.html#a47538c45fd5a9b2cd97bea6d41341171" title="Simulates, via the Monte Carlo method, the irradiation process of a nucleus which is part of the cell..." alt="" coords="196,34,371,90"/>
+<area shape="rect" id="node3" href="$d2/d56/class_survival_1_1_calculus.html#a7f5dbb4c4c72cba8dacd883b65fc8d61" title="Returns the model used in the simulation. " alt="" coords="461,5,589,47"/>
+<area shape="rect" id="node4" href="$d2/d56/class_survival_1_1_calculus.html#aac0abf30856195062b94015937838aaf" title="Perform the Monte Carlo simulation relatively to a single value of dose imposed and returns the mean ..." alt="" coords="419,70,632,126"/>
+<area shape="rect" id="node5" href="$d2/d56/class_survival_1_1_calculus.html#a532ecb9940306c12f8ca08684057f34e" title="Sets the prefix of the output file name. " alt="" coords="891,77,1019,119"/>
+<area shape="rect" id="node6" href="$d2/d56/class_survival_1_1_calculus.html#a5354e680ba838228dba9624b1e0a6ca7" title="This function was thought to control the dose delivery inside the MKM nucleus. It&#39;s similar to slow_a..." alt="" coords="680,102,843,158"/>
+</map>

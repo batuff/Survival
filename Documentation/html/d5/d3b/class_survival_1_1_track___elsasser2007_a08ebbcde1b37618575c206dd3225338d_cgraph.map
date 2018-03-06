@@ -1,0 +1,6 @@
+<map id="Survival::Track_Elsasser2007::clone" name="Survival::Track_Elsasser2007::clone">
+<area shape="rect" id="node2" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a08fdfdc91801e62c31edf97dd7e8d274" title="Constructor. Instantiates and sets the object. " alt="" coords="249,35,445,76"/>
+<area shape="rect" id="node3" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a87f79853a7320bf4ce3a124880845317" title="Creates the master curve corresponding to the common track profile. " alt="" coords="493,5,689,47"/>
+<area shape="rect" id="node4" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a2a25dfe2b1aedfd05d97404dbdead525" title="Evaluates the local dose along the radial profile of the master curve. " alt="" coords="737,35,933,76"/>
+<area shape="rect" id="node5" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a3d09a781ce22ee08721d1471b0206ebf" title="Evaluates the argument of the normalized integral in the creation of the master curve. " alt="" coords="981,35,1204,76"/>
+</map>

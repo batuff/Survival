@@ -1,0 +1,7 @@
+<map id="Survival::Calculus::verbatim_dose_survival" name="Survival::Calculus::verbatim_dose_survival">
+<area shape="rect" id="node2" href="$d0/d7f/class_survival_1_1_nucleus.html#a534c8b9731693f31451a7229a6b7b59f" title="Declaration of the pure virtual function distributeDose (for a more detailed description see the deri..." alt="" coords="225,5,358,47"/>
+<area shape="rect" id="node3" href="$d0/d7f/class_survival_1_1_nucleus.html#adbd3faee7029e64620f3dec187657dfe" title="Declaration of the pure virtual function getDoseAndSurvival (for a more detailed description see the ..." alt="" coords="221,71,362,112"/>
+<area shape="rect" id="node4" href="$d0/d7f/class_survival_1_1_nucleus.html#a44f481a9cf5bc5ab59cc198db0f00ed1" title="Declaration of the pure virtual function getInNucleusCount (for a more detailed description see the d..." alt="" coords="224,136,359,177"/>
+<area shape="rect" id="node5" href="$d0/d7f/class_survival_1_1_nucleus.html#ad8fb8b4097f18f7f08920a66759afbb1" title="Declaration of the pure virtual function getIntersectionCount (for a more detailed description see th..." alt="" coords="220,201,363,243"/>
+<area shape="rect" id="node6" href="$d0/d7f/class_survival_1_1_nucleus.html#a805a3fbe99df542d135407aa1c2bae28" title="Declaration of the pure virtual function cleanNucleus (for a more detailed description see the derive..." alt="" coords="225,267,358,308"/>
+</map>

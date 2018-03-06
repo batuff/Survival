@@ -1,0 +1,7 @@
+<map id="Survival::Track_Elsasser2007::normalizedDoseIntegralArgument" name="Survival::Track_Elsasser2007::normalizedDoseIntegralArgument">
+<area shape="rect" id="node2" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a509090d69f7807573c362c1e1ad76012" title="Sets the time associated to a particular event. " alt="" coords="764,27,960,68"/>
+<area shape="rect" id="node3" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a2a25dfe2b1aedfd05d97404dbdead525" title="Evaluates the local dose along the radial profile of the master curve. " alt="" coords="276,60,472,101"/>
+<area shape="rect" id="node4" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a08fdfdc91801e62c31edf97dd7e8d274" title="Constructor. Instantiates and sets the object. " alt="" coords="764,119,960,160"/>
+<area shape="rect" id="node6" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a87f79853a7320bf4ce3a124880845317" title="Creates the master curve corresponding to the common track profile. " alt="" coords="520,85,716,127"/>
+<area shape="rect" id="node5" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a08ebbcde1b37618575c206dd3225338d" title="Returns a pointer to a new Track_Elsasser2007 object created as a copy of an existent one by means of..." alt="" coords="1008,119,1204,160"/>
+</map>

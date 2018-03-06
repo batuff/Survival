@@ -1,0 +1,6 @@
+<map id="Survival::CellLine::getAC" name="Survival::CellLine::getAC">
+<area shape="rect" id="node2" href="$d2/d56/class_survival_1_1_calculus.html#aff1c83dcc7dd667e86e3b08f17db6efe" title="Perform a Monte Carlo simulation delivering a fixed total dose with a defined time structure to a cel..." alt="" coords="197,5,325,47"/>
+<area shape="rect" id="node4" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#ae5af80e9ae9caa3eb28f9f6ed4b72b1d" title="Returns (overwriting parameters passed by reference) the total dose absorbed by the nucleus and the a..." alt="" coords="177,71,344,112"/>
+<area shape="rect" id="node3" href="$d2/d56/class_survival_1_1_calculus.html#ab6fbdc8ae32e5741260528c141a2cdd4" title="Returns the number of threads used in the simulation. " alt="" coords="411,5,539,47"/>
+<area shape="rect" id="node5" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#a97e93b32df2627502377ab92f063faf2" title="Returns the radius of the domain corresponding to the CellLine to which the tMKM nucleus belongs..." alt="" coords="392,71,559,112"/>
+</map>

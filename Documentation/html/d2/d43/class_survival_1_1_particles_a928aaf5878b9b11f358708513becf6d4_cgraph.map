@@ -1,0 +1,5 @@
+<map id="Survival::Particles::getIons" name="Survival::Particles::getIons">
+<area shape="rect" id="node2" href="$d2/d43/class_survival_1_1_particles.html#a05cc4eef44e8a81fe3255ba2ece1528f" title="Constructor. Instantiates and sets the object. " alt="" coords="181,5,309,47"/>
+<area shape="rect" id="node4" href="$d2/d43/class_survival_1_1_particles.html#a830119d364ca4355e1caf8819aaad9ef" title="Returns the size of the vector of particles. " alt="" coords="181,71,309,112"/>
+<area shape="rect" id="node3" href="$d2/d43/class_survival_1_1_particles.html#a18caab79ba2383851daf658e2094fbb0" title="Loads a spectrum from a file and stores it in particleVector. " alt="" coords="357,5,485,47"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Survival::Particles::~Particles" name="Survival::Particles::~Particles">
+<area shape="rect" id="node2" href="$d2/d43/class_survival_1_1_particles.html#ad27081384a23a82608c1a0b1ac7cd5cb" title="Overload of the &lt;&lt; operator to add a new particle at the end of the vector. " alt="" coords="193,5,321,47"/>
+<area shape="rect" id="node3" href="$d2/d43/class_survival_1_1_particles.html#a75769bb2a4fd89a81cbd42f5b326b743" title="Overload of the [] operator to access at the n&#45;th element of the vector. " alt="" coords="193,71,321,112"/>
+<area shape="rect" id="node4" href="$d2/d43/class_survival_1_1_particles.html#aef808a283131dddb4f09133ae089945d" title="Returns the dose averaged LET of the vector of particles. " alt="" coords="181,136,333,177"/>
+<area shape="rect" id="node5" href="$d2/d43/class_survival_1_1_particles.html#a340feea5d036b70e23a6a6a30d530f70" title="Selects and returns only the ions identified in the vector of particles. " alt="" coords="193,201,321,243"/>
+<area shape="rect" id="node7" href="$d2/d43/class_survival_1_1_particles.html#a35001116aabdfa83c98d7a7cbaf3cacd" title="Returns the mean LET of the vector of particles, expressed in keV/um. " alt="" coords="193,267,321,308"/>
+<area shape="rect" id="node6" href="$d2/d43/class_survival_1_1_particles.html#a830119d364ca4355e1caf8819aaad9ef" title="Returns the size of the vector of particles. " alt="" coords="381,201,509,243"/>
+</map>

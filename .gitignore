@@ -41,3 +41,7 @@ dep.mk
 # R/Rstudio files
 Survival.Rproj
 
+# latex sources
+Documentation/latex
+Documentation/latex/*
+Documentation/latex/*.*

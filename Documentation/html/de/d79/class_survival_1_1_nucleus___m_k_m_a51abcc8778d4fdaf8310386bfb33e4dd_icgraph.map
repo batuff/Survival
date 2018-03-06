@@ -1,0 +1,7 @@
+<map id="Survival::Nucleus_MKM::getDoseAndLethalForDomain" name="Survival::Nucleus_MKM::getDoseAndLethalForDomain">
+<area shape="rect" id="node2" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a5a1c60a9ff4923ed0220b96277dab8f6" title="Returns the radius of the domain corresponding to the CellLine to which the MKM nucleus belongs..." alt="" coords="465,27,628,69"/>
+<area shape="rect" id="node3" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a254b8878e6487a80090e5103e56fd8ff" title="Performs the sum of the dose absorbed by two different nucleus domain to domain (adds one to the othe..." alt="" coords="676,86,839,127"/>
+<area shape="rect" id="node4" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a49cf9a7e7a92e7fba54102c1878f5ebd" title="Returns (overwriting parameters passed by reference) the vectors containing doses absorbed and number..." alt="" coords="255,27,417,69"/>
+<area shape="rect" id="node5" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a0217cb8c959397b656cfd1770de05c91" title="Save data corresponding to the dose absorbed by each domain and the number of lethal events observed..." alt="" coords="255,145,417,186"/>
+<area shape="rect" id="node6" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#aff3aa9c796e1c74ff162b0d12e955ff2" title="Returns the effective radius of the Nucleus_MKM object. " alt="" coords="465,145,628,186"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Survival::Track_Scholz2000::~Track_Scholz2000" name="Survival::Track_Scholz2000::~Track_Scholz2000">
+<area shape="rect" id="node2" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a8ea89aa801fcf87ccc6a7921a37edddb" title="Returns a pointer to a new Track_Scholz2000 object created as a copy of an existent one by means of t..." alt="" coords="239,5,424,47"/>
+<area shape="rect" id="node4" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a58dcce6976b2aeed2ec707e58e2c5b12" title="Returns the distance from the center of the track, knowing the local dose deposited. " alt="" coords="239,71,424,112"/>
+<area shape="rect" id="node3" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#afa27ff267ffb57bd05e9395f27bc9145" title="Constructor. Instantiates and sets the object. " alt="" coords="472,5,657,47"/>
+</map>

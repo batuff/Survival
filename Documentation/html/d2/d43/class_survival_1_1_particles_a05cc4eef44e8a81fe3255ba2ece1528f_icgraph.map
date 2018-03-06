@@ -1,0 +1,6 @@
+<map id="Survival::Particles::Particles" name="Survival::Particles::Particles">
+<area shape="rect" id="node2" href="$d2/d43/class_survival_1_1_particles.html#a928aaf5878b9b11f358708513becf6d4" title="Selects and returns only the ions with a particular charge identified in the vector of particles..." alt="" coords="215,5,343,47"/>
+<area shape="rect" id="node3" href="$d2/d43/class_survival_1_1_particles.html#abc583ad07846b47387da9fd4fdfb02c9" title="Selects and returns only the particles with coordinates between &#160;and . " alt="" coords="181,71,377,112"/>
+<area shape="rect" id="node5" href="$d2/d43/class_survival_1_1_particles.html#a991c5de8192eb2ad74d945cf5544bbc2" title="Selects and returns only the particles with a distance from the origin between . " alt="" coords="190,136,369,177"/>
+<area shape="rect" id="node4" href="$d2/d43/class_survival_1_1_particles.html#ae08ed725ac764789dd964b0b43e5b511" title="Returns a string identifying the file containing the spectrum of particles. " alt="" coords="425,104,553,145"/>
+</map>

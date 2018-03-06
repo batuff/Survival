@@ -1,0 +1,5 @@
+<map id="Survival::Calculus" name="Survival::Calculus">
+<area shape="rect" id="node2" href="$d1/d8b/class_survival_1_1_cell_line.html" title="Represents the cell line to which the nucleus belongs and hosts the radiobiological and structural ch..." alt="" coords="167,145,383,619"/>
+<area shape="rect" id="node4" href="$df/d16/class_survival_1_1_tracks.html" title="This is a container class for Track objects; it implements the structure and methods to manage a vect..." alt="" coords="408,263,572,501"/>
+<area shape="rect" id="node5" href="$d0/d7f/class_survival_1_1_nucleus.html" title="Linked to a specific CellLine object, this class defines the structure of the cellular nucleus to be ..." alt="" coords="596,270,759,494"/>
+</map>

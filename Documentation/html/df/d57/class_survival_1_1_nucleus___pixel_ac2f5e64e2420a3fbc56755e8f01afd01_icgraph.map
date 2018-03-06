@@ -1,0 +1,7 @@
+<map id="Survival::Nucleus_Pixel::cleanNucleus" name="Survival::Nucleus_Pixel::cleanNucleus">
+<area shape="rect" id="node2" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a6d14763f8e69a92c83d59e74b0d38319" title="Clean the object by calling the Tracks::eraseAll() and Nucleus_Pixel::cleanNucleus() methods..." alt="" coords="215,5,413,47"/>
+<area shape="rect" id="node4" href="$df/d57/class_survival_1_1_nucleus___pixel.html#a450201dc60fb4a159a57e3e8c5528b72" title="Constructor. Instantiates and sets the object. " alt="" coords="233,71,395,112"/>
+<area shape="rect" id="node6" href="$df/d57/class_survival_1_1_nucleus___pixel.html#a28c1b1bda435bf4d8440d749036cb1cb" title="Sets a value of dose in each of the smallest pixels constituting the nucleus, getting it from an exte..." alt="" coords="233,136,395,177"/>
+<area shape="rect" id="node3" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html#a3e5ad32b67811bf5b95b51103a7f78b6" title="Destructor. " alt="" coords="461,5,660,47"/>
+<area shape="rect" id="node5" href="$df/d57/class_survival_1_1_nucleus___pixel.html#ada2394c0ec7cc21368761e1da61b2f15" title="Returns a pointer to a new Nucleus_Pixel object. It not really a clone but a new clean object..." alt="" coords="480,71,641,112"/>
+</map>

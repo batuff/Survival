@@ -1,0 +1,4 @@
+<map id="Survival::Track_KieferChatterjee::getParticleType" name="Survival::Track_KieferChatterjee::getParticleType">
+<area shape="rect" id="node2" href="$df/d2f/class_survival_1_1_track___kiefer_chatterjee.html#ad487984977d92583e46be5e172e32801" title="Returns the track position (x and y coordinates) referred to the beam axis and expressed in mm overwr..." alt="" coords="264,5,475,47"/>
+<area shape="rect" id="node3" href="$df/d2f/class_survival_1_1_track___kiefer_chatterjee.html#afef0b9b73115509e8607a12db0767bf9" title="Returns the dose (in Gy) deposited by the track evaluated as the radial integral of the track profile..." alt="" coords="264,71,475,112"/>
+</map>

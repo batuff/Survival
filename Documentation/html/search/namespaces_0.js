@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['survival',['Survival',['../df/d88/namespaceSurvival.html',1,'']]]
+  ['survival',['Survival',['../de/d0a/namespace_survival.html',1,'']]]
 ];

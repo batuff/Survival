@@ -1,0 +1,21 @@
+<map id="Survival::CellLine::getParameters_LQ_noDt" name="Survival::CellLine::getParameters_LQ_noDt">
+<area shape="rect" id="node2" href="$d1/d8b/class_survival_1_1_cell_line.html#a850ce403d91953b71f89cbe1aba93517" title="Returns the radius of the nucleus expressed in um. " alt="" coords="228,324,365,365"/>
+<area shape="rect" id="node15" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a98422ab9e7cd064a2ba6c3e63c2f1180" title="Constructor. Instantiates and sets the object. " alt="" coords="419,556,582,597"/>
+<area shape="rect" id="node3" href="$d2/d56/class_survival_1_1_calculus.html#a78cec5e607ac8ff691d42292ea3efc59" title="Fast implementation of the MKM as described in (Kase_2008) " alt="" coords="423,425,578,467"/>
+<area shape="rect" id="node6" href="$d2/d56/class_survival_1_1_calculus.html#a02bcc368a1b01891db717a7e581c064d" title="Extension of the rapidMKM_Kase2008() method with . " alt="" coords="423,281,578,337"/>
+<area shape="rect" id="node7" href="$d2/d56/class_survival_1_1_calculus.html#a1c81b6b37e94c87ec054a20c80725121" title="This method provide a fast original implementation of the MKM model, combining the methods described ..." alt="" coords="425,360,576,401"/>
+<area shape="rect" id="node8" href="$d2/d56/class_survival_1_1_calculus.html#aae250fd0d311c9dd682aa90162afe3a5" title="Extension of the rapidMKM_Attili2013() method with . " alt="" coords="425,201,576,257"/>
+<area shape="rect" id="node9" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a4ce3baeb75abfe0acdb20e6ea6ebc677" title="Constructor. Instantiates and sets the object. " alt="" coords="413,491,588,532"/>
+<area shape="rect" id="node12" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a4f1da2e7e95bd7218d30cdc7fce5b85f" title="Constructor. Instantiates and sets the object. " alt="" coords="413,5,588,47"/>
+<area shape="rect" id="node17" href="$df/d57/class_survival_1_1_nucleus___pixel.html#a450201dc60fb4a159a57e3e8c5528b72" title="Constructor. Instantiates and sets the object. " alt="" coords="420,71,581,112"/>
+<area shape="rect" id="node19" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#ac0ba5b4131c47c1da7c65ff95a504fb7" title="Constructor. Instantiates and sets the object. " alt="" coords="417,136,584,177"/>
+<area shape="rect" id="node4" href="$d2/d56/class_survival_1_1_calculus.html#a7f5dbb4c4c72cba8dacd883b65fc8d61" title="Returns the model used in the simulation. " alt="" coords="659,324,787,365"/>
+<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="698,430,749,457"/>
+<area shape="rect" id="node10" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a8fd639c77cebd1022549836545e81a17" title="Returns a pointer to a new Nucleus_Integral object. It not really a clone but a new clean object..." alt="" coords="636,491,811,532"/>
+<area shape="rect" id="node11" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a91a5db2285e722f8c42574625fa74a8e" title="Destructor. " alt="" coords="859,491,1033,532"/>
+<area shape="rect" id="node13" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#afcce1f66cf6017674f2ed50f86b9c70d" title="Returns a pointer to a new Nucleus_Integral_t object. It not really a clone but a new clean object..." alt="" coords="636,5,811,47"/>
+<area shape="rect" id="node14" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a6ce9353dc4afd860aef683158b752df9" title="Destructor. " alt="" coords="859,5,1033,47"/>
+<area shape="rect" id="node16" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html#a7c636b061fa866437e518103d767d29a" title="Returns a pointer to a new Nucleus_MKM object. It not really a clone but a new clean object..." alt="" coords="642,556,805,597"/>
+<area shape="rect" id="node18" href="$df/d57/class_survival_1_1_nucleus___pixel.html#ada2394c0ec7cc21368761e1da61b2f15" title="Returns a pointer to a new Nucleus_Pixel object. It not really a clone but a new clean object..." alt="" coords="643,71,804,112"/>
+<area shape="rect" id="node20" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#ae30e29da4ef02fc1b1a2ad7477887265" title="Returns a pointer to a new Nucleus_tMKM object. It not really a clone but a new clean object..." alt="" coords="640,136,807,177"/>
+</map>

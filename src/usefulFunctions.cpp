@@ -904,9 +904,9 @@ void parse(int argc,
         trackType = "Scholz2000";
         parametrizationType = "LQ";
         
-        if ( (calculusType != "rapidRusso") && (calculusType != "rapidScholz") && (calculusType != "MonteCarlo") ) {
+        if ( (calculusType != "rapidLEM_Russo2011") && (calculusType != "rapidLEM_Scholz2006") && (calculusType != "MonteCarlo") ) {
             cerr << "The indicated calculusType, " << calculusType << " is not compatible with the specified model, " << model << "." << endl
-                 << "Choose between \"rapidRusso\", \"rapidScholz\" and \"MonteCarlo\"." << endl;
+                 << "Choose between \"rapidLEM_Russo2011\", \"rapidLEM_Scholz2006\" and \"MonteCarlo\"." << endl;
             exit(1);
         }
         parameter_name.push_back("alpha_0");
@@ -919,9 +919,9 @@ void parse(int argc,
         trackType = "Elsasser2007";
         parametrizationType = "LQ2";
         
-        if ( (calculusType != "rapidRusso") && (calculusType != "rapidScholz") && (calculusType != "MonteCarlo")) {
+        if ( (calculusType != "rapidLEM_Russo2011") && (calculusType != "rapidLEM_Scholz2006") && (calculusType != "MonteCarlo")) {
             cerr << "The indicated calculusType, " << calculusType << ", is not compatible with the specified model, " << model << "." << endl
-                 << "Choose between \"rapidRusso\", \"rapidScholz\" and \"MonteCarlo\"." << endl;
+                 << "Choose between \"rapidLEM_Russo2011\", \"rapidLEM_Scholz2006\" and \"MonteCarlo\"." << endl;
             exit(1);
         }
         parameter_name.push_back("alpha_0");
@@ -934,9 +934,9 @@ void parse(int argc,
         trackType = "Elsasser2008";
         parametrizationType = "LQ3";
         
-        if ( (calculusType != "rapidRusso") && (calculusType != "rapidScholz") && (calculusType != "MonteCarlo")) {
+        if ( (calculusType != "rapidLEM_Russo2011") && (calculusType != "rapidLEM_Scholz2006") && (calculusType != "MonteCarlo")) {
             cerr << "The indicated calculusType, " << calculusType << ", is not compatible with the specified model, " << model << "." << endl
-                 << "Choose between \"rapidRusso\", \"rapidScholz\" and \"MonteCarlo\"." << endl;
+                 << "Choose between \"rapidLEM_Russo2011\", \"rapidLEM_Scholz2006\" and \"MonteCarlo\"." << endl;
             exit(1);
         }
         parameter_name.push_back("alpha_0");
@@ -949,9 +949,13 @@ void parse(int argc,
         trackType = "KieferChatterjee";
         parametrizationType = "LQ_noDt";
         
-        if ( calculusType != "rapidMKM" && calculusType != "MonteCarlo") {
+        if ( (calculusType != "rapidMKM_Kase2008")
+               && (calculusType != "rapidMKM_Attili2013")
+               && (calculusType != "rapidMKM_Kase2008_corrected_beta")
+               && (calculusType != "rapidMKM_Attili2013_corrected_beta")
+               && (calculusType != "MonteCarlo")) {
             cerr << "The indicated calculusType, " << calculusType << " is not compatible with the specified model, " << model << "." << endl
-                 << "Choose between \"rapidMKM\" and \"MonteCarlo\"." << endl;
+                 << "Choose between \"rapidMKM_Kase2008\",  \"rapidMKM_Attili2013\",  \"rapidMKM_Kase2008_corrected_beta\",  \"rapidMKM_Attili2013_corrected_beta\" and \"MonteCarlo\"." << endl;
             exit(1);
         }
         parameter_name.push_back("alpha_0");
@@ -959,7 +963,7 @@ void parse(int argc,
         parameter_name.push_back("r_nucleus");
         parameter_name.push_back("r_domain");
     }
-    else if ( model == "tMKM" )
+    else if ( model == "tMKM_Manganaro2017" )
     {
         trackType = "KieferChatterjee";
         parametrizationType = "LQ_noDt_T";
@@ -978,17 +982,19 @@ void parse(int argc,
     else
     {
         cerr << "The indicated model is not provided." << endl
-             << "Choose between LEMI, LEMII, LEMIII, MKM and tMKM." << endl;
+             << "Choose between LEMI, LEMII, LEMIII, MKM and tMKM_Manganaro2017." << endl;
         exit(1);
     }
     
-    if (temporal_pars_specified && model!="tMKM") {
+    if (temporal_pars_specified && model!="tMKM_Manganaro2017") {
         cerr << "The specified model (" << model << ") doesn't support temporal parameters." << endl
-             << "Choose \"tMKM\" model or remove temporal specifications (\"-nFraction\", \"-timeSpacing\" or \"-fracDeliveryTime\")." << endl;
+             << "Choose \"tMKM_Manganaro2017\" model or remove temporal specifications (\"-nFraction\", \"-timeSpacing\" or \"-fracDeliveryTime\")." << endl;
         exit(1);
     }
     
-    if ( (calculusType == "rapidMKM" || calculusType == "rapidSchol" || calculusType == "rapidRusso") && saveCell ) {
+    if ( (calculusType == "rapidMKM_Kase2008" || calculusType == "rapidMKM_Attili2013" || calculusType == "rapidMKM_Kase2008_corrected_beta" || calculusType == "rapidMKM_Attili2013_corrected_beta"
+            || calculusType == "rapidLEM_Scholz2006" || calculusType == "rapidLEM_Russo2011")
+            && saveCell ) {
         cerr << "Output not supported from the indicated calculusType: " << calculusType << "." << endl
              << "Choose \"LQ_pars\" or change calculusType." << endl;
         exit(1);
@@ -1011,14 +1017,14 @@ void parse(int argc,
          << "Model and Calculus setting:" << endl
          << "   Model: " << model << endl
          << "   Model parameters: " << endl
-         << "   (MKM and tMKM)" << ((model == "MKM" || model == "tMKM") ? " " : " - Not used") << endl
+         << "   (MKM and tMKM)" << ((model == "MKM" || model == "tMKM_Manganaro2017") ? " " : " - Not used") << endl
          << "      Alpha0: " << MKM_alpha0 << endl
          << "      Beta0:  " << MKM_beta0 << endl
          << "      Nucleus Radius: " << MKM_rNucleus << endl
          << "      Domain Radius:  " << MKM_rDomain << endl
-         << "   (tMKM)" << (model == "tMKM" ? " " : " - Not used") << endl
+         << "   (tMKM)" << (model == "tMKM_Manganaro2017" ? " " : " - Not used") << endl
          << "      Repair Time Constant: " << tMKM_ac << endl
-         << "   (LEMI, LEMII and LEMIII)" << ((model == "MKM" || model == "tMKM") ? " - Not used" : " ") << endl
+         << "   (LEMI, LEMII and LEMIII)" << ((model == "MKM" || model == "tMKM_Manganaro2017") ? " - Not used" : " ") << endl
          << "      alpha0: " << LEM_alpha0 << endl
          << "      beta0:  " << LEM_beta0 << endl
          << "      Nucleus Radius: " << LEM_rNucleus << endl
@@ -1076,13 +1082,16 @@ void Usage()
          << endl
          << "Model and Calculus settings:" << endl
          << "     survival -model [string]" << endl
-         << "          Supported: \"LEMI\" - \"LEMII\" - \"LEMIII\" - \"MKM\" - \"tMKM\"" << endl
+         << "          Supported: \"LEMI\" - \"LEMII\" - \"LEMIII\" - \"MKM\" - \"tMKM_Manganaro2017\"" << endl
          << "     survival -calculusType [string]" << endl
          << "          Supported:" << endl
-         << "             \"rapidScholz\" (compatible with LEMI, LEMII and LEMIII)" << endl
-         << "             \"rapidRusso\"  (compatible with LEMI, LEMII and LEMIII)" << endl
-         << "             \"rapidMKM\"    (compatible with MKM)" << endl
-         << "             \"MonteCarlo\"  (compatible with LEMI, LEMII, LEMIII, MKM and tMKM)" << endl
+         << "             \"rapidLEM_Scholz2006\" (compatible with LEMI, LEMII and LEMIII)" << endl
+         << "             \"rapidLEM_Russo2011\"  (compatible with LEMI, LEMII and LEMIII)" << endl
+         << "             \"rapidMKM_Kase2008\"    (compatible with MKM)" << endl
+         << "             \"rapidMKM_Attili2013\"    (compatible with MKM)" << endl
+         << "             \"rapidMKM_Kase2008_corrected_beta\"    (compatible with MKM)" << endl
+         << "             \"rapidMKM_Attili2013_corrected_beta\"    (compatible with MKM)" << endl
+         << "             \"MonteCarlo\"  (compatible with LEMI, LEMII, LEMIII, MKM and tMKM_Manganaro2017)" << endl
          << "     survival -precision [double]" << endl
          << "     survival -parallelismType [int]" << endl
          << "          Supported:" << endl

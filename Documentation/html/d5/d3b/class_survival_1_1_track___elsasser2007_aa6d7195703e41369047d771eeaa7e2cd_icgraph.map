@@ -1,0 +1,8 @@
+<map id="Survival::Track_Elsasser2007::getLocalDose" name="Survival::Track_Elsasser2007::getLocalDose">
+<area shape="rect" id="node2" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a4547e7184e369e96ccd95335a77e1ead" title="Returns the LET in water of the particle generating the track expressed in MeV/um. " alt="" coords="493,5,689,47"/>
+<area shape="rect" id="node3" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#aa8750be8db13ae62dba9cca0563080aa" title="Function created to calculate the mean time required to the evaluation the getLocalDose() method..." alt="" coords="249,49,445,91"/>
+<area shape="rect" id="node4" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#aa0d5d8749fd9f33bae5f29c580815741" title="Evaluates and returns the LET of the track. " alt="" coords="249,115,445,156"/>
+<area shape="rect" id="node5" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a509090d69f7807573c362c1e1ad76012" title="Sets the time associated to a particular event. " alt="" coords="493,100,689,141"/>
+<area shape="rect" id="node6" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a7e8d8c12fa99c86ae7fa63beaf34e9fa" title="Evaluates the relative precision of the calculated LET with respect of the original particle LET..." alt="" coords="493,165,689,207"/>
+<area shape="rect" id="node7" href="$d5/d3b/class_survival_1_1_track___elsasser2007.html#a3cced420d7a7494a92847d4cf02b1af8" title="Returns the effective radius of the track, expressed in um. " alt="" coords="737,165,933,207"/>
+</map>

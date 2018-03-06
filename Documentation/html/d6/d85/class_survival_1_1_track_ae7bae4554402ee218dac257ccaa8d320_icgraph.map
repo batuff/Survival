@@ -1,0 +1,6 @@
+<map id="Survival::Track::getTime" name="Survival::Track::getTime">
+<area shape="rect" id="node2" href="$d6/d85/class_survival_1_1_track.html#af1de629fe6ebae653aaf1c792f4164f3" title="Destructor of a pure virtual class (empty). " alt="" coords="227,5,385,32"/>
+<area shape="rect" id="node3" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a7b0074656eda4dcdf81c88d7ccf6fa98" title="Integrates the radial profile of the track in the intersection area with the nucleus to evaluate the ..." alt="" coords="219,57,393,98"/>
+<area shape="rect" id="node4" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a6ce9353dc4afd860aef683158b752df9" title="Destructor. " alt="" coords="441,23,616,65"/>
+<area shape="rect" id="node5" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#aaa018773b968eb8e48cfeae48ddb88f8" title="Overload of distributeDose(const Track &amp;track) to manage a Tracks object, it simply calls distributeD..." alt="" coords="441,89,616,130"/>
+</map>

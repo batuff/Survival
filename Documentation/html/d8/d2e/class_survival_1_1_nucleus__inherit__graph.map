@@ -1,0 +1,8 @@
+<map id="Survival::Nucleus" name="Survival::Nucleus">
+<area shape="rect" id="node2" href="$dd/d3a/class_survival_1_1_nucleus___integral.html" title="Implements a nucleus as a 2D circular object and provides methods to evaluate the number of lethal ev..." alt="" coords="5,299,220,670"/>
+<area shape="rect" id="node3" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html" title="Implements a nucleus as a 2D circular object and provides methods to evaluate the number of lethal ev..." alt="" coords="244,299,459,670"/>
+<area shape="rect" id="node4" href="$de/d79/class_survival_1_1_nucleus___m_k_m.html" title="Inherited from the Nucleus pure virtual class, it implements the cellular nucleus as defined and used..." alt="" coords="483,277,646,692"/>
+<area shape="rect" id="node5" href="$df/d57/class_survival_1_1_nucleus___pixel.html" title="Inherited from the Nucleus pure virtual class, it implements the nucleus structure used in the LEM..." alt="" coords="671,277,848,692"/>
+<area shape="rect" id="node7" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html" title="Inherited from the Nucleus pure virtual class, it implements the nucleus defined in the Monte Carlo t..." alt="" coords="872,277,1039,692"/>
+<area shape="rect" id="node6" href="$d0/db4/class_survival_1_1_nucleus___monte_carlo.html" title="Inherited from the Nucleus_Pixel class, it performs the integration of the dose deposited by the trac..." alt="" coords="660,740,859,920"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Survival::Nucleus_Integral_t::getTimes" name="Survival::Nucleus_Integral_t::getTimes">
+<area shape="rect" id="node2" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a6ca6c20ff84692f59312614b30815520" title="Evaluate the length of the arc of circumference (expressed in radians) derived from the intersection ..." alt="" coords="505,5,680,47"/>
+<area shape="rect" id="node3" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#a0a0e14b76472cfcfc67fe701b9677e12" title="Performs the integral of the radial profile of the track in the intersection area with the nucleus..." alt="" coords="228,64,445,105"/>
+<area shape="rect" id="node4" href="$d6/d85/class_survival_1_1_track.html#aacf246b1c633218966efd08bd8733626" title="Declaration of the pure virtual function getLocalDose (for a more detailed description see the derive..." alt="" coords="493,71,692,98"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Survival::Track_Scholz2000::getWeight" name="Survival::Track_Scholz2000::getWeight">
+<area shape="rect" id="node2" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#a38954da540fe5160699e7d17e8025191" title="Saves the local dose deposited by the track at different distances from its center to reconstruct the..." alt="" coords="239,5,424,47"/>
+<area shape="rect" id="node4" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#ab7e7a446f830133adc564766ffba4931" title="Sets the track position (x and y coordinates) referred to the beam axis. " alt="" coords="239,71,424,112"/>
+<area shape="rect" id="node3" href="$d2/d5e/class_survival_1_1_track___scholz2000.html#ae851174376fbcb3ad7d7a00e6ba8e9b1" title="Returns the local dose (in Gy) deposited by the track at a certain distance from the track center (ex..." alt="" coords="472,5,657,47"/>
+</map>

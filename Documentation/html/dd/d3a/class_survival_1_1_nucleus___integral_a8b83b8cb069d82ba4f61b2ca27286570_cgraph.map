@@ -1,0 +1,10 @@
+<map id="Survival::Nucleus_Integral::distributeDose" name="Survival::Nucleus_Integral::distributeDose">
+<area shape="rect" id="node2" href="$df/d16/class_survival_1_1_tracks.html#a4413948ed5fc96621bb0aa8c5f5166d5" title="Returns the size of the vector of tracks. " alt="" coords="241,27,390,53"/>
+<area shape="rect" id="node3" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#ad2accdc21874fcd9ce45859d7a2ba4c9" title="Integrates the radial profile of the track in the intersection area with the nucleus to evaluate the ..." alt="" coords="228,78,403,119"/>
+<area shape="rect" id="node4" href="$d6/d85/class_survival_1_1_track.html#a7cbd42c4881770c7bb89d8baad8c81a0" title="Declaration of the pure virtual function getPosition (for a more detailed description see the derived..." alt="" coords="463,5,645,32"/>
+<area shape="rect" id="node5" href="$d6/d85/class_survival_1_1_track.html#a0f268b2048c965a9c1a2604e786b55a7" title="Declaration of the pure virtual function getRadius (for a more detailed description see the derived c..." alt="" coords="465,56,643,83"/>
+<area shape="rect" id="node6" href="$d6/d85/class_survival_1_1_track.html#adf431f091753b442cc903170a0f99b11" title="Declaration of the pure virtual function getRadialIntegral (for a more detailed description see the d..." alt="" coords="467,107,641,149"/>
+<area shape="rect" id="node7" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#adf4ae59e1328acdf875a3e036b1c07b3" title="Performs the integral of the radial profile of the track in the intersection area with the nucleus..." alt="" coords="451,173,657,214"/>
+<area shape="rect" id="node8" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#afcd075b63bb7a091fdbe1c5666d85f7b" title="Evaluate the length of the arc of circumference (expressed in radians) derived from the intersection ..." alt="" coords="717,143,892,185"/>
+<area shape="rect" id="node9" href="$d6/d85/class_survival_1_1_track.html#aacf246b1c633218966efd08bd8733626" title="Declaration of the pure virtual function getLocalDose (for a more detailed description see the derive..." alt="" coords="705,209,904,236"/>
+</map>

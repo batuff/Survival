@@ -1,0 +1,5 @@
+<map id="Survival::Nucleus_tMKM::createDomains" name="Survival::Nucleus_tMKM::createDomains">
+<area shape="rect" id="node2" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#a59090d40acf69bd29bffab2e52b00feb" title="Returns the effective radius of the Nucleus_tMKM object. " alt="" coords="220,5,387,47"/>
+<area shape="rect" id="node3" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#ac0ba5b4131c47c1da7c65ff95a504fb7" title="Constructor. Instantiates and sets the object. " alt="" coords="220,71,387,112"/>
+<area shape="rect" id="node4" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#ae30e29da4ef02fc1b1a2ad7477887265" title="Returns a pointer to a new Nucleus_tMKM object. It not really a clone but a new clean object..." alt="" coords="435,71,601,112"/>
+</map>

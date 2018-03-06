@@ -16,7 +16,7 @@ namespace Survival {
         \author Andrea Attili
         \author Lorenzo Manganaro
         \author Germano Russo
-        \date 2011--2015
+        \date 2011--2018
      
         The class makes use of Track and Nucleus objects to simulate the irradiation process. Different methods are implemented in order to perform Monte Carlo simulations or approximated analytic evaluations of the process.
      */
@@ -250,49 +250,90 @@ namespace Survival {
         void rapidINFN_alphaIon_betaIon(double &alphaIon,
                                         double &betaIon);
         
-        //! Different implementation of the rapidMKM calculation.
+        //! Fast implementation of the MKM as described in (\ref Kase_2008)
         /*!
-            The only difference between this method and rapidMKM_Kase_alphaIon_betaIon() is the way in which it evaluates the \f$\gamma_{nucleus}\f$, as the rapidMKM_Kase_alphaIon_betaIon() uses the approximation:
-            \f[
-                \gamma_{nucleus}=\frac{LET}{\rho\,\sigma}
-            \f]
-            while the present method evaluates it in a more rigorous way, as:
-            \f[
-                \gamma=\frac{\left\langle z_n^2\right\rangle}{\left\langle z_n\right\rangle}
-            \f]
-            where \f$z_n\f$ is the specific energy deposited in the nucleus in each interaction event.
-         
-            \param alphaIon The LQ \f$\alpha\f$ parameter expressed in \f$Gy^{-1}\f$, passed by reference to be overwritten.
-            \param betaIon The LQ \f$\beta\f$ parameter expressed in \f$Gy^{-2}\f$, passed by reference to be overwritten.
-         */
-        void rapidMKM_Hawkins_alphaIon_betaIon(double &alphaIon,
-                                               double &betaIon);
+         Within this approach, the estimate for \f$\alpha\f$ is obtained as:
+         \f[
+        \alpha=\frac{1-\exp(-\alpha_P\,\gamma_{nucleus})}{\gamma_{nucleus}}
+        \f]
+        where \f$\gamma_{nucleus}\f$ is the dose-weighted average of the specific energy deposited in the nucleus
+        by a single track, evaluated by means of the approximated formula:
+        \f[
+        \gamma_{nucleus}=\frac{LET}{\rho\,\sigma}
+        \f]
+        while
+        \f[
+        \alpha_P=\alpha_0+\beta_0\,\gamma
+        \f]
+        indicating with \f$\alpha_0\f$ and \f$\beta_0\f$ the input LQ parameters of the MKM, which can be identified
+         with the LQ parameters for X-ray reference irradiation,
+        and with \f$\gamma\f$ the dose-weighted average of the dose deposited by a single event in the domain, or:
+        \f[
+        \gamma=\frac{\left\langle z_d^2\right\rangle}{\left\langle z_d\right\rangle}
+        \f]
+        where \f$z_d\f$ is the specific energy deposited in the single domain in each interaction event.
+        For \f$\beta\f$ no recipe is available. In this implementation it is assumed to be constant and
+        equal to \f$\beta_0\f$, even if this contrasts with most of the experimental data.
+        To accounts also for the mixed fields, the method estimates \f$\alpha\f$ and \f$\beta\f$
+        for each tracks of the #tracks vector accounting also for the particle weight (Particle::weight).
+        Then \f$\alpha\f$ and \f$\beta\f$ are evaluating according to the TDRA:
+        \f[
+        \alpha=\frac{\sum_i\,\alpha_i\,LET_i}{\sum_i\,LET_i}
+        \f]
+        \f[
+        \sqrt{\beta}=\frac{\sum_i\,\sqrt{\beta_i}\,LET_i}{\sum_i\,LET_i}
+        \f]
         
-        //! This method provide the original analytic implementation of the MKM model, as it is described by Hawkins.
+        \param alphaIon The LQ \f$\alpha\f$ parameter expressed in \f$Gy^{-1}\f$, passed by reference to be overwritten.
+        \param betaIon The LQ \f$\beta\f$ parameter expressed in \f$Gy^{-2}\f$, passed by reference to be overwritten.
+        
+        \sa slow_alphaIon_betaIon() and rapidMKM_Attili2013()
+        
+        \anchor Kase_2008 Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008).
+        Biophysical calculation of cell survival probabilities using amorphous track structure models
+        for heavy-ion irradiation. \a Physics \a in \a Medicine \a and \a Biology, 53(1), 37–59
+         */
+        void rapidMKM_Kase2008(double &alphaIon, double &betaIon);
+        
+        //! Extension of the rapidMKM_Kase2008() method with \f$\beta=\beta(\mathrm{LET})\f$
         /*!
-            This method was developed by Hawkins between 1994 and 2003.
+         This implementation correspond to the implementation of rapidMKM_Kase2008() with the LET-dependent non-poissonian correction factor
+         (\f$alpha/alpha_P\f$) applied to the quadratic term (\f$\beta_0\f$) too:
+         \f[
+         \beta=\left(\frac{\alpha}{\alpha_P}\right)^2\beta_0
+         \f]
+         */
+        void rapidMKM_Kase2008_corrected_beta(double &alphaIon, double &betaIon);
+        
+        //! This method provide a fast original implementation of the MKM model, combining the methods described in (\ref Hawkins_2003) and (\ref Kase_2008).
+        /*!
+            Whithin this method the non-Poissonian corrective factor introduced in (\ref Hawkins_2003) is exactly evaluated using
+            the track model adopted by (\ref Kase_2008) and performing an explicit integration of the track averaged dose in the cell nucleus.
          
-            Here, the rigorous derivations of the formulas used is omitted, the reader interested could look at the works of Hawkins (\ref MKM1 "1", \ref MKM2 "2").
-         
-            In the last developments of the MKM model (\ref MKM2 "2" \ref MKM3 "3") the estimate for \f$\alpha\f$ is obtained as:
+            Within this approach, the estimate for \f$\alpha\f$ is obtained as:
             \f[
                 \alpha=\frac{1-\exp(-\alpha_P\,\gamma_{nucleus})}{\gamma_{nucleus}}
             \f]
-            where \f$\gamma_{nucleus}\f$ is the dose-weighted average of the specific energy deposited in the nucleus by a single track, evaluated by means of the approximated formula:
+            where \f$\gamma_{nucleus}\f$ is the dose-weighted average of the specific energy deposited in the nucleus
+            by a single track, evaluated by integrating:
             \f[
-                \gamma_{nucleus}=\frac{LET}{\rho\,\sigma}
+                \gamma_{nucleus}=\frac{\left\langle z_n^2\right\rangle}{\left\langle z_n\right\rangle}
             \f]
-            while
+            where \f$z_n\f$ is the specific energy deposited in the single domain in each interaction event, while
             \f[
-                \alpha_P=\alpha_X+\beta_X\,\gamma
+                \alpha_P=\alpha_0+\beta_0\,\gamma
             \f]
-            indicating with \f$\alpha_X\f$ and \f$\beta_X\f$ the LQ parameters identified for X-ray irradiation and with \f$\gamma\f$ the dose-weighted average of the dose deposited by a single event in the domain, or:
+            indicating with \f$\alpha_0\f$ and \f$\beta_0\f$ the input LQ parameters of the model, which can be identified with
+            the LQ parameter of the reference X-ray irradiation.
+            \f$\gamma\f$ is the dose-weighted average of the dose deposited by a single event in the domain, or:
             \f[
                 \gamma=\frac{\left\langle z_d^2\right\rangle}{\left\langle z_d\right\rangle}
             \f]
             where \f$z_d\f$ is the specific energy deposited in the single domain in each interaction event.
-            For \f$\beta\f$ no recipe is available. In most of the applications it is assumed to be constant and equal to \f$\beta_X\f$, even if this contrasts with most of the experimental data.
-            To accounts also for the mixed fields, the method estimates \f$\alpha\f$ and \f$\beta\f$ for each tracks of the #tracks vector accounting also for the particle weight (Particle::weight).
+            For \f$\beta\f$ no recipe is available. In most of the applications it is assumed to be constant and
+            equal to \f$\beta_X\f$, even if this contrasts with most of the experimental data.
+            To accounts also for the mixed fields, the method estimates \f$\alpha\f$ and \f$\beta\f$
+            for each tracks of the #tracks vector accounting also for the particle weight (Particle::weight).
             Then \f$\alpha\f$ and \f$\beta\f$ are evaluating according to the TDRA:
             \f[
                 \alpha=\frac{\sum_i\,\alpha_i\,LET_i}{\sum_i\,LET_i}
@@ -301,21 +342,29 @@ namespace Survival {
                 \sqrt{\beta}=\frac{\sum_i\,\sqrt{\beta_i}\,LET_i}{\sum_i\,LET_i}
             \f]
          
-            The function provide also the possibility to plot the results.
-         
             \param alphaIon The LQ \f$\alpha\f$ parameter expressed in \f$Gy^{-1}\f$, passed by reference to be overwritten.
             \param betaIon The LQ \f$\beta\f$ parameter expressed in \f$Gy^{-2}\f$, passed by reference to be overwritten.
          
-            \sa slow_alphaIon_betaIon() and rapidMKM_Hawkins_alphaIon_betaIon()
+            \sa slow_alphaIon_betaIon() and rapidMKM_Kase2008()
          
-            \anchor MKM1 1. R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", \a Radiation \a Research \b 140, 366-374 (1994).
+            \anchor Hawkins_2003 Hawkins, R. B. (2003). A microdosimetric-kinetic model for the effect of non-Poisson distribution of lethal
+                    lesions on the variation of RBE with LET. \a Radiation \a Research, 160(1), 61–69.
          
-            \anchor MKM2 2. R.B. Hawkins, "A Microdosimetric-Kinetic Model for the Effect of Non-Poisson Distribution of Lethal Lesions on the Variation of RBE with LET", \a Radiation \a Research \b 160, 61-69 (2003).
-         
-            \anchor MKM3 3. Y. Kase, T. Kanai, N. Matsufuji, Y. Furusawa, T. Elsasser, and M. Scholz, "Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation", \a Physics \a in \a Medicine \a and \a Biology \b 53, 37-59 (2008).
+            \anchor Kase_2008 Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008).
+                    Biophysical calculation of cell survival probabilities using amorphous track structure models
+                    for heavy-ion irradiation. \a Physics \a in \a Medicine \a and \a Biology, 53(1), 37–59
          */
-        void rapidMKM_Kase_alphaIon_betaIon(double &alphaIon,
-                                            double &betaIon);
+        void rapidMKM_Attili2013(double &alphaIon, double &betaIon);
+        
+        //! Extension of the rapidMKM_Attili2013() method with \f$\beta=\beta(\mathrm{LET})\f$
+        /*!
+         This implementation correspond to the implementation of rapidMKM_Attili2013() with the LET-dependent non-poissonian correction factor
+         (\f$alpha/alpha_P\f$) applied to the quadratic term (\f$\beta_0\f$) too:
+         \f[
+           \beta=\left(\frac{\alpha}{\alpha_P}\right)^2\beta_0
+         \f]
+         */
+        void rapidMKM_Attili2013_corrected_beta(double &alphaIon, double &betaIon);
         
         //! This method is based on the approach of Scholz (rapidScholz_alphaIon_betaIon()) but provides a more precise estimation of the \f$\alpha\f$ parameter.
         /*!
@@ -361,8 +410,7 @@ namespace Survival {
          
             \anchor TDRA 2. M. Zaider and H.H. Rossi, "The synergistic effets of different radiations", \a Radiation \a Research \b 160, 61-69 (2003).
          */
-        void rapidRusso_alphaIon_betaIon(double &alphaIon,
-                                         double &betaIon);
+        void rapidLEM_Russo2011(double &alphaIon, double &betaIon);
         
         //! This method provide a faster approximate implementation of the LEM model that avoids the Monte Carlo simulation.
         /*!
@@ -406,8 +454,7 @@ namespace Survival {
          
             \anchor TDRA 2. M. Zaider and H.H. Rossi, "The synergistic effets of different radiations", \a Radiation \a Research \b 160, 61-69 (2003).
          */
-        void rapidScholz_alphaIon_betaIon(double &alphaIon,
-                                          double &betaIon);
+        void rapidLEM_Scholz2006(double &alphaIon, double &betaIon);
         
         //! Sets the number of threads.
         /*!

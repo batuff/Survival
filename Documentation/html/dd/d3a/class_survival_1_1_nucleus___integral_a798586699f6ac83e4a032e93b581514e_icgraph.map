@@ -1,0 +1,11 @@
+<map id="Survival::Nucleus_Integral::cleanNucleus" name="Survival::Nucleus_Integral::cleanNucleus">
+<area shape="rect" id="node2" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a91a5db2285e722f8c42574625fa74a8e" title="Destructor. " alt="" coords="673,30,848,71"/>
+<area shape="rect" id="node3" href="$d2/d56/class_survival_1_1_calculus.html#a78cec5e607ac8ff691d42292ea3efc59" title="Fast implementation of the MKM as described in (Kase_2008) " alt="" coords="238,283,393,325"/>
+<area shape="rect" id="node6" href="$d2/d56/class_survival_1_1_calculus.html#a02bcc368a1b01891db717a7e581c064d" title="Extension of the rapidMKM_Kase2008() method with . " alt="" coords="238,124,393,180"/>
+<area shape="rect" id="node7" href="$d2/d56/class_survival_1_1_calculus.html#a1c81b6b37e94c87ec054a20c80725121" title="This method provide a fast original implementation of the MKM model, combining the methods described ..." alt="" coords="240,349,391,390"/>
+<area shape="rect" id="node8" href="$d2/d56/class_survival_1_1_calculus.html#aae250fd0d311c9dd682aa90162afe3a5" title="Extension of the rapidMKM_Attili2013() method with . " alt="" coords="240,204,391,260"/>
+<area shape="rect" id="node9" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a4ce3baeb75abfe0acdb20e6ea6ebc677" title="Constructor. Instantiates and sets the object. " alt="" coords="228,59,403,101"/>
+<area shape="rect" id="node4" href="$d2/d56/class_survival_1_1_calculus.html#a7f5dbb4c4c72cba8dacd883b65fc8d61" title="Returns the model used in the simulation. " alt="" coords="474,247,602,289"/>
+<area shape="rect" id="node5" href="$df/d0a/main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="513,353,563,380"/>
+<area shape="rect" id="node10" href="$dd/d3a/class_survival_1_1_nucleus___integral.html#a8fd639c77cebd1022549836545e81a17" title="Returns a pointer to a new Nucleus_Integral object. It not really a clone but a new clean object..." alt="" coords="451,59,625,101"/>
+</map>

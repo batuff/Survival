@@ -1,0 +1,5 @@
+<map id="Survival::Nucleus_Integral_t::getDoseAndLethals" name="Survival::Nucleus_Integral_t::getDoseAndLethals">
+<area shape="rect" id="node2" href="$d7/d43/class_survival_1_1_nucleus___integral__t.html#ab413e3493d754ce08be0473e52570b4e" title="Returns the vector representing each dose deposited in the nucleus by a Particle when an interaction ..." alt="" coords="228,5,403,47"/>
+<area shape="rect" id="node3" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#ae5af80e9ae9caa3eb28f9f6ed4b72b1d" title="Returns (overwriting parameters passed by reference) the total dose absorbed by the nucleus and the a..." alt="" coords="451,5,617,47"/>
+<area shape="rect" id="node4" href="$dd/d40/class_survival_1_1_nucleus__t_m_k_m.html#a97e93b32df2627502377ab92f063faf2" title="Returns the radius of the domain corresponding to the CellLine to which the tMKM nucleus belongs..." alt="" coords="665,5,832,47"/>
+</map>
