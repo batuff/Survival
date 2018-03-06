@@ -100,13 +100,19 @@ using namespace Survival;
                 Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008).
                 Biophysical calculation of cell survival probabilities using amorphous track structure models
                 for heavy-ion irradiation. \a Physics \a in \a Medicine \a and \a Biology, 53(1), 37–59
-                It's compatible only with the MKM model and it's the default value for this option. See Survival::Calculus::rapidMKM_Kase2008() for details.
+                It's compatible only with the MKM model and it's the default value for this option.
+                See Survival::Calculus::rapidMKM_Kase2008() for details.
+                -# "rapidMKM_Kase2008_corrected_beta" An extension of the "rapidMKM_Kase2008" method in which a non-Poissonian correction factor is added
+                also for the \f$\beta\f$ parameter. See Survival::Calculus::rapidMKM_Kase2008_corrected_beta() for details.
                 -# "rapidMKM_Attili2013" A fast original implementation of the MKM model, combining the methods described in:\n
                 Hawkins_2003 Hawkins, R. B. (2003). A microdosimetric-kinetic model for the effect of non-Poisson distribution of lethal
                 lesions on the variation of RBE with LET. \a Radiation \a Research, 160(1), 61–69, and\n
                 Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008).
                 Biophysical calculation of cell survival probabilities using amorphous track structure models
-                for heavy-ion irradiation. \a Physics \a in \a Medicine \a and \a Biology, 53(1), 37–59. See Survival::Calculus::rapidMKM_Attili2013() for details.
+                for heavy-ion irradiation. \a Physics \a in \a Medicine \a and \a Biology, 53(1), 37–59.
+                See Survival::Calculus::rapidMKM_Attili2013() for details.
+                -# "rapidMKM_Attili2013_corrected_beta" An extension of the "rapidMKM_Attili2013" method in which a non-Poissonian correction factor is added
+                also for the \f$\beta\f$ parameter. See Survival::Calculus::rapidMKM_Attili2017_corrected_beta() for details.
                 -# "MonteCarlo" Compatible with all models implemented, performs a monte carlo simulation of the irradiation process to get the LQ parameters.
         - \c -cellType A string identifying the name of the cell lline used in the calculation. The default value is "Cell1"
                 \note The cell line in reality is completely determined by the model parameters chosen. This is only a tag to indicate the cell but it isn't used in the simulation.
