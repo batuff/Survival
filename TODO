@@ -4,4 +4,6 @@
 	- Pass a spectrum (mixed-fields evaluations) - ("spectrum_tmp.txt")
 4) Instruction to compile on (or precompiled version for) Windows, and test.
 5) Remove warnings during compilation
-6) Improve main.cpp
+6) Improve main.cpp (input parsing)
+7) Change MeV/µm to keV/µm in input/output and add documentation about it
+8) Update README.md
