@@ -10,7 +10,6 @@
 
 # Compiled Dynamic libraries
 *.so
-*.dylib
 *.dll
 
 # Fortran module files
@@ -45,3 +44,8 @@ Survival.Rproj
 Documentation/latex
 Documentation/latex/*
 Documentation/latex/*.*
+
+# Mac
+.DS_Store
+
+

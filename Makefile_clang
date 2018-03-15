@@ -2,15 +2,15 @@
 
 EXE = survival
 
-CC = g++
-CCFLAGS = -O3 -Wall -W -fopenmp -std=c++11
+CC = clang++
+CCFLAGS = -O3 -Wall -W -std=c++11 -Xpreprocessor -fopenmp
 
-INCLUDE = ./include
+INCLUDE = ./include/
 EXT_INCLUDE = ./ext_include/gsl ./ext_include/omp
 INCLUDE_PATHS = $(foreach d, $(INCLUDE), -I$d) $(foreach e, $(EXT_INCLUDE), -I$e)
 
 EXT_LIB = ./ext_lib/
-LDFLAGS = $(foreach e, $(EXT_LIB), -L$e) -lgsl -lgslcblas -lm
+LDFLAGS = $(foreach e, $(EXT_LIB), -L$e) -lgsl -lgslcblas -lm -lomp
 
 SRC = ./src
 BIN = ./

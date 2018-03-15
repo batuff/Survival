@@ -6,6 +6,11 @@
 
 install_folder=$HOME/path_to_this_directory/
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$install_folder/lib
+## Linux Library Path:
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$install_folder/ext_lib
+
+## Mac Library Path:
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$install_folder/ext_lib
+
 export DATA=$install_folder/data
 export PATH=$PATH:$install_folder
