@@ -14,7 +14,7 @@ The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) a
 The *Survival* code is distributed under terms of the [GNU General Public Licence](https://github.com/batuff/Survival/edit/master/LICENSE)
 
 ### Published paper:
-*Writing in progress!!*
+L. Manganaro, G. Russo, F. Bourhaleb, F. Fausti, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati, R. Cirio and A. Attili. "Survival": a simulation toolkit introducing a modular approach for radiobiological evaluations in ion beam therapy. Physics in Medicine and Biology 2018. ePub ahead of print. doi: https://doi.org/10.1088/1361-6560/aab697
 
 ### Papers describing the implemented models
 A detailed description of the implemented models can be found in the following papers:

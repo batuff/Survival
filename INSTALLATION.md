@@ -100,7 +100,7 @@ Running
 
         source setenv.sh
         
-2. In the command line, type:
+3. In the command line, type:
 
         survival --help
 
@@ -116,3 +116,6 @@ The test is currently in progress...
 
 **NOTES:**
 The correct compilation and execution of "Survival" has been tested only on Ubuntu 14.04, Ubuntu 16.04 and macOS High Sierra (v10.13.3)
+
+If you experience any problems in downloading or installing Survival, please do not hesitate to contact us. We’re friendly people.
+email contacts: andrea.attili@to.infn.it or lorenzo.manganaro@unito.it
