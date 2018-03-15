@@ -6,7 +6,7 @@ projectName="Example"
 output="LQ_pars meanValues"
 
 model="MKM"
-calculusType="rapidMKM"
+calculusType="rapidMKM_Kase2008"
 
 precision=0.015
 parallelismType=0
