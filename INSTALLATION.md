@@ -1,44 +1,118 @@
-Requirements
-=================
+Linux
+=====
+
+Prerequisites
+-------------
 
 To correctly compile the software, please be sure to have:
- - The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)  
- - A version of the gcc compiler installed that:
-    1. Supports the OpenMP libraries (information about OpenMP compilers at: http://openmp.org/wp/openmp-compilers/)
-    2. Is compatible with the C++11 version (information about C++11 compatible compilers at: http://en.cppreference.com/w/cpp/compiler_support)  
 
-**NOTES:**  
-- To **check your gcc version** type from the command line: `gcc --version` (recommended 4.9 or newer).  
-- To **test if your gcc version is compatible with the OpenMP libraries**:
-   1. cd to the *test_OpenMP* directory
-   2. From the command line type: `./compile_test_OpenMP.sh`: Compilation should proceed with no errors or warnings.
-   3. Test the result typing `./test_OpenMP`  
-- To **install gcc** (full guide at https://gcc.gnu.org/install/):  
-   1. Download gcc-4.xx.yy-bin.tar.gz download or newer from http://hpc.sourceforge.net/
-   2. cd to your downloads folder and un-gzip the archive: `gunzip gcc-xx.yy-bin.tar.gz`
-   3. In the same folder run `sudo tar -xvf gcc-xx.yy-bin.tar -C /` - this will place new executable to /usr/local/bin
-   4. Add the following to your ~/.bash_profile (*Linux Users*) or ~/.profile (*MacOS X Users*)  
-      `export PATH=/usr/local/bin:$PATH`  
-      `export C_INCLUDE_PATH=/usr/local/include:$C_INCLUDE_PATH`  
-      `export CPLUS_INCLUDE_PATH=/usr/local/include:$CPLUS_INCLUDE_PATH`  
-      `export LIBRARY_PATH=/usr/local/lib:$LIBRARY_PATH`  
-      `export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH`\*\*  
-      \*\* **MacOS X Users** must replace LD\_LIBRARY\_PATH with DYLD\_LIBRARY\_PATH
-   5. Open new terminal and run `which gcc`. This should point to /usr/local/bin/gcc.
-- For **MacOS X 10.11 (El Capitan) Users** (or higher): In the wake of the introduction of the SIP (System Integrity Protection) security feature, the user who wants to install the GSL libraries from the command line has to do it as super user (1. download the GSL; 2. `./configure`; 3. `sudo make`; 4. `sudo make install`). More information about the SIP at https://support.apple.com/en-us/HT204899
+- The GNU Compiler Collection (GCC) (http://gcc.gnu.org) compatible with the C++11 version (information about C++11 compatible compilers at: http://en.cppreference.com/w/cpp/compiler_support)
+- The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)  
+- The OpenMP libraries (information about OpenMP at: http://openmp.org)
 
-Linux and MacOS X
-=================
+    
+### Installation of prerequired libraries
 
-Please:
- 1. Download the whole *Survival* folder
- 2. Modify the *setenv.sh* file with the correct path
- 3. In the command line, type:  
- `> source setenv.sh` to load the setenv.sh settings  
- `> make` to create the executable file named *survival*
+Usually, in the Linux distributions the GCC is already installed.
+
+#### Debian/Ububtu systems
+
+You can install the GSL libraries using the following command:
+
+    sudo apt-get install libgsl-dev
+
+Youe can install the OpenMP libraries using the following command:
+
+    sudo apt-get install libpomp-dev
+    
+#### RedHat/CentOS systems
+
+You can install the GSL libraries using the following command:
+
+    sudo yum install gsl-devel
+
+You can install the OpenMP libraries using the following command:
+
+    sudo yum install libgomp-devel
+
+
+Compilation
+-----------
+
+1. Download the whole *Survival* folder
+2. In the command line change the active directory to the folder and simply type:
+
+        make
+
+
+Running
+-------
+
+1. Modify the *setenv.sh* file with the correct path
+2. In the command line, type:
+
+        source setenv.sh
+
+3. In the command line, type:
+
+        survival --help
+
+Specific usage details are given in the README.md file.
+
+ 
+MacOS X
+=======
+
+Prerequisites
+-------------
+
+To correctly compile the software, please be sure to have:
+
+- XCode and the Command Line Tools installed on the system
+- The GNU Scientific Libraries (GSL) installed (Free download from the gsl website: http://www.gnu.org/software/gsl/)  
+- The OpenMP libraries (information about OpenMP at: http://openmp.org)
+    
+### Installation of prerequired libraries
+
+Install XCode from the App Store.
+Once installed, from the Terminal type:
+
+    xcode-select --install
+
+to install the Command Line Tools.
+
+Note that the GSL and OpenMP pre-compiled libraries for MacOS High Sierra are already present in the "Survival" GitHub repository.
+
+Compilation
+-----------
+
+1. Download the whole *Survival* folder
+2. In the command line change the active directory to the folder and simply type:
+
+        make -f Makefile_clang
+
+
+Running
+-------
+
+1. Modify the *setenv.sh* file with the correct path
+2. In the command line, type:
+
+        source setenv.sh
+        
+2. In the command line, type:
+
+        survival --help
+
+Specific usage details are given in the README.md file.
+
 
 Windows
 =================
 
 The software has never been tested on *Windows*. Nevertheless, it technically works (under the previous requirements).  
 The test is currently in progress...
+
+
+**NOTES:**
+The correct compilation and execution of "Survival" has been tested only on Ubuntu 14.04, Ubuntu 16.04 and macOS High Sierra (v10.13.3)

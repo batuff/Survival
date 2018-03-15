@@ -46,6 +46,11 @@ Documentation/latex
 Documentation/latex/*
 Documentation/latex/*.*
 
+# MD previews
+INSTALLATION.html
+README.html
+RUN_EXAMPLE.html
+
 # Mac
 .DS_Store
 
