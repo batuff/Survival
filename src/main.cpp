@@ -386,10 +386,20 @@ int main(int argc, char* argv[])
             Calculus calculus(tracks, *cellLine, nucleus_MKM, filename_LQ.str(), model, parallelismType);
             calculus.rapidMKM_Kase2008(alpha[i], beta[i]);
         }
+        else if (calculusType == "rapidMKM_Kase2008_corrected_beta")
+        {
+          Calculus calculus(tracks, *cellLine, nucleus_MKM, filename_LQ.str(), model, parallelismType);
+          calculus.rapidMKM_Kase2008_corrected_beta(alpha[i], beta[i]);
+        }
         else if (calculusType == "rapidMKM_Attili2013")
         {
           Calculus calculus(tracks, *cellLine, nucleus_MKM, filename_LQ.str(), model, parallelismType);
           calculus.rapidMKM_Attili2013(alpha[i], beta[i]);
+        }
+        else if (calculusType == "rapidMKM_Attili2013_corrected_beta")
+        {
+          Calculus calculus(tracks, *cellLine, nucleus_MKM, filename_LQ.str(), model, parallelismType);
+          calculus.rapidMKM_Attili2013_corrected_beta(alpha[i], beta[i]);
         }
         else if (calculusType == "MonteCarlo")
         {
