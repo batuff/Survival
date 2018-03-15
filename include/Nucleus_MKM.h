@@ -26,6 +26,9 @@ namespace Survival {
      */
     class Nucleus_MKM : public Nucleus
     {
+        using Survival::Nucleus::addNucleusDoses;
+        using Survival::Nucleus::getDosesAndLethals;
+        
     public:
         
         //! Constructor. Instantiates and sets the object.

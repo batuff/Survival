@@ -54,6 +54,9 @@ namespace Survival {
      */
     class Nucleus_Pixel : public Nucleus
     {
+        using Survival::Nucleus::addNucleusDoses;
+        using Survival::Nucleus::getDosesAndLethals;
+        
     public:
         
         //! Constructor. Instantiates and sets the object.

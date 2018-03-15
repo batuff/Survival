@@ -21,6 +21,8 @@ namespace Survival {
      */
     class Nucleus_MonteCarlo : public Nucleus_Pixel
     {
+        using Survival::Nucleus_Pixel::getDoseAndSurvival;
+        
     public:
         
         //! Constructor. Instantiates and sets the object.
