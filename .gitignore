@@ -26,6 +26,7 @@
 *.out
 *.app
 .Rproj.user
+test_OpenMP/test_OpenMP
 
 # Rstudio project
 Survival.Rproj
