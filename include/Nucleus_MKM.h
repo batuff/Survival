@@ -26,6 +26,7 @@ namespace Survival {
      */
     class Nucleus_MKM : public Nucleus
     {
+        // tell the compiler we are implicitly overriding and then overloading -- suppress [-Woverloaded-virtual] warnings
         using Survival::Nucleus::addNucleusDoses;
         using Survival::Nucleus::getDosesAndLethals;
         

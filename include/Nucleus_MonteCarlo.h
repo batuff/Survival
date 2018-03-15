@@ -21,6 +21,7 @@ namespace Survival {
      */
     class Nucleus_MonteCarlo : public Nucleus_Pixel
     {
+        // tell the compiler we are implicitly overriding and then overloading -- suppress [-Woverloaded-virtual] warnings
         using Survival::Nucleus_Pixel::getDoseAndSurvival;
         
     public:
