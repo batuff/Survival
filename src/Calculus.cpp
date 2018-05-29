@@ -28,7 +28,7 @@ using std::time;
 using std::pow;
 using std::abs;
 //#ifdef OSX
-//using std::isnan;
+using std::isnan; // comment this line for old compiler.
 //#endif
 
 #include <iomanip>
