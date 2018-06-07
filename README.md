@@ -14,7 +14,7 @@ The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) a
 The *Survival* code is distributed under terms of the [GNU General Public Licence](https://github.com/batuff/Survival/edit/master/LICENSE)
 
 ### Reference paper:
-L. Manganaro, G. Russo, F. Bourhaleb, F. Fausti, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati, R. Cirio and A. Attili. "Survival": a simulation toolkit introducing a modular approach for radiobiological evaluations in ion beam therapy. Physics in Medicine and Biology 2018. ePub ahead of print. doi: https://doi.org/10.1088/1361-6560/aab697
+L. Manganaro, G. Russo, F. Bourhaleb, F. Fausti, S. Giordanengo, V. Monaco, R. Sacchi, A. Vignati, R. Cirio and A. Attili. "Survival": a simulation toolkit introducing a modular approach for radiobiological evaluations in ion beam therapy. *Physics in Medicine and Biology* **63**(8), 08NT01 (2018). https://doi.org/10.1088/1361-6560/aab697
 
 ### A selection of papers describing the implemented models
 A detailed description of the implemented models can be found in the following papers:
@@ -22,20 +22,23 @@ A detailed description of the implemented models can be found in the following p
  - Local Effect Model (LEM):
  
       - LEM I: M. Scholz and G. Kraft, "Track structure and the calculation of biological effects of heavy charged particles", *Advances in Space Research* **18**, 5-14 (1996).
- 
-      - LEM I rapid calculation: M. Krämer and M. Scholz, "Rapid calculation of biological effects in ion radiotherapy", *Physics in medicine and biology* **51**, 1959-1970 (2006).
    
       - LEM II: T. Elsässer and M. Scholz, "Cluster effects within the local effect model", *Radiation Research* **167**, 319-329 (2007).
  
       - LEM III: T. Elsässer, M. Krämer and M. Scholz, "Accuracy of the local effect model for the prediction of biologic effects of carbon ion beams *in vitro* and *in vivo*", *International Journal of Radiation Oncology-Biology-Physics* **71**, 866-872 (2008).
+      
+      - LEM I,II,III rapid calculation (GSI approach): M. Krämer and M. Scholz, “Rapid calculation of biological effects in ion radiotherapy”, *Physics in Medicine and Biology* **51**, 1959-1970 (2006).
+
+      - LEM I,II,III rapid calculation (INFN approach): G. Russo, "Develpment of a radiobiological database for carbon ion Treatment Planning Systems - Modelling and simulating the irradiation process", *Ph.D. Thesis*, Università degli studi di Torino (2011).
+      
  
  - Microdosimetric Kinetic Model (MKM):
  
-      - Original MKM formulation: R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", *Radiation Research* **140**, 366-374 (1994). [Some corrections and improvements were made over the subsequent years].
+      - Original MKM formulation: R.B. Hawkins, "A Statistical Theory of Cell Killing by Radiation of Varying Linear Energy Transfer", *Radiation Research* **140**, 366-374 (1994).
 
-      - Kiefer-Chatterjee amorphous track structure introduction: Y. Kase, T. Kanai, N. Matsufuji, Y. Furusawa, T. Elsasser, and M. Scholz, "Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation", *Physics in Medicine and Biology* **53**, 37-59 (2008).
+      - MKM + amorphous track structure: Y. Kase, T. Kanai, N. Matsufuji, Y. Furusawa, T. Elsasser, and M. Scholz, “Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation”, *Physics in Medicine and Biology* **53**, 37-59 (2008).
 
-      - MCt-MKM: Manganaro, L., Russo, G., Cirio, R., Dalmasso, F., Giordanengo, S., Monaco, V., … Attili, A. (2017). A Monte Carlo approach to the microdosimetric kinetic model to account for dose rate time structure effects in ion beam therapy with application in treatment planning simulations. *Medical Physics*, 44(4), 1577–1589.
+      - MCt-MKM: Manganaro, L., Russo, G., Cirio, R., Dalmasso, F., Giordanengo, S., Monaco, V., … Attili, A. (2017). A Monte Carlo approach to the microdosimetric kinetic model to account for dose rate time structure effects in ion beam therapy with application in treatment planning simulations. *Medical Physics*, **44**(4), 1577–1589.
 
 
 ### Usage (Unix and Unix-like systems)
@@ -63,7 +66,7 @@ Typing `./survival --help` a simple help text will be displayed, suggesting how 
 
  - `-output` The user has the possibility to choose between three kinds of output (and all possible combination between them):
  
-      1. "LQ_pars" Then a file will be created, named "PROJECTNAME_LQparameters_MKM.csv", containing the information about the parameters chosen for the simulation and the values of the simulated LQ $\alpha$ and $\beta$ parameters (a new line for each energy evaluated).
+      1. "LQ_pars" Then a file will be created, named "PROJECTNAME_LQparameters_MKM.csv", containing the information about the parameters chosen for the simulation and the values of the simulated LQ &#945; and &#946; parameters (a new line for each energy evaluated).
    
       2. "meanValues" Then a file will be created, named "PROJECTNAME_survival_MKM.csv", containing the information about the parameters chosen for the simulation and the values of doses delivered and survival observed (a new line for each energy or dose evaluated).
    
@@ -110,9 +113,9 @@ Typing `./survival --help` a simple help text will be displayed, suggesting how 
 
    - `-MKM_alpha0` A double representing associated to the linear quadratic &#945; parameter characteristic for X-rays, expressed in Gy<sup>-1</sup>. The simulated &#945; parameter will tend to this value for low LET. This option is compatible only with the MKM (and tMKM) model, it won't be use if a different model is chosen. The default value is 0.312 Gy<sup>-1</sup>, a tipical value representing the Human Salivary Gland (HSG) cell line.
 
-   - `-MKM_beta0` A double representing associated to the linear quadratic $\beta$ parameter characteristic for X-rays, expressed in Gy<sup>-2</sup>. The simulated $\beta$ parameter will tend to this value for low LET. This option is compatible only with the MKM (and tMKM) model, it won't be use if a different model is chosen. The default value is 0.073 Gy<sup>-2</sup>, a tipical value representing the Human Salivary Gland (HSG) cell line.
+   - `-MKM_beta0` A double representing associated to the linear quadratic &#946; parameter characteristic for X-rays, expressed in Gy<sup>-2</sup>. The simulated &#946; parameter will tend to this value for low LET. This option is compatible only with the MKM (and tMKM) model, it won't be use if a different model is chosen. The default value is 0.073 Gy<sup>-2</sup>, a tipical value representing the Human Salivary Gland (HSG) cell line.
 
- - `-MKM_rNucleus` The radius of the cell expressed in $\mu$m. This option is compatible only with the MKM (and tMKM) model, it won't be use if a different model is chosen. The default value is 4.611 &#956;m, a tipical value representing the Human Salivary Gland (HSG) cell line.
+ - `-MKM_rNucleus` The radius of the cell expressed in &#956;m. This option is compatible only with the MKM (and tMKM) model, it won't be use if a different model is chosen. The default value is 4.611 &#956;m, a tipical value representing the Human Salivary Gland (HSG) cell line.
 
  - `-MKM_rDomain` The radius of domains wich constitute the MKM nucleus expressed in &#956;m. This option is compatible only with the MKM (and tMKM) model, it won't be use if a different model is chosen. The default value is 0.365 &#956;m, a tipical value representing the Human Salivary Gland (HSG) cell line.
 
@@ -121,23 +124,23 @@ Typing `./survival --help` a simple help text will be displayed, suggesting how 
 
 #### Evaluation method options
  
-   - `-calculusType` A string identifying the type of calculus to be done. Some possibilities are available:
+   - `-calculusType` A string identifying the type of numerical approach ("calculus") to be used in the simulations. Different possibilities are available:
  
-      1. "rapidLEM_Scholz2006" It's an implementation of the method described in: M. Krämer and M. Scholz, "Rapid calculation of biological effects in ion radiotherapy", *Physics in medicine and biology* **51**, 1959-1970 (2006). It's compatible only with LEMI, LEMII and LEMIII models.
+      1. "rapidLEM_Scholz2006" It's an implementation of the method described in: M. Krämer and M. Scholz, "Rapid calculation of biological effects in ion radiotherapy", *Physics in medicine and biology* **51**, 1959-1970 (2006). It's compatible only with `LEMI`, `LEMII` and `LEMIII` models.
    
-      2. "rapidLEM_Russo2011" A new rapid method for LEM, proved to be more accurate, described in: G. Russo, "Develpment of a radiobiological database for carbon ion Treatment Planning Systems - Modelling and simulating the irradiation process", *Ph.D. Thesis*, Università degli studi di Torino (2011). It is compatible only with LEMI-LEMII-LEMIII models.
+      2. "rapidLEM_Russo2011" A rapid evaluation method for LEM, with better agreement to the Monte Carlo approach, described in: G. Russo, "Develpment of a radiobiological database for carbon ion Treatment Planning Systems - Modelling and simulating the irradiation process", *Ph.D. Thesis*, Università degli studi di Torino (2011). It's compatible only with `LEMI`, `LEMII` and `LEMIII` models.
    
-      3. "rapidMKM_Kase2008" A fast implementation of the MKM calculation as described in: Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008). Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation. *Physics in Medicine and Biology*, **53**(1), 37–59 It's compatible only with the MKM.
+      3. "rapidMKM_Kase2008" A fast implementation of the MKM calculation as described in: Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008). Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation. *Physics in Medicine and Biology*, **53**(1), 37–59. It's compatible only with the `MKM`.
    
-      4. "rapidMKM_Kase2008_corrected_beta" An extension of the "rapidMKM_Kase2008" method in which a non-Poissonian correction factor is added also for the $\beta$ parameter.
+      4. "rapidMKM_Kase2008_corrected_beta" An extension of the "rapidMKM_Kase2008" method in which a non-Poissonian correction factor is added also for the &#946; parameter.  It's compatible only with the `MKM`.
       
-      5. "rapidMKM_Attili2013" A fast original implementation of the MKM model, combining the methods described in: Hawkins_2003 Hawkins, R. B. (2003). A microdosimetric-kinetic model for the effect of non-Poisson distribution of lethal lesions on the variation of RBE with LET. *Radiation Research*, 160(1), 61–69, and Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008). Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation. *Physics in Medicine and Biology*, **53**(1), 37–59.
+      5. "rapidMKM_Attili2013" A fast original implementation of the MKM model, combining the methods described in: Hawkins_2003 Hawkins, R. B. (2003). A microdosimetric-kinetic model for the effect of non-Poisson distribution of lethal lesions on the variation of RBE with LET. *Radiation Research*, 160(1), 61–69, and Kase, Y., Kanai, T., Matsufuji, N., Furusawa, Y., Elsässer, T., & Scholz, M. (2008). Biophysical calculation of cell survival probabilities using amorphous track structure models for heavy-ion irradiation. *Physics in Medicine and Biology*, **53**(1), 37–59.  It's compatible only with the `MKM`.
    
-      6. "rapidMKM_Attili2013_corrected_beta" An extension of the "rapidMKM_Attili2013" method in which a non-Poissonian correction factor is added also for the $\beta$ parameter. See Survival::Calculus::rapidMKM_Attili2017_corrected_beta() for details.
+      6. "rapidMKM_Attili2013_corrected_beta" An extension of the "rapidMKM_Attili2013" method in which a non-Poissonian correction factor is added also for the &#946; parameter. See Survival::Calculus::rapidMKM_Attili2017_corrected_beta() for details.  It's compatible only with the `MKM`.
    
-      7. "MonteCarlo" Compatible with all models implemented, performs a Monte Carlo simulation of the irradiation process to get the LQ parameters.
+      7. "MonteCarlo" Compatible with all the implemented models, it performs a Monte Carlo simulation of the irradiation process.
       
-   **Note**: the model "tMKM_Manganaro2017" accepts only the Monte Carlo ("MonteCarlo") type of calculus.
+   **Note**: the model `tMKM_Manganaro2017` accepts only the Monte Carlo ("MonteCarlo") type of calculus.
 
 
 ##### Monte Carlo Options
@@ -164,7 +167,7 @@ Typing `./survival --help` a simple help text will be displayed, suggesting how 
 
  - `-energies` A sequence of kinetic energies of the ion to be evaluated, expressed in MeV. The energy values should be separated by one o more spaces. This and the `-lets` option are mutually exclusive, but one of the two has to be specified.
 
- - `-lets` A sequence of LET of the ion to be evaluated, expressed in keV/$\mu$m. The LET values should be separated by one o more spaces. This and the `-energies` option are mutually exclusive, but one of the two has to be specified.
+ - `-lets` A sequence of LET of the ion to be evaluated, expressed in keV/&#956;m. The LET values should be separated by one o more spaces. This and the `-energies` option are mutually exclusive, but one of the two has to be specified.
 
  - `-doses` The sequence of doses to be delivered. The LET values should be separated by one o more spaces. The default is 1 to 6 Gy ("1 2 3 4 5 6"), in order to construct a survival curve.
 
