@@ -30,6 +30,7 @@ test_OpenMP/test_OpenMP
 
 # Rstudio project
 Survival.Rproj
+project.Rproj
 .Rhistory
 
 # executables
