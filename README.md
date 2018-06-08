@@ -80,9 +80,9 @@ Typing `survival --help` a simple help text will be displayed, suggesting how to
       
       **Note**: This parameter has to be specified. No default values are set.
       
-   - `-cellType` A string identifying the name of the cell lline used in the calculation. The default value is "Cell1".
+   - `-cellType` A string identifying the name of the cell line used in the calculation. The default value is "Cell1".
 
-   **Note**: the cell line is only determined by the chosen model parameters. `-cellType` is only a tag to indicate the cell useful for bookeeping, but it isn't used in the simulation.
+   **Note**: the cell line is only determined by the chosen model parameters. `-cellType` is only a tag to indicate the cell, useful for bookkeeping.
 
 
 
