@@ -2,13 +2,13 @@ Survival
 ========
 
 
-This software was developed by the INFN (Istituto Nazionale di Fisica Nucleare) in collaboration with the University of Torino (UniTO, Physics Department) and provides different implementations of some radiobiological models to predict the cell survival after irradiation. The implemented models are (for the moment): LEMI, LEMII, LEMIII, MKM and MCt-MKM.
+This software was developed by the INFN (Istituto Nazionale di Fisica Nucleare) in collaboration with the University of Torino (UniTO, Physics Department) and provides different implementations of some radiobiological models to predict the cell survival after irradiation with ion beams. The implemented models are (for the moment): LEMI, LEMII, LEMIII, MKM and MCt-MKM.
 
 The code is written in C++ and makes use of the GSL (GNU Scientific Libraries) and OpenMP (Open Multi-Processing) external libraries.
 
 ### Documentation
  - A full description of the code can be found in the [User's Manual](https://github.com/batuff/Survival/tree/master/Documentation/Survival_USERS_MANUAL.pdf).
- - Once you have downloaded the *Survival* folder, an interactive html manual is available opening the **./Documentation/html/index.html** file.
+ - Once you have downloaded the *Survival* folder, an interactive html manual is available opening the `../Documentation/html/index.html` file.
 
 ### Licensing
 The *Survival* code is distributed under terms of the [GNU General Public Licence](https://github.com/batuff/Survival/edit/master/LICENSE)
