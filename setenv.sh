@@ -4,7 +4,7 @@
 # 	$ source setenv.sh
 #
 
-install_folder=$HOME/path_to_this_directory/
+install_folder=$HOME/path_to_Survival_directory/
 
 ## Linux Library Path:
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$install_folder/ext_lib

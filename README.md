@@ -43,21 +43,25 @@ A detailed description of the implemented models can be found in the following p
 
 ### Usage (Unix and Unix-like systems)
 
+#### Setting the environment
+
+In order to run the program, the user has to set a couple of environment variables. The BASH script `setenv.sh` automates this procedure. In the script the user has to define the folder where the program is installed in the variable `$install_folder`.
+
+#### Running the program
+
 The user has to call from the command line:
 
-`$ source setenv.sh`
+      source setenv.sh
 
 to set the system variables and then
 
-`$ ./survival -SIMULATION_OPTION CHOSEN_VALUES ...`
+      survival -SIMULATION_OPTION CHOSEN_VALUES ...
 
 to execute the program.
 
-The user has the possibility to set a number of physical (and not only physical) parameters by using the syntax:
-
-`-PARAMETER_NAME PARAMETER_VALUE`.
+The user has the possibility to set a number of physical (and not only physical) parameters by using the syntax: `-PARAMETER_NAME PARAMETER_VALUE`.
  
-Typing `./survival --help` a simple help text will be displayed, suggesting how to use the program. In the following sections a complete list of parameters and their meaning is reported.
+Typing `survival --help` a simple help text will be displayed, suggesting how to use the program. In the following sections a complete list of parameters and their meaning is reported.
 
 
 #### Output options
