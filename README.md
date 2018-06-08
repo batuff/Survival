@@ -45,7 +45,7 @@ A detailed description of the implemented models can be found in the following p
 
 #### Setting the environment
 
-In order to run the program, the user has to set a couple of environment variables. The BASH script `setenv.sh` automates this procedure. In the script the user has to define the folder where the program is installed in the variable `$install_folder`.
+In order to run the program, the user has to set a couple of environment variables. The BASH script `setenv.sh` automates this procedure. In the script the user has to define the variable `$install_folder` to the install folder where the program is located.
 
 #### Running the program
 
